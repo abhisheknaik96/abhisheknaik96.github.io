@@ -41,10 +41,10 @@ $$ \begin{aligned} \mathbb{E}\big[\mathbb{E}[A|B]\big] &= \sum_{b\in\mathcal{B}}
 What we did here is condition over another random variable and marginalize over it. Keeping this in mind, let us go back to the first term on the RHS in equation 1.
 
 $$ \begin{aligned}
-\mathbb{E}[R_{t+1}|S_t=s] &= \mathbb{E}\big[\mathbb{E}[R_{t+1}|S_t=s,A_t=a]\big]\\
+\mathbb{E}[R_{t+1}|S_t=s] &= \mathbb{E}\big[\mathbb{E}[R_{t+1}|S_t=s,A_t]\big]\\
 &= \sum_{a}p(A_t=a|S_t=s)\;\mathbb{E}[R_{t+1}|S_t=s,A_t=a]\\
 &= \sum_{a}\pi(a|s)\;\mathbb{E}[R_{t+1}|S_t=s,A_t=a]\\
-&= \sum_{a}\pi(a|s)\;\mathbb{E}\big[\mathbb{E}[R_{t+1}|S_t=s,A_t=a,S_{t+1}=s']\big]\\
+&= \sum_{a}\pi(a|s)\;\mathbb{E}\big[\mathbb{E}[R_{t+1}|S_t=s,A_t=a,S_{t+1}]\big]\\
 &= \sum_{a}\pi(a|s)\;\sum_{s'}p(s'|s,a)\mathbb{E}[R_{t+1}|S_t=s,A_t=a,S_{t+1}=s']\\
 &= \sum_{a}\pi(a|s)\;\sum_{s'}p(s'|s,a)\;r(s,a,s') \qquad (2)
 \end{aligned} $$
@@ -80,6 +80,7 @@ Wait, you say, the Bellman equation in the book looks different from this...
 ![Eq 3.14 from Pg 46](/images/BellmanEquation_book_small.png)
 
 Hmm... Well, it turns out that that requires another assumption: the reward obtained per timestep depends only on the current state $$s$$ and the action $$a$$ taken in it, and not the next state $$s'$$.
+Another way to look at it is that the reward $$r$$ and next state $$s'$$ are jointly conditional on the current state $$s$$ and action $$a$$, resulting in the joint distribution $$p(s',r|s,a)$$. Given this, the derivation becomes more straightforward (_and is left to the reader as an exercise :P I've always wanted to say that!_)
 
 If that is the case, then equation 2 can be re-written as:
 
