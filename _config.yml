@@ -4,7 +4,7 @@ theme: jekyll-theme-cayman
 title: [Abhishek Naik]
 description: [Has the mind of a techie and the heart of a wanderer.]
 
-include: ['_posts', '_pages']
+include: ['_posts', '_pages', 'uploads']
 
 baseurl: ""
 
