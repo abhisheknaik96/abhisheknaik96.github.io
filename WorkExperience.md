@@ -7,19 +7,19 @@ layout: default
 
 ## Reinforcement Learning II (CMPUT609)
 **Jan 2020 - Apr 2020; Dept. of Computing Science, University of Alberta**
-- As one of the Teaching Assistants of this course taken by [Professor Rich Sutton](http://www.incompleteideas.net/), I'll be helping create the course content and guiding research projects for a class of ~30 graduate students.
+- As one of the Teaching Assistants of this course offered by [Professor Rich Sutton](http://www.incompleteideas.net/), I helped create the course content and guided research projects for a class of about 40 graduate students.
 
 
 ## Reinforcement Learning (CS6700)
 **Jan 2018 - May 2018; Dept. of CSE, IIT Madras**
 
-- As the Head Teaching Assistant of this course taken by [Professor Balaraman Ravindran](www.cse.iitm.ac.in/~ravi), I created and evaluated tutorials, programming assignments, and exams for a class of about 90 undergraduates and postgraduates.
+- As the Head Teaching Assistant of this course offered by [Professor Balaraman Ravindran](www.cse.iitm.ac.in/~ravi), I created and evaluated tutorials, programming assignments, and exams for a class of about 90 undergraduates and graduates.
 
 
 ## Principles of Machine Learning (CS4011)
 **Aug 2017 - Nov 2017; Dept. of CSE, IIT Madras**
 
-- As one of Teaching Assistants of this course taken by [Professor Balaraman Ravindran](www.cse.iitm.ac.in/~ravi) and [Professor Mitesh Khapra](https://www.cse.iitm.ac.in/~miteshk), I created and evaluated tutorials, programming assignments, and quizzes for a class of about 90 undergraduates.
+- As one of Teaching Assistants of this course offered by [Professor Balaraman Ravindran](www.cse.iitm.ac.in/~ravi) and [Professor Mitesh Khapra](https://www.cse.iitm.ac.in/~miteshk), I created and evaluated tutorials, programming assignments, and quizzes for a class of about 90 undergraduates.
 
 
 ***

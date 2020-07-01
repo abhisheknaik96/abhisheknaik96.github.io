@@ -5,23 +5,28 @@ layout: default
 
 # [Research](#research)
 
-I am intrigued by how the mind works and learns to perform a myriad of tasks over its lifetime. In particular, I think about intelligence – the computational ability to achieve goals – and how the mind can be modeled as a machine. I believe that making headways in answering this question will benefit humanity significantly and tangibly, for good (in expectation).
+I study how the mind works and how intelligent systems learn to perform a myriad of tasks over their lifetime. In other words, I think about intelligence – the computational ability to achieve goals – and how the mind can be modeled as a machine. I believe making progress in answering these questions will benefit humanity significantly and tangibly, for good (in expectation).
 
 ## [Publications and Pre-prints](#publications)
 
+### Learning and Planning in Average-Reward Markov Decision Processes [[PDF](https://arxiv.org/abs/2006.16318)]
+
+Yi Wan<sup>*</sup>, **Abhishek Naik**<sup>*</sup>, Richard S. Sutton <br>
+Under review.
+
 ### Discounted Reinforcement Learning is Not an Optimization Problem [[PDF](https://arxiv.org/abs/1910.02140)]
 
-**Abhishek Naik**, Roshan Shariff, Niko Yasui, Richard S Sutton. <br>
-To be presented in the _Optimization Foundations of Reinforcement Learning Workshop, NeuRIPS,_ 2019.
+**Abhishek Naik**, Roshan Shariff, Niko Yasui, Richard S. Sutton <br>
+In the _Optimization Foundations of Reinforcement Learning [Workshop](https://optrl2019.github.io/), NeuRIPS,_ 2019.
 
 ### RAIL: Risk-Averse Imitation Learning [[PDF](https://arxiv.org/abs/1707.06658)]
 
-Anirban Santara<sup>*</sup>, **Abhishek Naik**<sup>*</sup>, Balaraman Ravindran, Dipankar Das, Dheevatsa Mudigere, Sasikanth Avancha, Bharat Kaul.<br>
+Anirban Santara<sup>*</sup>, **Abhishek Naik**<sup>*</sup>, Balaraman Ravindran, Dipankar Das, Dheevatsa Mudigere, Sasikanth Avancha, Bharat Kaul <br>
 In _Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems (AAMAS)_, 2018.
 
 ### Identifying User Survival Types via Clustering of Censored Social Network Data [[PDF](https://arxiv.org/abs/1703.03401)]
 
-S Chandra Mouli, **Abhishek Naik**, Bruno Ribeiro, Jennifer Neville. <br>
+S Chandra Mouli, **Abhishek Naik**, Bruno Ribeiro, Jennifer Neville <br>
 CoRR abs/1703.03401, 2017.
 
 ## [Projects](#projects)
