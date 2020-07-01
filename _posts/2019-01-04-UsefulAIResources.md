@@ -5,12 +5,13 @@ date : 2019-01-04
 time : +1335
 permalink : posts/GreatAIResources
 tags : general
-summary : A collection of useful links  
+summary : A collection of useful links
+published : false
 ---
 
 So here's a collection of great resources that _I have used_ for learning/reviewing concepts of AI. I'll keep updating the list as and when I come across more material that I would like to recommend.
 
-### Maths for Machine Learning 
+### Maths for Machine Learning
 
 - Matrix Calculus [[Link](https://atmos.washington.edu/~dennis/MatrixCalculus.pdf)]
 	- Concise notes covering useful identities along with their proofs.
@@ -20,7 +21,7 @@ So here's a collection of great resources that _I have used_ for learning/review
 ### Reinforcement Learning
 
 - The RL textbook [[Link](http://www.incompleteideas.net/book/RLbook2018.pdf)]
-	- Brilliantly-written, provides a gentle and general introduction to RL. 
+	- Brilliantly-written, provides a gentle and general introduction to RL.
 - Code for the RL textbook [[Python](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction); [Jupyter Notebooks](https://marcinbogdanski.github.io/ai_sketchpad/)]
 	- Python and iPython versions of codes for generating (almost all) the figures and graphs in the RL textbook.
 - David Silver's course [[Slides](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)]
@@ -31,7 +32,7 @@ So here's a collection of great resources that _I have used_ for learning/review
 ### General
 
 - A* [[Link](https://www.redblobgames.com/pathfinding/a-star/introduction.html)]
-	- Concise theory accompanied by brilliant, interactive animations. 
+	- Concise theory accompanied by brilliant, interactive animations.
 
 <br>
 

@@ -8,12 +8,12 @@ permalink: AllPosts
   <nav class="nav__list">
 
     <ul>
-          
-		<li>
+
+		<!-- <li>
             <div style="padding-bottom: 10px !important;">
             <a href="{{ post.permalink }}"> Summaries </a><br>
                 Of interesting papers, articles, and blogs.
-            
+
                 <ul>
 
 					{% for post in site.posts %}
@@ -21,7 +21,7 @@ permalink: AllPosts
 			        <li>
 			                <div style="padding-left: 10px !important;">
 			                <a href="{{ post.permalink }}"> {{ post.title }} </a><br>
-			                {{ post.summary }} 
+			                {{ post.summary }}
 			                </div>
 					</li>
 		            {% endif %}
@@ -38,7 +38,7 @@ permalink: AllPosts
                 <div style="padding-bottom: 10px !important;">
                 <a href="{{ post.permalink }}"> OpEds </a><br>
                     My take on things that pique my interest.
-                
+
 	                <ul>
 
 						{% for post in site.posts %}
@@ -46,7 +46,7 @@ permalink: AllPosts
 				        <li>
 				                <div style="padding-left: 10px !important;">
 				                <a href="{{ post.permalink }}"> {{ post.title }} </a><br>
-				                {{ post.summary }} 
+				                {{ post.summary }}
 				                </div>
 						</li>
 			            {% endif %}
@@ -55,19 +55,19 @@ permalink: AllPosts
 			        </ul>
 
 				</div>
-           </li>
-	
+           </li> -->
+
 			<hr>
- 
+
             {% for post in site.posts %}  <!-- If required, site.posts.reverse -->
-	      	{% if post.tags contains "general" %}
 	      	<li>
               	<div>
               	<a href="{{ post.permalink }}"> {{ post.title }} </a><br>
-              	{{ post.summary }}
+              	{{ post.summary }} <br>
+                <i> {{ post.date | date: "%B %e, %Y" }} </i>
               	</div>
-            </li><hr>
-            {% endif %}
+          </li>
+            <hr>
             {% endfor %}
 
 	</ul>

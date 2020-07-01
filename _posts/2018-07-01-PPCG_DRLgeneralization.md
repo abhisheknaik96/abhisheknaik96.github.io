@@ -5,6 +5,7 @@ date : 2018-07-01
 time : +1911
 permalink : posts/PPCG_DRLgeneralization
 tags : summary
+published : false
 ---
 
 [[arXiv;1806.10729](https://arxiv.org/abs/1806.10729)]
@@ -15,7 +16,7 @@ tags : summary
 ![Socially Acceptable](/images/sociallyAcceptable.png)
 
 This paper does a great job at calling out this questionable practice in RL.
-> When it is reported that an agent has learned to play a game, it may simply mean that the policy model is memorizing what action to take for a large number of observations that it has seen over and over again. This boils down to the network compressing a large number of image and action pairs without the network ever learning the general concepts of the game. 
+> When it is reported that an agent has learned to play a game, it may simply mean that the policy model is memorizing what action to take for a large number of observations that it has seen over and over again. This boils down to the network compressing a large number of image and action pairs without the network ever learning the general concepts of the game.
 
 - It is seen that RL agents perform decently in the environment that they are tested on, and generally show unbelievably low performance on even related tasks, let alone significantly different ones. This is the motivation for transfer learning, and one of the goals of AGI.
 - The authors attempt to learn generalized behaviour by training the agent to learn on a newly-generated level of the game after every episode!
@@ -42,7 +43,7 @@ This paper does a great job at calling out this questionable practice in RL.
 - Furthermore, PPCG agents are seen to show the behaviour of catastrophic forgetting on levels of lower difficulties as training progresses.
 
 As future work, it needs to be ensured that the level generator covers a sufficiently large space of levels in order to learn proper general understanding of the game.
-    
+
 ## Notes
 
 - While GVG-AI originally provides a forward model that allows agents to use search algorithms, the GVG-AI Gym only provides the pixels of each frame, the incremental reward, and whether the game is won or lost
