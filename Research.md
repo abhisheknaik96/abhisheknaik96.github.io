@@ -35,6 +35,11 @@ CoRR abs/1703.03401, 2017.
 
 ## [Talks](#talks)
 
+### Learning and Planning in Average-Reward MDPs
+
+_[ Tea Time Talks](https://amiithinks.github.io/tea-time-talks/), RLAI lab and Amii,_ Aug 2020 <br>
+[Video (coming soon), [Slides](https://abhisheknaik96.github.io/uploads/Talks/TTT_2020_AbhishekNaik.pdf)]
+
 ### On Intelligence: A Glimpse of the Diversity in Natural Intelligence
 
 _ Amii AI Meetup,_ June 2020 <br>
