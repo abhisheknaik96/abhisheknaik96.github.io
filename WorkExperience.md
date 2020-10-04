@@ -5,6 +5,11 @@ layout: default
 
 # [Teaching Experience](#teachingExperience)
 
+## Reinforcement Learning I (CMPUT397)
+**Sep 2020 - Dec 2020; Dept. of Computing Science, University of Alberta**
+- Helping teach [Professor Martha White](https://webdocs.cs.ualberta.ca/~whitem/) a class of ~150 undergraduate students.
+
+
 ## Reinforcement Learning II (CMPUT609)
 **Jan 2020 - Apr 2020; Dept. of Computing Science, University of Alberta**
 - As one of the Teaching Assistants of this course offered by [Professor Rich Sutton](http://www.incompleteideas.net/), I helped create the course content and guided research projects for a class of about 40 graduate students.
@@ -73,11 +78,16 @@ With [Sravan Bodapati](https://www.linkedin.com/in/justsravan/) and [Venkatraman
 
 # [Community Service](#communityService)
 
+## Organizer, [Tea Time Talks 2020](https://amiithinks.github.io/tea-time-talks/), Amii and RLAI lab
+**June 2020 – Aug 2020**
+
+- Organized and moderated the talks of 40+ speakers over the course of 12 weeks (in a virtual format for the first time). Full playlist [here](https://www.youtube.com/watch?v=g80wiWvOtvI&list=PLKlhhkvvU8-Y3Up8reY3Qi_YWN_v7EN3O).
+
 
 ## Executive Member, [Computer Science Graduate Students' Association](https://sites.google.com/ualberta.ca/csgsa/), University of Alberta
-**Apr 2019 – present**
+**Apr 2019 – Apr 2020**
 
-- Apart from representing the interests of the graduate students to the department, I help organize activities which support their well-being – physically and emotionally; academically and personally – to make University of Alberta a home away from home, especially for international students.
+- Apart from representing the interests of the graduate students to the department, I helped organize activities which support their well-being – physically and emotionally; academically and personally – to make University of Alberta a home away from home, especially for international students.
 
 
 ## Volunteer, [Centre for Autism Services Alberta](https://centreforautism.ab.ca/)
