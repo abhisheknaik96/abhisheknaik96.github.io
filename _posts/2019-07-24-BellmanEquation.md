@@ -54,7 +54,7 @@ Here, $$r(s,a,s')$$ is the _expected_ reward when action $$a$$ is state $$s$$ le
 Next, the second term (without $$\gamma$$) in the RHS of equation 1 can be similarly expanded as:
 
 $$ \begin{aligned}
-\mathbb{E}[G_{t+1}| S_t = s] &= \mathbb{E}\big[\mathbb{E}[G_{t+1}| S_t = s, S_{t+1}=s']\big] \\
+\mathbb{E}[G_{t+1}| S_t = s] &= \mathbb{E}\big[\mathbb{E}[G_{t+1}| S_t = s, S_{t+1}]\big] \\
 &= \sum_{s'} \mathbb{E}[G_{t+1}| S_t = s, S_{t+1}=s']\; p(s'|s) \\
 &= \sum_{s'}  \mathbb{E}[G_{t+1}| S_t = s, S_{t+1}=s'] \sum_a p(a|s)\;p(s'|s,a)\\
 &= \sum_a \pi(a|s) \sum_{s'} p(s'|s,a) \mathbb{E}[G_{t+1}| S_t = s, S_{t+1}=s']\\
@@ -79,7 +79,7 @@ Wait, you say, the Bellman equation in the book looks different from this...
 
 ![Eq 3.14 from Pg 46](/images/BellmanEquation_book_small.png)
 
-Hmm... Well, it turns out that that requires another assumption: the reward obtained per timestep depends only on the current state $$s$$ and the action $$a$$ taken in it, and not the next state $$s'$$.
+<!-- Hmm... Well, it turns out that that requires another assumption: the reward obtained per timestep depends only on the current state $$s$$ and the action $$a$$ taken in it, and not the next state $$s'$$.
 Another way to look at it is that the reward $$r$$ and next state $$s'$$ are jointly conditional on the current state $$s$$ and action $$a$$, resulting in the joint distribution $$p(s',r|s,a)$$. Given this, the derivation becomes more straightforward (_and is left to the reader as an exercise :P I've always wanted to say that!_)
 
 If that is the case, then equation 2 can be re-written as:
@@ -90,17 +90,34 @@ v_{\pi}(s) &= \sum_{a}\pi(a|s)\;\sum_{s'}p(s'|s,a)\;r(s,a,s')\\
 &= \sum_{a}\pi(a|s)\;\sum_{s'}p(s'|s,a)\;\mathbb{E}[R_{t+1}|S_t=s,A_t=a]\\
 &= \sum_{a}\pi(a|s)\;\sum_{s'}p(s'|s,a)\;\sum_{s'}p(r|s,a)\;r\\
 &= \sum_{a}\pi(a|s)\;\sum_{s',r}p(s',r|s,a)\;r \qquad (5)
+\end{aligned} $$ -->
+
+Hmm, let us look at the first term again:
+
+$$ \begin{aligned}
+\text{First term} &= \sum_{a}\pi(a|s)\;\sum_{s'}p(s'|s,a)\;r(s,a,s')\\
+&= \sum_{a}\pi(a|s)\;\sum_{s'}p(s'|s,a)\;\mathbb{E}[R_{t+1}|S_t=s,A_t=a,S_{t+1}=s']\\
+&= \sum_{a}\pi(a|s)\;\sum_{s'}p(s'|s,a)\sum_{r}p(r|s,a,s')\,r\\
+&= \sum_{a}\pi(a|s)\;\sum_{s'}\sum_{r}p(s'|s,a)p(r|s,a,s')\,r\\
+&= \sum_{a}\pi(a|s)\;\sum_{s',r}p(s',r|s,a)\,r \qquad (5)
 \end{aligned} $$
 
 Starting to look more familiar, eh?
 
-Similarly, we can re-write equation 3. Here, the RHS does not have any reward term, and so:
+What happened in the last step there, you ask. Well, we applied the chain rule of conditional probability:
+
+$$ \begin{aligned}
+P(A|B,C,D)P(B|C,D) &= \dfrac{P(A,B,C,D)}{P(B,C,D)} \dfrac{P(B,C,D)}{P(C,D)} \\
+&= \dfrac{P(A,B,C,D)}{P(C,D)} \\
+&= P(A,B|C,D)
+\end{aligned} $$
+
+We can also re-write the second term. There is no reward term here, and so:
 
 $$ \begin{aligned}
 \mathbb{E}[G_{t+1}| S_t = s]
 &= \sum_a \pi(a|s) \sum_{s'} p(s'|s,a) \;\mathbb{E}[G_{t+1}| S_{t+1}=s']\\
-&= \sum_a \pi(a|s) \sum_{s'} p(s'|s,a)\cdot 1\cdot \mathbb{E}[G_{t+1}| S_{t+1}=s']\\
-&= \sum_a \pi(a|s) \sum_{s'} p(s'|s,a) \sum_{r} p(r|s,a)\;\mathbb{E}[G_{t+1}| S_{t+1}=s']\\
+&= \sum_a \pi(a|s) \sum_{s'} \sum_r p(s',r|s,a)\;\mathbb{E}[G_{t+1}| S_{t+1}=s'] \\
 &= \sum_a \pi(a|s) \sum_{s',r} p(s',r|s,a)\;\mathbb{E}[G_{t+1}| S_{t+1}=s'] \qquad(6)\\
 \end{aligned} $$
 
