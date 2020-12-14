@@ -35,9 +35,14 @@ CoRR abs/1703.03401, 2017.
 
 ## [Talks](#talks)
 
+### Personalized Brain State Targeting via Reinforcement Learning
+
+_[The 3rd Neuromatch Conference](https://neuromatch.io/),_ Oct 2020 <br>
+[[Video](https://www.youtube.com/watch?v=MjdOLeOe19g) (plus more Q/A at the [9:58:41](https://youtu.be/DA7vgHrT3OU?t=35921) mark), [Slides](https://abhisheknaik96.github.io/uploads/Talks/NMC_20_AbhishekNaik.pdf)]
+
 ### Learning and Planning in Average-Reward MDPs
 
-_[ Tea Time Talks](https://amiithinks.github.io/tea-time-talks/), RLAI lab and Amii,_ Aug 2020 <br>
+_ [Tea Time Talks](https://amiithinks.github.io/tea-time-talks/), RLAI lab and Amii,_ Aug 2020 <br>
 [Video (coming soon), [Slides](https://abhisheknaik96.github.io/uploads/Talks/TTT_2020_AbhishekNaik.pdf)]
 
 ### On Intelligence: A Glimpse of the Diversity in Natural Intelligence
