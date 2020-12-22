@@ -1,0 +1,33 @@
+I"�<p>With the recent <a href="OpEd_Uber">fatal Uber crash</a>, I was reading <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.20266">this report</a> documenting a low-speed crash between two autonomous vehicles in the DARPA challenge, which highlights the surprising but crucial (and arguably blatant) challenges that even the state-of-the-art FAD technology faces today:</p>
+
+<h3 id="1-clusters-of-static-objects">1. Clusters of Static Objects</h3>
+
+<p>Often, a design choice is made - classification into static objects or moving obstacles. If it is the latter, forward predictions are made for the object.</p>
+<blockquote>
+  <p>Because the software treated Skynet as a collection of static objects instead of a moving obstacle, no forward prediction was made on Skynet’s motion. Talos was driving between a lane constraint on the left and a collection of static objects on the right. If Skynet had not moved, Talos would have negotiated the gap just as it had to avoid K-rails and other static objects adjacent to the lanes throughout the day. Instead, unexpectedly for Talos, Skynet moved forward into the planned path of Talos. Without a forward-motion prediction of Skynet, by the time Skynet was in Talos’s path, Talos was unable to come to a stop before colliding.</p>
+</blockquote>
+
+<p>Maybe if a explicit vehicle classification was performed over the deployed moving-obstacle model, this could have been avoided.</p>
+
+<h3 id="2-inability-to-track-slow-moving-objects">2. Inability to Track Slow-Moving Objects</h3>
+
+<ul>
+  <li>When the vehicle is moving, the visible portion of other obstacles can change, and the motion of the visible portion of the obstacle is difficult to distinguish from an obstacle that is actually moving.</li>
+  <li>As I realized while researching <a href="OpEd_Tesla">the Tesla crash</a> earlier, there is already a problem of ignoring static ‘moving’ objects like traffic signs or billboards relative to the moving car.</li>
+</ul>
+
+<h3 id="3-inability-to-detect-objects-that-are-too-close">3. Inability to Detect Objects that are Too Close</h3>
+
+<p>Remember the black hole around the cars beyond which all the concentric circles of world maps are shown in visualizations of what self-driving cars ‘see’ in all those videos? Yeah, LiDARs cannot (reliably) detect objects in close range.</p>
+
+<h3 id="4-negotiation-by-intent-recognition">4. Negotiation by Intent Recognition</h3>
+
+<p>Drivers on the road constantly anticipate the potential  actions  of  fellow  drivers. For close maneuvering in car parks and intersections, for example, eye contact is made to ensure a shared  understanding. DARPA stated that traffic vehicle drivers, unnerved by being unable to make eye contactwith  the robots, had resorted to watching the front wheels of the robots for an  indication of their intent. As intervehicle communication becomes ubiquitous and reliable (Hello 5G!), autonomous vehicles will be able to transmit their intent to neighboring vehicles to implement the level of coordination beyond what human drivers currently achieve using eye contact.</p>
+
+<h3 id="5-re-engaging-the-driver">5. Re-engaging the driver</h3>
+<p>Till the last Level-5 of autonomy, self-driving require a human driver to be present at the wheel, to take over in a jiffy when called for. Now we have to take into account that the human in question will lack situational awareness at such points, since they could potentially be engaging in activities like reading or texting. As drivers reengage, they must immediately evaluate their surroundings, determine the vehicle’s place in them, analyze the danger, and decide on a safe course of action.<br />
+As <a href="https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/self-driving-car-technology-when-will-the-robots-hit-the-road">this insightful article by McKinsey</a> puts it:</p>
+<blockquote>
+  <p>At 65 miles an hour, cars take less than four seconds to travel the length of a football field, and the longer a driver remains disengaged from driving, the longer the reengagement process could take. Automotive companies must develop a better human–machine interface to ensure that the new technologies save lives rather than contributing to more accidents.</p>
+</blockquote>
+:ET

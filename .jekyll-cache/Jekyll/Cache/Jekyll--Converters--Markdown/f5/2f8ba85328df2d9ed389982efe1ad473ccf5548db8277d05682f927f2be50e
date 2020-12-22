@@ -1,0 +1,65 @@
+I"^<p>Back when I first studied machine learning, I came across the following formula for computing variance of a sampled distribution :</p>
+
+\[\sigma^2 = \frac{1}{N-1} \sum_{i=1}^N (x_i - \bar{x})^2\]
+
+<p>where \(x_i\) is the \(i^{th}\) sample from the distribution over \(x\), \(N\) is the total number of samples, and \(\bar{x}\) is the sample mean. This was called the <em>unbiased estimate of the variance</em>.</p>
+
+<p><br />
+Why? Intuitively, shouldn’t the denominator be \(N\), since \(\sigma^2 = \mathbb{E}[(x-\bar{x})^2]\)?</p>
+
+<p><br />
+That’s where I was mistaken. And now that I’ve had time to think about it, it’s actually quite elegant.</p>
+
+<p><br />
+Variance is defined as :</p>
+<blockquote>
+  <p><em>the expectation of the squared deviation of a random variable from its mean</em>.</p>
+</blockquote>
+
+<p>The ‘mean’ there, that is the <em>true</em> mean of the distribution of the random variable. \(\bar{x}\), on the other hand, is the <em>sampled</em> mean. Which means every time we compute \((x_i - \bar{x})\), we’re off by a factor of  \((x_i-\mu)\), where \(\mu\) is the <em>true</em> mean of the random variable.</p>
+
+<p><br />
+Alright, so something is off. But by how much? And how did \(N\) get replaced exactly by \(N-1\)? Time to dive into some math…</p>
+
+<p>Let’s call the <em>unbiased</em> variance as \(\sigma_{true}\) and the <em>biased</em> variance as \(\sigma_{biased}\). Now,
+\(\begin{aligned}
+\sigma_{true}^2 &amp;= \mathbb{E}[(x-\mu)^2] \\
+&amp;= \mathbb{E}[(x-\bar{x} + \bar{x} - \mu)^2] \\
+&amp;= \mathbb{E}[(x-\bar{x})^2 + (\bar{x} - \mu)^2 + 2(x-\bar{x})(\bar{x}-\mu)] \\
+&amp;= \mathbb{E}[(x-\bar{x})^2] + \mathbb{E}[(\bar{x} - \mu)^2] + 2\mathbb{E}[(x-\bar{x})(\bar{x}-\mu)]\\
+&amp;= \sigma_{biased}^2 +  \mathbb{E}[(\bar{x} - \mu)^2] + 2(\bar{x}-\mu)\mathbb{E}[(x-\bar{x})]\\
+\sigma_{true}^2 &amp;= \sigma_{biased}^2 +  \mathbb{E}[(\bar{x} - \mu)^2] \\
+\end{aligned}\)</p>
+
+<p><br />
+Alright now. We have established that our biased estimate is <em>smaller</em> than the true estimate (Why? Because the second term on the RHS is the expectation of a squared quantity). Let us compute that quantity.</p>
+
+\[\begin{aligned} 
+\mathbb{E}[(\bar{x} - \mu)^2] &amp;= Var(\bar{x}) \\
+&amp;= Var(\frac{1}{N}\sum_{i=1}^N x_i) \\
+&amp;= \frac{1}{N^2} Var(\sum_{i=1}^N x_i) \qquad \big( Var(aY) = a^2 Var(Y) \big) \\
+&amp;= \frac{1}{N^2} \big( Var(x_1) + Var(x_2) \ldots + Var(x_N) \big) \\
+\mathbb{E}[(\bar{x} - \mu)^2] &amp;= \frac{\sigma_{true}^2}{N} \qquad \big(Var(X+Y) = Var(X) + Var(Y) \text{ if X,Y are uncorrelated}\big)
+\end{aligned}\]
+
+<p><br />
+In the last step, we could use that property since all the \(x_i\)s are independently sampled, and hence uncorrelated. Thus, we have</p>
+
+\[\begin{aligned}
+\sigma_{true}^2 &amp;= \sigma_{biased}^2 + \frac{\sigma_{true}^2}{N}\\
+\sigma_{true}^2 &amp;= \frac{N}{N-1} \sigma_{biased}^2 \\
+\sigma_{true}^2 &amp;= \frac{N}{N-1} \big( \frac{1}{N}\sum_{i=1}^N(x_i - \bar{x})^2 \big) \\
+\sigma_{true}^2 &amp;= \frac{1}{N-1}\sum_{i=1}^N(x_i - \bar{x})^2
+\end{aligned}\]
+
+<p>There we go, the familiar variance of a sampled distribution.</p>
+
+<p>Doesn’t it feel great to prove something to yourself rather than take someone’s word for it? :)</p>
+
+<h3 id="parting-notes">Parting notes</h3>
+<ul>
+  <li>The use of \(N-1\) instead of \(N\) in that formula is called the <a href="https://en.wikipedia.org/wiki/Bessel's_correction">Bessel’s correction</a>.</li>
+  <li>I’m not sure what or who to attribute the definition of sample variance to, so <a href="https://en.wikipedia.org/wiki/Variance">here’s</a> the Wikipedia link.</li>
+  <li>Check out <a href="https://www.stat.cmu.edu/~cshalizi/uADA/13/reminders/uncorrelated-vs-independent.pdf">this link</a> for a crisp refresher on independent vs uncorrelated variables (<em>TL;DR</em> - independent variables are uncorrelated; uncorrelated variables may not be independent)</li>
+</ul>
+:ET

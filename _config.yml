@@ -1,30 +1,17 @@
----
-theme: jekyll-theme-cayman
+name: Abhishek Naik
+title: Abhishek Naik's Website
 
-title: [Abhishek Naik]
-description: [Figuring out how the mind works]
+include: ['_pages', 'uploads']
 
-include: ['_posts', '_pages', 'uploads']
+base_url: "/website/"
 
-baseurl: ""
-
-social_links:
-  github: "https://github.com/abhisheknaik96/"
-  twitter: "https://twitter.com/anaik96"
-  linkedin: "https://linkedin.com/in/abhisheknaik96"
-  flickr: "https://www.flickr.com/photos/120844874@N04/"
-  # quora: "https://www.quora.com/profile/Abhishek-Naik-20/"
-  # goodreads: "https://www.goodreads.com/user/show/41821528-abhishek-naik"
-
-plugins:
-  - jekyll-twitter-plugin
-
-github: [metadata]
+social:
+  twitter: anaik96
+  email: abhisheknaik22296@gmail.com
+  goodreads: 41821528-abhishek-naik
+  github: abhisheknaik96
+  google_scholar: 9gV4DRsAAAAJ
 
 markdown: kramdown
-
-google_analytics: UA-144379474-1
-
-repository: abhisheknaik96/abhisheknaik96.github.io
-
----
+kramdown:
+  parse_block_html: true
