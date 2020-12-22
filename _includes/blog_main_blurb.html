@@ -1,0 +1,22 @@
+<!-- <div id="main"> -->
+
+  <h2>Recent Posts</h2>
+  {% for post in site.posts %}
+      {% if forloop.index < 5 %}
+          <li>
+              <div>
+              <a href="{{ post.permalink }}"> {{ post.title }} </a><br>
+              {{ post.summary }} <br>
+              <i> {{ post.date | date: "%B %e, %Y" }} </i><br>
+              </div>
+          </li>
+          <br>
+          <!-- <hr> -->
+      {% endif %}
+  {% endfor %}
+
+  <div class="wrapper">
+    <a href="AllPosts" class="myButton">See All Posts</a>
+  </div>
+
+<!-- </div> -->

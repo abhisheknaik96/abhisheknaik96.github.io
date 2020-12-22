@@ -1,33 +1,16 @@
-
-<!-- ToDo : This is not working... Apparently the function never takes place... -->
-
-<script type="text/javascript">
-
-  $('body').scrollspy({target: '#home-sidenav', offset: 183});
-
-  $(window).on('scroll', function (event) 
-  {
-     var SIDENAV_OFFSET = 140;
-     var scroll_pos = $(window).scrollTop();
-     window.alert(5 + 6);
-     
-     if (scroll_pos > SIDENAV_OFFSET ) 
-        $("#home-sidenav").addClass('affix-top');
-     else
-        $("#home-sidenav").removeClass('affix-top');
-     
-  });  
-  // $(function()
-  // {
-  //   var hasBeenTrigged = false;
-  //   $(window).scroll(function() 
-  //   {
-  //       if ($(this).scrollTop() >= 100 && !hasBeenTrigged) 
-  //       { // if scroll is greater/equal then 100 and hasBeenTrigged is set to false.
-  //           alert("You've scrolled 100 pixels.");
-  //           hasBeenTrigged = true;
-  //       }
-  //   });
-  // });
-
-</script>
+<footer id="footer">
+  <div class="inner">
+    <ul class="icons">
+      <li><a href="https://scholar.google.co.in/citations?user={{ site.social.google_scholar }}" class="ai ai-google-scholar"></a></li>
+      <li><a href="https://twitter.com/{{ site.social.twitter }}" class="fab fa-twitter"></a></li>
+      <li><a href="https://github.com/{{ site.social.github }}" class="fab fa-github"></a></li>
+      <li><a href="https://www.goodreads.com/user/show/{{ site.social.goodreads }}" class="fab fa-goodreads"></a></li>
+      <li><a href="mailto:{{ site.social.email }}" class="fab fas fa-at"></a></li>
+    </ul>
+    <ul class="copyright">
+      <li>&copy; {{ site.name }}</li>
+      <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+      <!-- <li>Header image: <a href="https://www.freepik.com/free-vector/science-template_1081078.htm">vilmosvarga</a></li> -->
+    </ul>
+  </div>
+</footer>
