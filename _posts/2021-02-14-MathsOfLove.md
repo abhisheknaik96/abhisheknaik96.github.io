@@ -5,7 +5,7 @@ date: 2021-02-14
 time: 1826
 permalink: posts/MathsOfLove
 tags: general
-summary: How maths can help find a life parnter
+summary: How maths can help find a life partner
 ---
 
 Preface: I first heard about the 37% rule in [Hannah Fry's TED talk](https://www.youtube.com/watch?v=yFVXsjVdvmY). And then again in the book ['Algorithms to Live By'](https://www.goodreads.com/book/show/25666050-algorithms-to-live-by). They both talked about what the rule is, not how or why it works, what assumptions it makes, etc. So I went down that rabbit hole. And what better occasion to write about it than Valentine's Day :)
