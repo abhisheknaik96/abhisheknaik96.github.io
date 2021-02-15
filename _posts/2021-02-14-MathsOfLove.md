@@ -5,7 +5,7 @@ date: 2021-02-14
 time: 1826
 permalink: posts/MathsOfLove
 tags: general
-summary: Interesting research-relevant lessons from Peter Thiel's notes on startups and building the future
+summary: How maths can help find a life parnter
 ---
 
 Preface: I first heard about the 37% rule in [Hannah Fry's TED talk](https://www.youtube.com/watch?v=yFVXsjVdvmY). And then again in the book ['Algorithms to Live By'](https://www.goodreads.com/book/show/25666050-algorithms-to-live-by). They both talked about what the rule is, not how or why it works, what assumptions it makes, etc. So I went down that rabbit hole. And what better occasion to write about it than Valentine's Day :)
@@ -20,15 +20,22 @@ This is what scientists call the "optimal stopping" problem. And this well-studi
 
 How come, you ask? Well, buckle yourselves, let's put on our maths h<sup>e</sup>a<sup>r</sup>ts :P
 
+---
+
 Okay, so first of all, let's take a moment to clarify the strategy. Assuming you decide you want to find a within N years, you will spend the first M of those years just figuring out your baseline; you will not settle down with anyone in those M years. And after those M years have passed, the first person you meet who is above the baseline you have set is the best potential partner you've been looking for. You want to know what M is such that the probability of finding the best potential partner is maximized.
 
 Alright, now the problem is clear. Let's move on to the solution.
-Let $$P(M,N)$$ denote the probability of meeting the best potential partner after exploring for $$M$$ out of $$N$$ years of the search. Then:
+Let $$P(M,N)$$ denote the probability of meeting the best potential partner after exploring for $$M$$ out of $$N$$ years of the search.
+
+Then:
 $$ P(M,N) = \sum_{K={M+1}}^N Pr(\text{meeting the best potential partner in the k-th year}) $$.
+
 Now this inner probability has two components:
 - the probability of you bumping into that person in the k<sup>th</sup> year, which is $$\frac{1}{N}$$, and
 - the probability of you bumping into the person who set the baseline for this person in the first $$M$$ years, which is $$\frac{M}{K-1}$$.
+
 Putting these together,
+
 $$ \begin{aligned}
 	P(M,N) &= \sum_{K=M+1}^N \frac{1}{N} \frac{M}{K-1} \\
 	&= \frac{M}{N} \sum_{K=M+1}^N \frac{1}{K-1} \\
@@ -39,12 +46,15 @@ $$ \begin{aligned}
 \end{aligned} $$
 
 When this probability is maximized,
+
 $$ \begin{aligned}
 \frac{d P(M,N)}{dM} &= 0 \\
 \implies \qquad \frac{M}{N} \frac{M-1}{N-1} \frac{-(N-1)}{(M-1)^2} + \ln \frac{N-1}{M-1} \frac{1}{N} &= 0 \\
 \ln \frac{N-1}{M-1} &= \frac{M}{M-1}
 \end{aligned} $$
+
 Now, for large N<sup>*</sup>,
+
 $$ \begin{aligned}
 \ln \frac{N}{M} &\approx 1 \\
 \frac{M}{N} &\approx \frac{1}{e} \\
@@ -63,6 +73,7 @@ Other examples of the optimal-stopping problem in real life are:
 - when approaching a friend's place for dinner by car, at what point should one start looking for parking spots? Settle too early and have to walk far, or wait for too long only to find no good parking spot nearby and hence having to circle back.
 - when finding the best person for a job, at what point should one stop interviewing? Settle too early on a not-so-great person, or wait too long only for the good candidates to have taken up jobs elsewhere.
 - when to sell a particular stock you are holding?
+
 You get the idea.
 
 Alright, so we know what an optimal strategy in such situations looks like. What kind of strategies do people actually use? Do we follow this 37% Look-Then-Leap rule---by intuition or evolution?
@@ -80,14 +91,11 @@ Anyway, for more such fun connections of real-life problems and commonly-used al
 I'll end with a quote from the book:
 > And indeed, people are almost always confronting what computer science regards as the hard cases. Up against such hard cases, effective algorithms make assumptions, show a bias toward simpler solutions, trade off the costs of error against the costs of delay, and take chances. These aren’t the concessions we make when we can’t be rational. They’re what being rational means.
 
-<br>
-
 <sup>* One might say N is typically not a very large number within human lifespans. But we could consider time in the granularity of months instead of years, and then N can be a reasonably large number for most people. </sup>
-
 
 ---
 
-References:
-<sup><sub>[1] Christian, B., & Griffiths, T. (2016). [Algorithms to Live By: The Computer Science of Human Decisions](https://www.goodreads.com/book/show/25666050-algorithms-to-live-by). Macmillan.
-[2] Fry, H. (2015). The Mathematics of Love. [TED talk](https://www.youtube.com/watch?v=yFVXsjVdvmY).
-[3] Smith, D. (1997). Solution to the optimal stopping problem [Blog post]. Retrieved from: https://plus.maths.org/content/solution-optimal-stopping-problem</sub></sup>
+References:<br>
+<sup><sub>[1] Christian, B., & Griffiths, T. (2016). [Algorithms to Live By: The Computer Science of Human Decisions](https://www.goodreads.com/book/show/25666050-algorithms-to-live-by). Macmillan.</sub></sup> <br>
+<sup><sub>[2] Fry, H. (2015). The Mathematics of Love. [TED talk](https://www.youtube.com/watch?v=yFVXsjVdvmY).</sub></sup> <br>
+<sup><sub>[3] Smith, D. (1997). Solution to the optimal stopping problem [Blog post]. Retrieved from: [https://plus.maths.org/content/solution-optimal-stopping-problem](https://plus.maths.org/content/solution-optimal-stopping-problem)</sub></sup>
