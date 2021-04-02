@@ -15,6 +15,7 @@ You can find my resume [here](uploads/Resume_AbhishekNaik.pdf).
 
 ## [Recent News](#news)
 
+- (Jan 2021) Started TA-ing for Rich Sutton's CMPUT609 RL-2 course
 - (Dec 2020) Helped organize the [Policy Optimization in RL](https://sites.google.com/ualberta.ca/rlandoptimization-neurips2020/home) tutorial at NeurIPS 2020. We made some cool interactive notebooks; links on the website!
 - (Oct 2020) [Presented](https://youtu.be/DA7vgHrT3OU?t=34702) our work on 'Personalized Brain State Targeting via Reinforcement Learning' at the 3rd Neuromatch conference (more Q/A at the [9:58:41](https://youtu.be/DA7vgHrT3OU?t=35921) mark)
 - (Sep 2020) Reviewed for AAAI 2021
