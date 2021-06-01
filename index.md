@@ -15,8 +15,10 @@ You can find my resume [here](uploads/Resume_AbhishekNaik.pdf).
 
 ## [Recent News](#news)
 
-- (May 2021) Presenting two posters at NERL 2021 (one submitted, one invited)
-- (Jan 2021) Started TA-ing for Rich Sutton's CMPUT609 RL-2 course
+- (May 2021) Paper accepted at ICML 2021!
+- (May 2021) Presented two posters at NERL 2021 (one submitted, one invited)
+- (Apr 2021) Paper accepted in the Journal of AI Research (JAIR)!
+- (Jan 2021) Started TA-ing for Rich Sutton's [CMPUT609 RL-2](https://sites.google.com/ualberta.ca/cmput-609/) course
 - (Dec 2020) Helped organize the [Policy Optimization in RL](https://sites.google.com/ualberta.ca/rlandoptimization-neurips2020/home) tutorial at NeurIPS 2020. We made some cool interactive notebooks; links on the website!
 - (Oct 2020) [Presented](https://youtu.be/DA7vgHrT3OU?t=34702) our work on 'Personalized Brain State Targeting via Reinforcement Learning' at the 3rd Neuromatch conference (more Q/A at the [9:58:41](https://youtu.be/DA7vgHrT3OU?t=35921) mark)
 - (Sep 2020) Reviewed for AAAI 2021
@@ -60,23 +62,23 @@ Currently, I'm interested in learning and planning methods for continuing (non-e
 
 - #### Towards Reinforcement Learning in the Continuing Setting [[PDF](https://drive.google.com/file/d/1l2sr7HRkeaOdZNaWNjgrqBELnTF90e70/view?usp=sharing)]
 **Abhishek Naik**, Zaheer Abbas, Adam White, Richard S. Sutton <br>
-In the _Never-Ending Reinforcement Learning (NERL) [Workshop](https://sites.google.com/view/neverendingrl)_, ICLR 2021.
+In _Never-Ending Reinforcement Learning (NERL) [Workshop](https://sites.google.com/view/neverendingrl)_, ICLR 2021.
 
 - #### Learning and Planning in Average-Reward Markov Decision Processes [[PDF](https://arxiv.org/abs/2006.16318)]
 Yi Wan<sup>*</sup>, **Abhishek Naik**<sup>*</sup>, Richard S. Sutton <br>
-_Under review._
+In _International Conference on Machine Learning (ICML)_, 2021.
 
 - #### Discounted Reinforcement Learning is Not an Optimization Problem [[PDF](https://arxiv.org/abs/1910.02140)]
 **Abhishek Naik**, Roshan Shariff, Niko Yasui, Richard S. Sutton <br>
-In the _Optimization Foundations of Reinforcement Learning [Workshop](https://optrl2019.github.io/)_, NeurIPS 2019.
+In _Optimization Foundations of Reinforcement Learning [Workshop](https://optrl2019.github.io/)_, NeurIPS 2019.
 
 - #### MADRaS: Multi Agent DRiving Simulator [[PDF](https://arxiv.org/abs/2010.00993)]
 Anirban Santara, Sohan Rudra, Sree Aditya Buridi, Meha Kaushik, **Abhishek Naik**, Bharat Kaul, Balaraman Ravindran <br>
-In the _Journal of Artificial Intelligence Research (JAIR)_, 2021.
+In _Journal of Artificial Intelligence Research (JAIR)_, 2021.
 
 - #### RAIL: Risk-Averse Imitation Learning [[PDF](https://arxiv.org/abs/1707.06658)]
 Anirban Santara<sup>*</sup>, **Abhishek Naik**<sup>*</sup>, Balaraman Ravindran, Dipankar Das, Dheevatsa Mudigere, Sasikanth Avancha, Bharat Kaul <br>
-In _Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems (AAMAS)_, 2018.
+In _International Conference on Autonomous Agents and MultiAgent Systems (AAMAS)_, 2018.
 
 - #### Identifying User Survival Types via Clustering of Censored Social Network Data [[PDF](https://arxiv.org/abs/1703.03401)]
 S Chandra Mouli, **Abhishek Naik**, Bruno Ribeiro, Jennifer Neville <br>
@@ -164,18 +166,18 @@ With [Sravan Bodapati](https://www.linkedin.com/in/justsravan/) and [Venkatraman
 
 ## [Teaching Experience](#teaching-experience)
 
-- ### Reinforcement Learning II (CMPUT609)
+- ### Reinforcement Learning II ([CMPUT609](https://sites.google.com/ualberta.ca/cmput-609/))
 **Jan 2021 - Apr 2021; Dept. of Computing Science, University of Alberta** <br>
 As a teaching assistant for [Professor Rich Sutton](http://www.incompleteideas.net/), created and graded written assignments and exams for a class of ~30 graduate students.
 
-- ### Reinforcement Learning I (CMPUT397)
+- ### Reinforcement Learning I ([CMPUT397](https://marthawhite.github.io/rlcourse/))
 **Sep 2020 - Dec 2020; Dept. of Computing Science, University of Alberta** <br>
-Helped teach [Professor Martha White](https://webdocs.cs.ualberta.ca/~whitem/) a class of ~150 undergraduate students.
+Helped [Professor Martha White](https://webdocs.cs.ualberta.ca/~whitem/) teach a class of ~150 undergraduate students.
 
 
 - ### Reinforcement Learning II (CMPUT609)
 **Jan 2020 - Apr 2020; Dept. of Computing Science, University of Alberta** <br>
-As one of the Teaching Assistants of this course offered by [Professor Rich Sutton](http://www.incompleteideas.net/), I helped create the course content and guided research projects for a class of about 40 graduate students.
+Helped create the course content and guided research projects for a class of about 40 graduate students in a course offered by [Professor Rich Sutton](http://www.incompleteideas.net/).
 
 
 - ### Reinforcement Learning (CS6700)
@@ -192,7 +194,7 @@ As one of Teaching Assistants of this course offered by [Professor Balaraman Rav
 
 - ### Reinforcement Learning Specialization on Coursera [[Link](https://www.coursera.org/specializations/reinforcement-learning)]
 **Jan 2019 - Oct 2019; University of Alberta** <br>
-As one of the 'Subject Matter Expert's, I helped develop programming assignments, multiple-choice quizzes, and slides for the four courses that form the RL Specialization, released in late 2019. There have been more than 10k enrollments till now!
+As one of the 'Subject Matter Expert's, I developed programming assignments, multiple-choice quizzes, and slides for the four courses that form the RL Specialization, released in late 2019. There have been more than 10k enrollments till now!
 
 
 ***
