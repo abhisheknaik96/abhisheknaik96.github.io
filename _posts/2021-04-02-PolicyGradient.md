@@ -126,6 +126,8 @@ $$\begin{aligned}
     \nabla_\mathbb{\theta} J(\mathbb{\theta}) &= \mathbb{E}_\tau \Big[ \sum_{t=0}^{T-1} \gamma^t G_t \nabla_\mathbb{\theta} \ln \pi_\mathbb{\theta} (A_t|S_t) \Big].
 \end{aligned}$$
 
+Try it on your own. The full derivation is [here]({{site.baseurl}}{% link _posts/2021-07-10-PolicyGradient-discounted.md %}).
+
 Cool. So we've derived the following two equivalent forms of the policy gradient:
 
 $$\begin{aligned}

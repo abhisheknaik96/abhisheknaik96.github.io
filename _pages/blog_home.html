@@ -5,6 +5,9 @@ permalink: AllPosts
 ---
 
 {% for post in site.posts %}  <!-- If required, site.posts.reverse -->
+  {% if post.tags contains "invisible" %}
+    {% continue %}
+  {% endif %}
     <li>
         <div>
         <a href="{{ post.permalink }}"> {{ post.title }} </a><br>
