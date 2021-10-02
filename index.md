@@ -15,7 +15,9 @@ You can find my resume [here](uploads/Resume_AbhishekNaik.pdf).
 
 ## [Recent News](#news)
 
-- (May 2021) Paper accepted at ICML 2021!
+- (Sep 2021) Paper accepted at NeurIPS 2021
+- (July 2021) Co-hosted a ICML Social on _Continuing Problems in RL_
+- (May 2021) Paper accepted at ICML 2021
 - (May 2021) Presented two posters at NERL 2021 (one submitted, one invited)
 - (Apr 2021) Paper accepted in the Journal of AI Research (JAIR)!
 - (Jan 2021) Started TA-ing for Rich Sutton's [CMPUT609 RL-2](https://sites.google.com/ualberta.ca/cmput-609/) course
@@ -30,7 +32,7 @@ You can find my resume [here](uploads/Resume_AbhishekNaik.pdf).
 
 ## [Research](#research) -->
 
-<!-- I study how the mind works and how intelligent systems learn to perform a myriad of tasks over their lifetime. In other words, I think about intelligence – the computational ability to achieve goals – and how the mind can be modeled as a machine. I believe making progress in answering these questions will benefit humanity significantly and tangibly, for good (in expectation). -->
+<!-- I  how the mind works and how intelligent systems learn to perform a myriad of tasks over their lifetime. In other words, I think about intelligence – the computational ability to achieve goals – and how the mind can be modeled as a machine. I believe making progress in answering these questions will benefit humanity significantly and tangibly, for good (in expectation). -->
 
 <!--
 ## [Blog posts](#blog)
@@ -59,6 +61,10 @@ Some text -->
 <!-- this is the custom tag for this section -->
 
 Currently, I'm interested in learning and planning methods for continuing (non-episodic) problems in RL.
+
+- #### Average-Reward Learning and Planning with Options [PDF coming soon]
+Yi Wan, **Abhishek Naik**, Richard S. Sutton <br>
+In _Advances in Neural Information Processing Systems (NeurIPS)_, 2021.
 
 - #### Towards Reinforcement Learning in the Continuing Setting [[PDF](https://drive.google.com/file/d/1l2sr7HRkeaOdZNaWNjgrqBELnTF90e70/view?usp=sharing)]
 **Abhishek Naik**, Zaheer Abbas, Adam White, Richard S. Sutton <br>
@@ -118,10 +124,10 @@ _[ Tea Time Talks](https://amiithinks.github.io/tea-time-talks/), RLAI lab and
 
 _This thesis was a part of my integrated Bachelor's + Master's program in the Dept. of Computer Science and Engineering at the Indian Institute of Technology Madras in Chennai, India, supervised by Professor [Balaraman Ravindran](www.cse.iitm.ac.in/~ravi). Defended in **May 2018**._
 
-My goal was to contribute in making self-driving cars a reality in my country, India. I modeled this as a multi-agent learning problem in a safety-critical application and:
+My goal was to make self-driving cars a reality in my country, India. Towards this end, I modeled it as a multi-agent learning problem in a safety-critical application and:
 1. proposed a risk-averse imitation learning algorithm that had lower tail-end risk w.r.t. the then state-of-the-art,
 2. trialled a curriculum-based learning approach for multi-agent RoboSoccer, and
-3. extended the TORCS simulator to release the first open-source driving simulator that supports multi-agent training.
+3. extended the TORCS simulator to release the first open-source driving simulator that supports multi-agent training —  MADRaS (has 100+ stars on [Github](https://github.com/abhisheknaik96/MultiAgentTORCS)).
 
 [[Thesis PDF](uploads/DDP/DDP_Thesis_AbhishekNaik.pdf), [Defense Slides](uploads/DDP/DDP_Slides_AbhishekNaik.pdf)]
 
@@ -135,13 +141,13 @@ With [Hengshuai Yao](https://hengshuaiyao.github.io/).
 
 - Worked on establishing an appropriate problem formulation for control in continuing tasks with function approximation.
 - Surveyed the literature on the average reward problem formulation for MDPs, and its connection with reinforcement learning.
-- [Some of the work](https://arxiv.org/abs/1910.02140) done here will be presented at the NeurIPS 2019 Workshop on Optimization Foundations of Reinforcement Learning ([OPTRL 2019](https://optrl2019.github.io/)).
+- [Some of the work](https://arxiv.org/abs/1910.02140) started here was presented at the NeurIPS 2019 Workshop on Optimization Foundations of Reinforcement Learning ([OPTRL 2019](https://optrl2019.github.io/)).
 
 ### Intel Labs
 **Research Internship; May 2017 – Jul 2017; Bengaluru, India** <br>
 With [Bharat Kaul](https://www.linkedin.com/in/bharatkaul/)
 
-- Developed a multi-agent version of the TORCS driving simulator ([MADRaS](https://github.com/abhisheknaik96/MultiAgentTORCS)) compatible with OpenAI Gym. The repo has 100+ stars!
+- Started work on a multi-agent version of the TORCS driving simulator ([MADRaS](https://github.com/abhisheknaik96/MultiAgentTORCS)) compatible with OpenAI Gym. 
 - Proposed and implemented a novel risk-averse imitation learning framework, achieving upto 89% improvement over the state-of-the-art in terms of tail-end risk at several physics-based control tasks.
 -  [This project](https://arxiv.org/abs/1707.06658) was presented at [AAMAS 2018](http://celweb.vuse.vanderbilt.edu/aamas18/).
 
@@ -157,8 +163,8 @@ With [Bruno Ribeiro](https://www.cs.purdue.edu/homes/ribeirob/)
 **Technical Internship; May 2015 – Jul 2015; Chennai, India** <br>
 With [Sravan Bodapati](https://www.linkedin.com/in/justsravan/) and [Venkatraman Kalyanapasupathy](https://www.linkedin.com/in/venkatraman-kalyanapasupathy-b19201/)
 
-- Worked on the design and implementation of a machine learning classifier to determine the relevance of a text-block with a bunch of other text-blocks, in a book.
-- The project, now in production(!), helps Kindle users to directly start reading a book after downloading it, without having to flip through a lot of irrelevant pages.
+- Built a classifier to determine the start-reading-location of books. 
+- Now in production, this feature helps Kindle users start reading a book quicker after downloading it, without having to flip through pages like acknowledgements or copyright notices. If you use a Kindle, you would have experienced this!
 
 
 ***
@@ -202,6 +208,14 @@ As one of the 'Subject Matter Expert's, I developed programming assignments, mul
 
 ## [Community Service](#community-service)
 
+- #### Co-organizer, ICML 2021 Social on Continuing (Non-episodic) Problems in RL
+**July 2021** <br>
+Had insightful discussions with a bunch of people about the state of research in continuing problems and where we should go from here.
+
+- #### Co-organizer, NeurIPS 2020 Tutorial on [Policy Optimization in RL](https://sites.google.com/ualberta.ca/rlandoptimization-neurips2020/home)
+**Dec 2020** <br>
+Alan Chan, Shivam Garg, Dhawal Gupta and I created a [set of notebooks](https://colab.research.google.com/drive/1eDrsgDKbffVCpxy4lT2khFeo8QXDyBtj?usp=sharing) to highlight some aspects of policy-gradient methods, such as the effects of a baseline. Thanks to Sham Kakade, Martha White, and Nicolas Le Roux for giving us the opportunity! 
+
 - #### Organizer, [Tea Time Talks 2020](https://amiithinks.github.io/tea-time-talks/), Amii and RLAI lab
 **June 2020 – Aug 2020** <br>
 Organized and moderated the talks of 40+ speakers over the course of 12 weeks (in a virtual format for the first time). Full playlist [here](https://www.youtube.com/watch?v=g80wiWvOtvI&list=PLKlhhkvvU8-Y3Up8reY3Qi_YWN_v7EN3O).
@@ -213,24 +227,24 @@ Along with representing the interests of the graduate students to the department
 
 
 - #### Volunteer, [Centre for Autism Services Alberta](https://centreforautism.ab.ca/)
-**Jan 2019 - present** <br>
-As a part of the Centre's Community and Therapeutic program, I help organize recreational activities for individuals in the age range of 5-20 affected with the Autism Spectrum Disorder. We try to create a fun and supportive atmosphere for the individuals to interact with each other and have a good time.
+**Jan 2019 - Mar 2020** <br>
+As a part of the Centre's Community and Therapeutic program, I helped organize recreational activities for individuals in the age range of 5-20 affected with the Autism Spectrum Disorder. The aim was to create a fun and supportive atmosphere for the individuals to interact with each other and have a good time.
 
 ---
 
 ## [Interests and Hobbies](#interests-and-hobbies)
 
 ### Formula 1
-There's hardly anything as spectacular as this confluence of science and engineering which gives the world these lean, mean, and beautiful machines, with some of fittest athletes on the planet battling fearlessly at speeds excessive of 300 kmph over 20+ challenging tracks all over the world. Current favorite track: Spa, Team: always _Forza Ferrari!_
+There's hardly anything as spectacular as this confluence of science and engineering which gives the world these lean, mean, and beautiful machines, with some of fittest athletes on the planet battling fearlessly at speeds excessive of 300 kmph over 20+ challenging tracks all over the world. Current favorite track: Spa Francorchamps, Team: _Forza Ferrari_ forever!
 
 ### Ice-hockey
 One of the fastest sport in the world, with an exhausting 60 minutes of action (yes, even while watching). The wizardry these athletes pull off _while on skates_ is a delight to watch (shoutout to Connor McDavid! _#LetsGoOilers_). I am currently ~~learning ice-skating in order to start playing ice-hockey by early 2020!~~ learning to play ice-hockey!
 
 ### Football
-I love watching and playing _the beautiful game_. Come rain or shine, my heart beats for Real Madrid. I also root for Liverpool, Juventus, and Portugal. My idol is, you guessed it, Cristiano Ronaldo --- one of the greatest footballers of all time.
+I love watching and playing _the beautiful game_. Come rain or shine, my heart beats for Real Madrid. I also root for Liverpool, Juventus, and Portugal. My favorite player is, you guessed it, Cristiano Ronaldo --- one of the greatest footballers of all time.
 
 ### Books
-If I had to pick one ~~thing~~ of the few things I could do all my life, it would be reading (sports comes first). With three fat bookshelves overflowing with books back home, and many more in my handy Kindle, there are actually times when I am happy to see long queues, presenting another opportunity to dive into my latest book. Big fan of Michael Crichton and Arthur Hailey. Been reading a lot of non-fiction these days, mostly about intelligence.
+If I had to pick one ~~thing~~ of the few things I could do all my life, it would be reading (sports comes first). With three fat bookshelves overflowing with books back home, and many more in my handy Kindle, there are actually times when I am happy to see long queues, presenting another opportunity to dive into my latest book. Big fan of Adrian Tchaikovsky and Michael Crichton. Been reading a lot of non-fiction these days, mostly about intelligence.
 
 ### Music
 During the pandemic, I have started learning to play the piano. I hope to play my favourite piano piece [Nuvole Bianche](https://www.youtube.com/watch?v=VUCI-1vIbUo) by the end of 2020!
