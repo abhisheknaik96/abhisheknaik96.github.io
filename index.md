@@ -62,7 +62,7 @@ Some text -->
 
 Currently, I'm interested in learning and planning methods for continuing (non-episodic) problems in RL.
 
-- #### Average-Reward Learning and Planning with Options [PDF coming soon]
+- #### Average-Reward Learning and Planning with Options [[PDF](https://arxiv.org/abs/2110.13855)]
 Yi Wan, **Abhishek Naik**, Richard S. Sutton <br>
 In _Advances in Neural Information Processing Systems (NeurIPS)_, 2021.
 
