@@ -15,6 +15,7 @@ You can find my resume [here](uploads/Resume_AbhishekNaik.pdf).
 
 ## [Recent News](#news)
 
+- (Dec 2021) Presented the essentials of RL at the 3rd Nepal AI Winter School
 - (Sep 2021) Paper accepted at NeurIPS 2021
 - (July 2021) Co-hosted a ICML Social on _Continuing Problems in RL_
 - (May 2021) Paper accepted at ICML 2021
@@ -94,9 +95,13 @@ Technical Report, _ArXiv:1703.03401,_ 2017.
 
 ## [Talks](#talks)
 
+- #### Essentials of Reinforcement Learning
+_[3rd Nepal Winter School in AI](https://nepalschool.naamii.com.np/home),_ Dec 2021 <br>
+[Slides](uploads/Talks/NAAMI21_EssentialsRL_AbhishekNaik.pdf)]
+
 - #### Towards Reinforcement Learning in the Continuing Setting
 _[NERL workshop](https://sites.google.com/view/neverendingrl) at ICLR 2021,_ May 2021 <br>
-[Video coming soon, [Slides](uploads/Talks/NERL21_ContinuingRL_AbhishekNaik.pdf)]
+[[Slides](uploads/Talks/NERL21_ContinuingRL_AbhishekNaik.pdf)]
 
 - #### Personalized Brain State Targeting via Reinforcement Learning
 _[The 3rd Neuromatch Conference](https://neuromatch.io/),_ Oct 2020 <br>
