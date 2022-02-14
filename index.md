@@ -97,7 +97,7 @@ Technical Report, _ArXiv:1703.03401,_ 2017.
 
 - #### Essentials of Reinforcement Learning
 _[3rd Nepal Winter School in AI](https://nepalschool.naamii.com.np/home),_ Dec 2021 <br>
-[Slides](uploads/Talks/NAAMI21_EssentialsRL_AbhishekNaik.pdf)]
+[[Slides](uploads/Talks/NAAMI21_EssentialsRL_AbhishekNaik.pdf)]
 
 - #### Towards Reinforcement Learning in the Continuing Setting
 _[NERL workshop](https://sites.google.com/view/neverendingrl) at ICLR 2021,_ May 2021 <br>
