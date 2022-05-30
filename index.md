@@ -67,7 +67,7 @@ Currently, I'm interested in learning and planning methods for continuing (non-e
 
 - #### Multi-Step Average-Reward Prediction via Differential TD(lambda) [[PDF](https://drive.google.com/file/d/1Ygx2XI0mOFw4pfWZOm67uWsJQTOZEPSj/view?usp=sharing)]
 **Abhishek Naik**, Richard S. Sutton <br>
-In _The Conference on Reinforcement Learning and Decision Making (RLDM), (https://rldm.org/)_, 2022.
+In _The Conference on Reinforcement Learning and Decision Making ([RLDM](https://rldm.org/))_, 2022.
 
 - #### Average-Reward Learning and Planning with Options [[PDF](https://arxiv.org/abs/2110.13855)]
 Yi Wan, **Abhishek Naik**, Richard S. Sutton <br>
