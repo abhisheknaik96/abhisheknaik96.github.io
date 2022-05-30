@@ -15,12 +15,14 @@ You can find my resume [here](uploads/Resume_AbhishekNaik.pdf).
 
 ## [Recent News](#news)
 
-- (Dec 2021) Presented the essentials of RL at the 3rd Nepal AI Winter School
+- (Apr 2022) Passed my PhD candidacy exam!
+- (Mar 2022) Paper accepted at RLDM 2022
+- (Dec 2021) Presented a lecture on 'The Essentials of RL' at the 3rd Nepal AI Winter School
 - (Sep 2021) Paper accepted at NeurIPS 2021
 - (July 2021) Co-hosted a ICML Social on _Continuing Problems in RL_
 - (May 2021) Paper accepted at ICML 2021
 - (May 2021) Presented two posters at NERL 2021 (one submitted, one invited)
-- (Apr 2021) Paper accepted in the Journal of AI Research (JAIR)!
+- (Apr 2021) Paper accepted in the Journal of AI Research (JAIR)
 - (Jan 2021) Started TA-ing for Rich Sutton's [CMPUT609 RL-2](https://sites.google.com/ualberta.ca/cmput-609/) course
 - (Dec 2020) Helped organize the [Policy Optimization in RL](https://sites.google.com/ualberta.ca/rlandoptimization-neurips2020/home) tutorial at NeurIPS 2020. We made some cool interactive notebooks; links on the website!
 - (Oct 2020) [Presented](https://youtu.be/DA7vgHrT3OU?t=34702) our work on 'Personalized Brain State Targeting via Reinforcement Learning' at the 3rd Neuromatch conference (more Q/A at the [9:58:41](https://youtu.be/DA7vgHrT3OU?t=35921) mark)
@@ -62,6 +64,10 @@ Some text -->
 <!-- this is the custom tag for this section -->
 
 Currently, I'm interested in learning and planning methods for continuing (non-episodic) problems in RL.
+
+- #### Multi-Step Average-Reward Prediction via Differential TD(lambda) [[PDF](https://drive.google.com/file/d/1Ygx2XI0mOFw4pfWZOm67uWsJQTOZEPSj/view?usp=sharing)]
+**Abhishek Naik**, Richard S. Sutton <br>
+In _The Conference on Reinforcement Learning and Decision Making (RLDM), (https://rldm.org/)_, 2022.
 
 - #### Average-Reward Learning and Planning with Options [[PDF](https://arxiv.org/abs/2110.13855)]
 Yi Wan, **Abhishek Naik**, Richard S. Sutton <br>
@@ -152,7 +158,7 @@ With [Hengshuai Yao](https://hengshuaiyao.github.io/).
 **Research Internship; May 2017 – Jul 2017; Bengaluru, India** <br>
 With [Bharat Kaul](https://www.linkedin.com/in/bharatkaul/)
 
-- Started work on a multi-agent version of the TORCS driving simulator ([MADRaS](https://github.com/abhisheknaik96/MultiAgentTORCS)) compatible with OpenAI Gym. 
+- Started work on a multi-agent version of the TORCS driving simulator ([MADRaS](https://github.com/abhisheknaik96/MultiAgentTORCS)) compatible with OpenAI Gym.
 - Proposed and implemented a novel risk-averse imitation learning framework, achieving upto 89% improvement over the state-of-the-art in terms of tail-end risk at several physics-based control tasks.
 -  [This project](https://arxiv.org/abs/1707.06658) was presented at [AAMAS 2018](http://celweb.vuse.vanderbilt.edu/aamas18/).
 
@@ -168,7 +174,7 @@ With [Bruno Ribeiro](https://www.cs.purdue.edu/homes/ribeirob/)
 **Technical Internship; May 2015 – Jul 2015; Chennai, India** <br>
 With [Sravan Bodapati](https://www.linkedin.com/in/justsravan/) and [Venkatraman Kalyanapasupathy](https://www.linkedin.com/in/venkatraman-kalyanapasupathy-b19201/)
 
-- Built a classifier to determine the start-reading-location of books. 
+- Built a classifier to determine the start-reading-location of books.
 - Now in production, this feature helps Kindle users start reading a book quicker after downloading it, without having to flip through pages like acknowledgements or copyright notices. If you use a Kindle, you would have experienced this!
 
 
@@ -219,7 +225,7 @@ Had insightful discussions with a bunch of people about the state of research in
 
 - #### Co-organizer, NeurIPS 2020 Tutorial on [Policy Optimization in RL](https://sites.google.com/ualberta.ca/rlandoptimization-neurips2020/home)
 **Dec 2020** <br>
-Alan Chan, Shivam Garg, Dhawal Gupta and I created a [set of notebooks](https://colab.research.google.com/drive/1eDrsgDKbffVCpxy4lT2khFeo8QXDyBtj?usp=sharing) to highlight some aspects of policy-gradient methods, such as the effects of a baseline. Thanks to Sham Kakade, Martha White, and Nicolas Le Roux for giving us the opportunity! 
+Alan Chan, Shivam Garg, Dhawal Gupta and I created a [set of notebooks](https://colab.research.google.com/drive/1eDrsgDKbffVCpxy4lT2khFeo8QXDyBtj?usp=sharing) to highlight some aspects of policy-gradient methods, such as the effects of a baseline. Thanks to Sham Kakade, Martha White, and Nicolas Le Roux for giving us the opportunity!
 
 - #### Organizer, [Tea Time Talks 2020](https://amiithinks.github.io/tea-time-talks/), Amii and RLAI lab
 **June 2020 – Aug 2020** <br>
