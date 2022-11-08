@@ -5,7 +5,14 @@ layout: default
 
 ## [About Me](#about-me)
 
-I am a Ph.D. student at the University of Alberta, working with Professor [Rich Sutton](incompleteideas.net/) in the Reinforcement Learning and Artificial Intelligence ([RLAI](http://rlai.ualberta.ca/)) lab. I want to discover the general principles that underlie goal-seeking behaviour. I study how the mind works and how intelligent systems can learn to perform a myriad of tasks over their lifetime. I believe research progress in these areas will benefit humanity significantly and tangibly, for good.
+I am a Ph.D. candidate at the University of Alberta, working with Professor [Rich Sutton](incompleteideas.net/) in the Reinforcement Learning and Artificial Intelligence ([RLAI](http://rlai.ualberta.ca/)) lab.
+I am fascinated by the question of how the mind works and how we can build artificial systems that have general learning abilities.
+I believe reinforcement learning offers _the_ computational theory of intelligence and I am trying to discover how agents can continually learn to perform a myriad of tasks over their lifetime!
+<!-- The effort has to be inter-disciplinary, so come join [the greatest intellectual pursuits of our time](https://twitter.com/richardssutton/status/1575619651563708418)! -->
+
+<!-- The extent to which this pursuit will advance science and benefit humanity make it one of the greatest intellectual pursuits of our time. -->
+
+<!-- I want to discover the general principles that underlie goal-seeking behaviour. I study how the mind works and how intelligent systems can continually learn to perform a myriad of tasks over their lifetime. I believe research progress in these areas will benefit humanity significantly and tangibly, for good. -->
 <!-- Currently, my research focuses on learning and planning methods for continuing (non-episodic) problems. I also love reading about the connections between AI, neuroscience, and cognitive psychology. -->
 <!-- I think about intelligence in the context of artificial agents and conduct research in fundamental RL for making it better-suited for solving real-world problems. I hope to make autonomous vehicles a reality in my country, India. -->
 
@@ -15,6 +22,7 @@ You can find my resume [here](uploads/Resume_AbhishekNaik.pdf).
 
 ## [Recent News](#news)
 
+- (Jun 2022) Started an internship at Google Brain
 - (Apr 2022) Passed my PhD candidacy exam!
 - (Mar 2022) Paper accepted at RLDM 2022
 - (Dec 2021) Presented a lecture on 'The Essentials of RL' at the 3rd Nepal AI Winter School
@@ -26,9 +34,9 @@ You can find my resume [here](uploads/Resume_AbhishekNaik.pdf).
 - (Jan 2021) Started TA-ing for Rich Sutton's [CMPUT609 RL-2](https://sites.google.com/ualberta.ca/cmput-609/) course
 - (Dec 2020) Helped organize the [Policy Optimization in RL](https://sites.google.com/ualberta.ca/rlandoptimization-neurips2020/home) tutorial at NeurIPS 2020. We made some cool interactive notebooks; links on the website!
 - (Oct 2020) [Presented](https://youtu.be/DA7vgHrT3OU?t=34702) our work on 'Personalized Brain State Targeting via Reinforcement Learning' at the 3rd Neuromatch conference (more Q/A at the [9:58:41](https://youtu.be/DA7vgHrT3OU?t=35921) mark)
-- (Sep 2020) Reviewed for AAAI 2021
-- (Sep 2020) Started TA-ing for Martha White's [CMPUT397 RL-1 course](https://marthawhite.github.io/rlcourse/)
-- (Aug 2020) Finished organizing the [Amii Tea Time Talk series](https://amiithinks.github.io/tea-time-talks/). Check out all the videos [here](https://www.youtube.com/watch?v=g80wiWvOtvI&list=PLKlhhkvvU8-Y3Up8reY3Qi_YWN_v7EN3O)!
+<!-- - (Sep 2020) Reviewed for AAAI 2021 -->
+<!-- - (Sep 2020) Started TA-ing for Martha White's [CMPUT397 RL-1 course](https://marthawhite.github.io/rlcourse/) -->
+<!-- - (Aug 2020) Finished organizing the [Amii Tea Time Talk series](https://amiithinks.github.io/tea-time-talks/). Check out all the videos [here](https://www.youtube.com/watch?v=g80wiWvOtvI&list=PLKlhhkvvU8-Y3Up8reY3Qi_YWN_v7EN3O)! -->
 <!-- - (Aug 2020) Presented our work on 'Learning and Planning in Average-reward MDPs' at the Amii Tea Time Talk series -->
 
 <!-- ---
@@ -63,7 +71,8 @@ Some text -->
 {: #research }
 <!-- this is the custom tag for this section -->
 
-Currently, I'm interested in learning and planning methods for continuing (non-episodic) problems in RL.
+Currently, I'm interested in learning and planning methods for continual learning in RL.
+<!-- Currently, I'm interested in learning and planning methods for continuing (non-episodic) problems in RL. -->
 
 - #### Multi-Step Average-Reward Prediction via Differential TD(lambda) [[PDF](https://drive.google.com/file/d/1Ygx2XI0mOFw4pfWZOm67uWsJQTOZEPSj/view?usp=sharing)]
 **Abhishek Naik**, Richard S. Sutton <br>
@@ -145,6 +154,12 @@ My goal was to make self-driving cars a reality in my country, India. Towards th
 ---
 
 ## [Work Experience](#work-experience)
+
+### Google Research, Brain Team
+**Research Scientist Intern; June 2022 – Sep 2022; Toronto, Canada** <br>
+With [Bo Chang](https://ca.linkedin.com/in/booochang) and [Alexandros Karatzoglou](https://alexiskz.wordpress.com/).
+
+- Investigated methods for action-space generalization in RL for large-scale recommender systems like YouTube.
 
 ### Huawei Research
 **Research Internship; May 2019 – Sep 2019; Edmonton, Canada** <br>
