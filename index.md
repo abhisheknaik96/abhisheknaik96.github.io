@@ -22,6 +22,7 @@ You can find my resume [here](uploads/Resume_AbhishekNaik.pdf).
 
 ## [Recent News](#news)
 
+- (April 2023) Oral presentation of my internship work on RL in recommender systems at a workshop in WWW'23 at Austin
 - (Jun 2022) Started an internship at Google Brain
 - (Apr 2022) Passed my PhD candidacy exam!
 - (Mar 2022) Paper accepted at RLDM 2022
@@ -73,6 +74,10 @@ Some text -->
 
 Currently, I'm interested in learning and planning methods for continual learning in RL.
 <!-- Currently, I'm interested in learning and planning methods for continuing (non-episodic) problems in RL. -->
+
+- #### Investigating Action-space Generalization in RL for Recommender Systems [PDF coming soon]
+**Abhishek Naik**, Bo Chang, Alexandros Karatzoglou, Martin Mladenov, Ed H. Chi, Minmin Chen  <br>
+Oral presentation at the _Decision Making for RecSys_ [workshop](https://decisionmaking4ir.github.io/WWW-2023/), WWW, 2023.
 
 - #### Multi-Step Average-Reward Prediction via Differential TD(lambda) [[PDF](https://drive.google.com/file/d/1Ygx2XI0mOFw4pfWZOm67uWsJQTOZEPSj/view?usp=sharing)]
 **Abhishek Naik**, Richard S. Sutton <br>
@@ -198,9 +203,9 @@ With [Sravan Bodapati](https://www.linkedin.com/in/justsravan/) and [Venkatraman
 
 ## [Teaching Experience](#teaching-experience)
 
-- ### Reinforcement Learning II ([CMPUT609](https://sites.google.com/ualberta.ca/cmput-609/))
-**Jan 2021 - Apr 2021; Dept. of Computing Science, University of Alberta** <br>
-As a teaching assistant for [Professor Rich Sutton](http://www.incompleteideas.net/), created and graded written assignments and exams for a class of ~30 graduate students.
+- ### Reinforcement Learning II ([CMPUT609](https://sites.google.com/ualberta.ca/cmput-609/)) (x3)
+**Jan - Apr 2023, 2021, 2020; Dept. of Computing Science, University of Alberta** <br>
+As a teaching assistant for [Professor Rich Sutton](http://www.incompleteideas.net/)'s class of ~30 graduate students, presented some lectures, helped create the assignments and lectures, and spent a suprisingly large amount of time grading.
 
 - ### Reinforcement Learning I ([CMPUT397](https://marthawhite.github.io/rlcourse/))
 **Sep 2020 - Dec 2020; Dept. of Computing Science, University of Alberta** <br>
@@ -260,27 +265,30 @@ As a part of the Centre's Community and Therapeutic program, I helped organize r
 
 ## [Interests and Hobbies](#interests-and-hobbies)
 
+### Ice-hockey
+One of the fastest sport in the world, with an exhausting 60 minutes of action (yes, even while watching). The wizardry these athletes pull off _while on skates_ is a delight to watch (shoutout to Connor McDavid! _#LetsGoOilers_). I am currently ~~learning ice-skating in order to start playing ice-hockey by early 2020!~~ ~~learning to play ice-hockey!~~ playing hockey in a league!
+
 ### Formula 1
 There's hardly anything as spectacular as this confluence of science and engineering which gives the world these lean, mean, and beautiful machines, with some of fittest athletes on the planet battling fearlessly at speeds excessive of 300 kmph over 20+ challenging tracks all over the world. Current favorite track: Spa Francorchamps, Team: _Forza Ferrari_ forever!
 
-### Ice-hockey
-One of the fastest sport in the world, with an exhausting 60 minutes of action (yes, even while watching). The wizardry these athletes pull off _while on skates_ is a delight to watch (shoutout to Connor McDavid! _#LetsGoOilers_). I am currently ~~learning ice-skating in order to start playing ice-hockey by early 2020!~~ learning to play ice-hockey!
-
-### Football
-I love watching and playing _the beautiful game_. Come rain or shine, my heart beats for Real Madrid. I also root for Liverpool, Juventus, and Portugal. My favorite player is, you guessed it, Cristiano Ronaldo --- one of the greatest footballers of all time.
+<!-- ### Football
+I love watching and playing _the beautiful game_. Come rain or shine, my heart beats for Real Madrid. I also root for Liverpool, Juventus, and Portugal. My favorite player is, you guessed it, Cristiano Ronaldo --- one of the greatest footballers of all time. -->
 
 ### Books
-If I had to pick one ~~thing~~ of the few things I could do all my life, it would be reading (sports comes first). With three fat bookshelves overflowing with books back home, and many more in my handy Kindle, there are actually times when I am happy to see long queues, presenting another opportunity to dive into my latest book. Big fan of Adrian Tchaikovsky and Michael Crichton. Been reading a lot of non-fiction these days, mostly about intelligence.
+If I had to pick one ~~thing~~ of the few things I could do all my life, it would be reading (sports comes first). With three fat bookshelves overflowing with books back home, and many more in my handy Kindle, there are actually times when I am happy to see long queues, presenting another opportunity to dive into my latest book. Some of my favorite authors are Adrian Tchaikovsky, Ted Chiang, Andy Weir, Michael Crichton. I also read non-fiction, mostly about intelligence.
 
-### Music
-During the pandemic, I have started learning to play the piano. I hope to play my favourite piano piece [Nuvole Bianche](https://www.youtube.com/watch?v=VUCI-1vIbUo) by the end of 2020!
+### Space
+I've found space fascinating since I was a kid. Over the past few years, my go-to sci-fi subgenre is first contact and inter-galactical travel. But my interest in space has had a massive resurgence thanks to [Kerbal Space Program](https://www.kerbalspaceprogram.com/) and [Everyday Astronaut](https://www.youtube.com/c/EverydayAstronaut/videos). Instead of core AI, I might start a career in Space x AI...
+
+<!-- ### Music
+During the pandemic, I have started learning to play the piano. I hope to play my favourite piano piece [Nuvole Bianche](https://www.youtube.com/watch?v=VUCI-1vIbUo) by the end of 2020! -->
 <!-- Beats. Bass. Boisterous. Be it working or working out, music is my constant companion.  Imagine Dragons, Linkin Park, The Script, Zedd, Alan Walker, Bastille, Fall Out Boy, Green Day rule the playlist of this renowned bathroom singer. I also tune into old classics once in a while. I wish to make my own remixes someday. -->
 
 <!-- ### Age of Empires
 I grew up building many civilisations and plotting the downfall of others, all the while learning so much about the intriguing medieval history. With countless hours spent on AoE2's gripping storyline and exciting gameplay, I can't wait for [AOE4](https://www.ageofempires.com/games/age-of-empires-iv/) to come out! -->
 
 ### Photography and Traveling
-I love visiting and documenting quaint, spectacular places; meeting local people; digging into the native cuisine. You can find some of my photos [here](https://www.flickr.com/photos/120844874@N04/). I also love trekking and hiking into the wilderness. After skydiving, bungee jumping, scuba diving, parasailing, I'm looking forward to hang gliding and cliff jumping!
+I love visiting and documenting quaint, spectacular places, and digging into the local cuisine. Till I figure out where to showcase some of my favorite pictures, here is my [old Flickr account](https://www.flickr.com/photos/120844874@N04/). I also enjoy trekking and hiking into the wilderness. After skydiving, bungee jumping, scuba diving, parasailing, I'm looking forward to hang gliding and cliff jumping!
 
 ***
 
