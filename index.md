@@ -212,11 +212,6 @@ As a teaching assistant for [Professor Rich Sutton](http://www.incompleteideas.n
 Helped [Professor Martha White](https://webdocs.cs.ualberta.ca/~whitem/) teach a class of ~150 undergraduate students.
 
 
-- ### Reinforcement Learning II (CMPUT609)
-**Jan 2020 - Apr 2020; Dept. of Computing Science, University of Alberta** <br>
-Helped create the course content and guided research projects for a class of about 40 graduate students in a course offered by [Professor Rich Sutton](http://www.incompleteideas.net/).
-
-
 - ### Reinforcement Learning (CS6700)
 **Jan 2018 - May 2018; Dept. of CSE, IIT Madras** <br>
 As the Head Teaching Assistant of this course offered by [Professor Balaraman Ravindran](www.cse.iitm.ac.in/~ravi), I created and evaluated tutorials, programming assignments, and exams for a class of about 90 undergraduates and graduates.
