@@ -16,7 +16,7 @@ I believe reinforcement learning offers _the_ computational theory of intelligen
 <!-- Currently, my research focuses on learning and planning methods for continuing (non-episodic) problems. I also love reading about the connections between AI, neuroscience, and cognitive psychology. -->
 <!-- I think about intelligence in the context of artificial agents and conduct research in fundamental RL for making it better-suited for solving real-world problems. I hope to make autonomous vehicles a reality in my country, India. -->
 
-You can find my resume [here](uploads/Resume_AbhishekNaik.pdf).
+You can find my resume [here](uploads/Resume_AbhishekNaik.pdf) (last updated: May 2023).
 
 ---
 
@@ -72,10 +72,11 @@ Some text -->
 {: #research }
 <!-- this is the custom tag for this section -->
 
-Currently, I'm interested in learning and planning methods for continual learning in RL.
+I mainly focusing on learning and planning methods for continual learning in RL.
+In particular, I design algorithms for non-episodic problems such that an agent can learn to achieve its goals from a single stream of experience (without resets or timeouts).
 <!-- Currently, I'm interested in learning and planning methods for continuing (non-episodic) problems in RL. -->
 
-- #### Investigating Action-space Generalization in RL for Recommender Systems [PDF coming soon]
+- #### Investigating Action-space Generalization in RL for Recommender Systems [[PDF](https://dl.acm.org/doi/abs/10.1145/3543873.3587661)]
 **Abhishek Naik**, Bo Chang, Alexandros Karatzoglou, Martin Mladenov, Ed H. Chi, Minmin Chen  <br>
 Oral presentation at the _Decision Making for RecSys_ [workshop](https://decisionmaking4ir.github.io/WWW-2023/), WWW, 2023.
 
