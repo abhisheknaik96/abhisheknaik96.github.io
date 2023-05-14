@@ -5,6 +5,7 @@ date : 2018-09-03
 time : +2109
 permalink : posts/Intelligence_and_AGI
 tags : oped
+summary : We keep changing the goalposts for 'intelligence', and it won't be easy to identify 'AGI'.
 ---
 
 Thoughts on Intelligence and AGI, after reading [this brilliant, insightful blog](http://home.strw.leidenuniv.nl/~vdhelm/blog.php).
@@ -53,7 +54,7 @@ Food for thought.
 <br>
 
 <sub>
-    ^ an interpretation of which is - 
+    ^ an interpretation of which is -
     > "If you can talk to a computer on any topic, for any length of time, and still you are unable to tell if you are talking to a computer or a human, then you know that computer is intelligent."       
 </sub>
 

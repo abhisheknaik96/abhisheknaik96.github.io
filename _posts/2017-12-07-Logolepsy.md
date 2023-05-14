@@ -15,5 +15,3 @@ Not long ago, Nike the torpe succumbed to throes of love. Left for dead, he beca
 <sub>
 ^ Thanks to [this Quora answer](http://qr.ae/Tbc6wD)
 </sub>
-
-

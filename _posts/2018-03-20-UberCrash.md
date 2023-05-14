@@ -6,6 +6,7 @@ time : +0142
 update : 2018-03-28
 permalink : posts/OpEd_Uber
 tags : oped
+published : false
 ---
 
 So an Uber in the autonomous mode [killed a woman](https://www.nytimes.com/2018/03/19/technology/uber-driverless-fatality.html) crossing a street a few hours ago, _while there was a human safety driver at the wheel_.
