@@ -21,13 +21,13 @@ The linear-algebra approach blows every other method out of the park!
 |:--:|
 | *Yup, I'm talking about the brown curve. The curves show the time it took to compute the N-th Fibonacci number. Lower is better.* |
 
-Knowledge is power.
-Connections between seemingly unrelated topics can unlock ideas that are greater than the sum of its parts!
+<!-- Knowledge is power.
+Connections between seemingly unrelated topics can unlock ideas that are greater than the sum of its parts! -->
 
-So let's look at the methods one-by-one.
+Let's look at the methods one-by-one.
 We'll start with the simplest and work our way up.
 
-Let's get started!
+Let's go!
 
 ---
 
@@ -435,11 +435,12 @@ Till I write this new post, you can google 'shortest addition chains'.
 I enjoyed this journey.
 I hope you did too :)  
 
-Like I said in the beginning, connections between seemingly unrelated topics can unlock ideas that are greater than the sum of its parts!
+Knowledge is power.
+Connections between seemingly unrelated topics can unlock ideas that are greater than the sum of its parts!
 
 Stay curious :)
 
-For some feedback—or just a discussion—you can email/Slack or DM me however.
+For feedback or discussion, email/Slack or DM me however.
 
 <!--
 <sub>
