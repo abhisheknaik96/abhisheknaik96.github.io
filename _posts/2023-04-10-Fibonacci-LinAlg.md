@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Computing Fibonacci numbers using Linear Algebra"
-date: 2023-05-11
-time: 2300
+date: 2023-05-12
+time: 1930
 permalink: posts/FibonnaciLinAlg
 tags: general
 summary: Linear Algebra yields a hilariously fast method to compute Fibonacci numbers!
@@ -238,7 +238,6 @@ If we multiple the powers corresponding to the 1s in the binary representation o
 That's neat, because we will be computing all of those powers en-route to computing the largest power.
 So we can just multiply them all the powers to get the right result!
 
-
 ```python
 def fibonacci_linalg_powers_better(k):
     A = np.array([[1, 1],
@@ -261,9 +260,11 @@ def fibonacci_linalg_powers_better(k):
 |:--:|
 | *Method 5 of computing matrix powers by iterative squaring is slower than DP for smaller numbers, but the speedup is apparent for larger numbers.* |
 
-Guess what the spiky pattern is?
+As you likely have guessed, this is an $$O(\log n)$$ method.
 
-Answer at the end of the post (I don't like leaving things to the reader <i>"as an exercise"</i>...)
+Guess what the spiky-but-regular pattern is?
+
+Hint: note which numbers correspond to a dip in computation time.
 
 ---
 
@@ -393,10 +394,54 @@ def fibonacci_linalg_diagonalization(k):
 |:--:|
 | *Lol* |
 
-That's an incredible speedup.
+That's an incredible speedup!
 
+As one would suspect, it's much cheaper to compute the powers of scalars than of matrices.
 
+Still, doesn't it seem ludicrous that the line is flat?
+Surely computing a larger power should take more time than computing a smaller one.
 
+<!-- That is indeed the case.
+If we compute Fibonacci numbers up to 1000, we can see an upward trend, likely $$O(n)$$ complexity with a tiny constant (compared to the other $$O(n)$$ methods we've considered).
+
+| ![Method 6 for larger numbers](/images/fibonacci/M123456.svg){:width="95%"} |
+|:--:|
+| *So not $$O(1)$$ :P* | -->
+
+Maybe the constant ahead of $$O(n)$$ is small and doesn't really show up for 120 Fibonacci numbers we are computing.
+
+So here's the graph for the first 1000 Fibonacci numbers:
+
+| ![Method 6 for larger numbers](/images/fibonacci/M6_upto1000.png){:width="80%"} |
+|:--:|
+| Yup...! |
+
+Note: This line is flatter than the one we saw earlier despite having a smaller y-axis scale.
+That's because I finally removed outliers (using Tukey's method with k=1.5) because at the time scales we are operating in (_microseconds_), noise can really screw up the results.
+
+Isn't it incredible?
+
+<!-- Further digging reveals integer exponentiation can be done in sub-linear time using the idea of shortest addition chains. -->
+
+That led me to the rabbit-hole of fast exponentiation.
+But that's another blog post :)
+
+Till I write this new post, you can google 'shortest addition chains'.
+
+<hr>
+
+## Wrapping up
+
+I enjoyed this journey.
+I hope you did too :)  
+
+Like I said in the beginning, connections between seemingly unrelated topics can unlock ideas that are greater than the sum of its parts!
+
+Stay curious :)
+
+For some feedback—or just a discussion—you can email/Slack or DM me however.
+
+<!--
 <sub>
 About the spiky pattern:
-</sub>
+</sub> -->
