@@ -104,7 +104,7 @@ We can do even better by getting rid of the recursion altogether while storing a
 ```python
 def fibonacci_dynamic_programming(k):
 
-    fib_list = np.zeros(k + 1, dtype=int)
+    fib_list = np.zeros(k + 1, dtype=object)
     fib_list[1] = 1
 
     for i in range(2, k+1):
@@ -376,7 +376,11 @@ $$\begin{aligned}
                  \end{bmatrix}.
 \end{aligned}$$
 
-The $$k$$-th Fibonacci number is the integer part of $$(\mathbf{A} \mathbf{x}_1)[1]$$: $$F(k) = {\huge\lfloor} \dfrac{\lambda_1^k - \lambda_2^k}{\lambda_1 - \lambda_2} {\huge\rfloor}$$.
+The $$k$$-th Fibonacci number is the nearest integer of $$(\mathbf{A} \mathbf{x}_1)[1]$$:
+
+$$\begin{aligned}
+  F(k) = {\huge[} \dfrac{\lambda_1^k - \lambda_2^k}{\lambda_1 - \lambda_2} {\huge]}.
+\end{aligned}$$
 
 That's it!
 
@@ -387,7 +391,7 @@ def fibonacci_linalg_diagonalization(k):
     lambda1 = (1 + np.sqrt(5)) / 2
     lambda2 = (1 - np.sqrt(5)) / 2
 
-    return int((lambda1**k - lambda2**k)/(lambda1 - lambda2))
+    return round((lambda1**k - lambda2**k)/(lambda1 - lambda2))
 ```
 
 | ![Methods 1, 2, 3, 4, 5, 6](/images/fibonacci/M123456.svg){:width="95%"} |
@@ -442,7 +446,12 @@ Stay curious :)
 
 For feedback or discussion, email/Slack or DM me however.
 
-<!--
+
 <sub>
-About the spiky pattern:
-</sub> -->
+**Notes:** <br>
+1: I ran the above experiments on a 2021 M1 Pro. The exact numbers may differ on other machines but the trends should remain the same. <br>
+2: I've used the native `object` dtype everywhere because it does not overflow (at the cost of an increased memory footprint). You can learn more about it [here](https://levelup.gitconnected.com/how-python-represents-integers-using-bignum-f8f0574d0d6b) and [here](https://stackoverflow.com/a/10365639/3284912). <br>
+3: Thanks to [Roshan](https://roshan.ca/) for pointing out that the simple diagonalization code above starts having rounding errors for larger Fibonacci numbers (since $$\sqrt{5}$$ is an irrational number). I found this neat [`Decimal`](https://docs.python.org/3/library/decimal.html#module-decimal) package that resolves this issue (at the cost of a small constant time addition). <br>
+4: We can make the diagonalization method even faster by (a) simplifying the denominator to $$\sqrt{5}$$, and (b) ignoring $$\lambda_2^k$$ as it will be almost zero for most $$k$$. <br>
+5: Thank you Gilbert Strang for writing a wonderful textbook on Linear Algebra :)
+</sub>
