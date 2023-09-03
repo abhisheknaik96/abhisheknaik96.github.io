@@ -16,12 +16,13 @@ I believe reinforcement learning offers _the_ computational theory of intelligen
 <!-- Currently, my research focuses on learning and planning methods for continuing (non-episodic) problems. I also love reading about the connections between AI, neuroscience, and cognitive psychology. -->
 <!-- I think about intelligence in the context of artificial agents and conduct research in fundamental RL for making it better-suited for solving real-world problems. I hope to make autonomous vehicles a reality in my country, India. -->
 
-You can find my resume [here](uploads/Resume_AbhishekNaik.pdf) (last updated: May 2023).
+You can find my resume [here](uploads/Resume_AbhishekNaik.pdf) (last updated: Aug 2023).
 
 ---
 
 ## [Recent News](#news)
 
+- (Aug 2023) Oral spotlight talk at the Science of Intelligence institute's summer school at Berlin
 - (April 2023) Oral presentation of my internship work on RL in recommender systems at a workshop in WWW'23 at Austin
 - (Jun 2022) Started an internship at Google Brain
 - (Apr 2022) Passed my PhD candidacy exam!
@@ -116,6 +117,10 @@ Technical Report, _ArXiv:1703.03401,_ 2017.
 
 ## [Talks](#talks)
 
+- #### Unifying Perspectives on Intelligence: What RL adds to the Common Model of the Agent
+_[Science of Intelligence Institute](https://www.scienceofintelligence.de/)'s Summer School,_ Aug 2023 <br>
+[[Slides](uploads/Talks/SCIoI_Spotlight_AbhishekNaik.pdf)]
+
 - #### Essentials of Reinforcement Learning
 _[3rd Nepal Winter School in AI](https://nepalschool.naamii.com.np/home),_ Dec 2021 <br>
 [[Slides](uploads/Talks/NAAMI21_EssentialsRL_AbhishekNaik.pdf)]
@@ -160,6 +165,11 @@ My goal was to make self-driving cars a reality in my country, India. Towards th
 ---
 
 ## [Work Experience](#work-experience)
+
+### AlbertaSat
+**Software, Automation, and Testing Team Member; April 2023 – _ongoing_; Edmonton, Canada** <br>
+
+- [AlbertaSat](https://albertasat.ca/) is University of Alberta’s student group that designs, builds, and operates nano satellites. My role is to simulate various operational and safety scenarios of our upcoming satellite to ensure it can robustly achieve all the mission objectives.
 
 ### Google Research, Brain Team
 **Research Scientist Intern; June 2022 – Sep 2022; Toronto, Canada** <br>
