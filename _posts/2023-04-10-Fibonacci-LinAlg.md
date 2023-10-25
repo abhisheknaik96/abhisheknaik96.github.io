@@ -190,13 +190,13 @@ So using linear algebra, we can calculate $$F(k)$$ by simply computing the secon
 def fibonacci_linalg_powers(k):
     A = np.array([[1, 1],
                   [1, 0]], dtype=int)
-    x = np.array([1, 0])
+    x_1 = np.array([1, 0])
 
     A_power = A
     for i in range(2, k+1):
-        A_power = A @ A_power
+        A_power = A @ A_power   # '@' denotes matrix multiplication
 
-    return (A_power@x)[1]
+    return (A_power@x_1)[1]
 ```
 
 | ![Methods 1, 2, 3, 4](/images/fibonacci/M1234.svg){:width="95%"} |
@@ -285,8 +285,8 @@ First, the eigenvalues:
 
 $$\begin{aligned}
   |\mathbf{A} - \lambda \mathbf{I}| &= 0 \\
-  (1-\lambda)(\lambda) - 1 &= 0 \\
-  \lambda^2 - \lambda + 1 &= 0 \\
+  (1-\lambda)(-\lambda) - 1 &= 0 \\
+  \lambda^2 - \lambda - 1 &= 0 \\
   \implies \lambda_1 = \frac{1 + \sqrt{5}}{2}&, \quad \lambda_2 = \frac{1 - \sqrt{5}}{2}.
 \end{aligned}$$
 
@@ -305,8 +305,8 @@ $$\begin{aligned}
 \end{aligned}$$
 
 And $$\mathbf{S}^{-1} = \frac{1}{\lambda_1 - \lambda_2} \begin{bmatrix}
-              1 & -1 \\
-              -\lambda_2 & \lambda_1
+              1 & -\lambda_2 \\
+              -1 & \lambda_1
               \end{bmatrix}$$.
 
 So,
@@ -321,8 +321,8 @@ $$\begin{aligned}
                    0 & \lambda_2
                  \end{bmatrix}
                  \begin{bmatrix}
-                   1 & -1 \\
-                   -\lambda_2 & \lambda_1
+                   1 & -\lambda_2 \\
+                   -1 & \lambda_1
                  \end{bmatrix}
 \end{aligned}$$
 
@@ -339,8 +339,8 @@ $$\begin{aligned}
                    0 & \lambda_2^k
                  \end{bmatrix}
                  \begin{bmatrix}
-                   1 & -1 \\
-                   -\lambda_2 & \lambda_1
+                   1 & -\lambda_2 \\
+                   -1 & \lambda_1
                  \end{bmatrix} \\
    &= \frac{1}{\lambda_1 - \lambda_2}
                  \begin{bmatrix}
@@ -348,8 +348,8 @@ $$\begin{aligned}
                    \lambda_1^k & \lambda_2^k
                  \end{bmatrix}
                  \begin{bmatrix}
-                   1 & -1 \\
-                   -\lambda_2 & \lambda_1
+                   1 & -\lambda_2 \\
+                   -1 & \lambda_1
                  \end{bmatrix} \\
    &= \frac{1}{\lambda_1 - \lambda_2}
                  \begin{bmatrix}
@@ -453,5 +453,6 @@ For feedback or discussion, email/Slack or DM me however.
 2: I've used the native `object` dtype everywhere because it does not overflow (at the cost of an increased memory footprint). You can learn more about it [here](https://levelup.gitconnected.com/how-python-represents-integers-using-bignum-f8f0574d0d6b) and [here](https://stackoverflow.com/a/10365639/3284912). <br>
 3: Thanks to [Roshan](https://roshan.ca/) for pointing out that the simple diagonalization code above starts having rounding errors for larger Fibonacci numbers (since $$\sqrt{5}$$ is an irrational number). I found this neat [`Decimal`](https://docs.python.org/3/library/decimal.html#module-decimal) package that resolves this issue (at the cost of a small constant time addition). <br>
 4: We can make the diagonalization method even faster by (a) simplifying the denominator to $$\sqrt{5}$$, and (b) ignoring $$\lambda_2^k$$ as it will be almost zero for most $$k$$. <br>
-5: Thank you Gilbert Strang for writing a wonderful textbook on Linear Algebra :)
+5: Thank you [Shivam](https://svmgrg.github.io/) for proof-reading! <br>
+6: Thank you Gilbert Strang for writing a wonderful textbook on Linear Algebra :)
 </sub>
