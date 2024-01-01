@@ -8,6 +8,10 @@ layout: default
 I am a Ph.D. candidate at the University of Alberta, working with Professor [Rich Sutton](incompleteideas.net/) in the Reinforcement Learning and Artificial Intelligence ([RLAI](http://rlai.ualberta.ca/)) lab.
 I am fascinated by the question of how the mind works and how we can build artificial systems that have general learning abilities.
 I believe reinforcement learning offers _the_ computational theory of intelligence and I am trying to discover how agents can continually learn to perform a myriad of tasks over their lifetime!
+
+I love space! And I want to use my AI expertise in space sciences and technology.
+I envision a future where artificial systems will have human-like intelligence and adaptability, making
+space exploration significantly easier and safer for our species.
 <!-- The effort has to be inter-disciplinary, so come join [the greatest intellectual pursuits of our time](https://twitter.com/richardssutton/status/1575619651563708418)! -->
 
 <!-- The extent to which this pursuit will advance science and benefit humanity make it one of the greatest intellectual pursuits of our time. -->
@@ -16,13 +20,15 @@ I believe reinforcement learning offers _the_ computational theory of intelligen
 <!-- Currently, my research focuses on learning and planning methods for continuing (non-episodic) problems. I also love reading about the connections between AI, neuroscience, and cognitive psychology. -->
 <!-- I think about intelligence in the context of artificial agents and conduct research in fundamental RL for making it better-suited for solving real-world problems. I hope to make autonomous vehicles a reality in my country, India. -->
 
-You can find my resume [here](uploads/Resume_AbhishekNaik.pdf) (last updated: Aug 2023).
+You can find my resume [here](uploads/Resume_AbhishekNaik.pdf) (last updated: Dec 2023).
 
 ---
 
-## [Recent News](#news)
+## [Some updates](#news)
 
+- (Nov 2023) [Khurram Javed](https://khurramjaved.com/) and I won the natHACKS hackathon! [Demo](https://www.youtube.com/watch?v=VVa_BcEbB9M)
 - (Aug 2023) Oral spotlight talk at the Science of Intelligence institute's summer school at Berlin
+- (May 2023) Started working with AlbertaSat, which is UofA's student group that designs, builds, and operates nano satellites!
 - (April 2023) Oral presentation of my internship work on RL in recommender systems at a workshop in WWW'23 at Austin
 - (Jun 2022) Started an internship at Google Brain
 - (Apr 2022) Passed my PhD candidacy exam!
@@ -117,7 +123,7 @@ Technical Report, _ArXiv:1703.03401,_ 2017.
 
 ## [Talks](#talks)
 
-- #### Unifying Perspectives on Intelligence: What RL adds to the Common Model of the Agent
+- #### Unifying Perspectives on Intelligence: What RL adds to  the Common Model of the Agent
 _[Science of Intelligence Institute](https://www.scienceofintelligence.de/)'s Summer School,_ Aug 2023 <br>
 [[Slides](uploads/Talks/SCIoI_Spotlight_AbhishekNaik.pdf)]
 
@@ -214,9 +220,10 @@ With [Sravan Bodapati](https://www.linkedin.com/in/justsravan/) and [Venkatraman
 
 ## [Teaching Experience](#teaching-experience)
 
-- ### Reinforcement Learning II ([CMPUT609](https://sites.google.com/ualberta.ca/cmput-609/)) (x3)
-**Jan - Apr 2023, 2021, 2020; Dept. of Computing Science, University of Alberta** <br>
-As a teaching assistant for [Professor Rich Sutton](http://www.incompleteideas.net/)'s class of ~30 graduate students, presented some lectures, helped create the assignments and lectures, and spent a suprisingly large amount of time grading.
+- ### Reinforcement Learning II ([CMPUT609](https://sites.google.com/ualberta.ca/cmput-609/)) (x4)
+**Jan - Apr 2024, 2023, 2021, 2020; Dept. of Computing Science, University of Alberta** <br>
+As a teaching assistant for [Professor Rich Sutton](http://www.incompleteideas.net/)'s class of ~30 graduate students, I presented some lectures, helped create the assignments and lectures, and spent a suprisingly large amount of time grading.
+
 
 - ### Reinforcement Learning I ([CMPUT397](https://marthawhite.github.io/rlcourse/))
 **Sep 2020 - Dec 2020; Dept. of Computing Science, University of Alberta** <br>
@@ -237,7 +244,7 @@ As one of Teaching Assistants of this course offered by [Professor Balaraman Rav
 
 - ### Reinforcement Learning Specialization on Coursera [[Link](https://www.coursera.org/specializations/reinforcement-learning)]
 **Jan 2019 - Oct 2019; University of Alberta** <br>
-As one of the 'Subject Matter Expert's, I developed programming assignments, multiple-choice quizzes, and slides for the four courses that form the RL Specialization, released in late 2019. There have been more than 10k enrollments till now!
+As one of the 'Subject Matter Expert's, I developed programming assignments, multiple-choice quizzes, and slides for the four courses that form the RL Specialization, released in late 2019. There have been more than 80k enrolments till now!
 
 
 ***
@@ -281,10 +288,10 @@ There's hardly anything as spectacular as this confluence of science and enginee
 I love watching and playing _the beautiful game_. Come rain or shine, my heart beats for Real Madrid. I also root for Liverpool, Juventus, and Portugal. My favorite player is, you guessed it, Cristiano Ronaldo --- one of the greatest footballers of all time. -->
 
 ### Books
-If I had to pick one ~~thing~~ of the few things I could do all my life, it would be reading (sports comes first). With three fat bookshelves overflowing with books back home, and many more in my handy Kindle, there are actually times when I am happy to see long queues, presenting another opportunity to dive into my latest book. Some of my favorite authors are Adrian Tchaikovsky, Ted Chiang, Andy Weir, Michael Crichton. I also read non-fiction, mostly about intelligence.
+If I had to pick one ~~thing~~ of the few things I could do all my life, it would be reading (sports comes first). With three fat bookshelves overflowing with books back home, and many more in my handy Kindle, there are actually times when I am happy to see long queues, presenting another opportunity to dive into my latest book. Some of my favorite authors are Adrian Tchaikovsky, Ted Chiang, Andy Weir, Michael Crichton. I also read non-fiction, mostly about intelligence. Check out [my Goodreads page](https://www.goodreads.com/review/list/41821528-abhishek-naik)!
 
 ### Space
-I've found space fascinating since I was a kid. Over the past few years, my go-to sci-fi subgenre is first contact and inter-galactical travel. But my interest in space has had a massive resurgence thanks to [Kerbal Space Program](https://www.kerbalspaceprogram.com/) and [Everyday Astronaut](https://www.youtube.com/c/EverydayAstronaut/videos). Instead of core AI, I might start a career in Space x AI...
+I've found space fascinating since I was a kid. Over the past few years, my go-to sci-fi subgenre is first contact and inter-galactical travel. But my interest in space has had a massive resurgence thanks to [Kerbal Space Program](https://www.kerbalspaceprogram.com/) and [Everyday Astronaut](https://www.youtube.com/c/EverydayAstronaut/videos). Instead of core AI, I ~might~ want to start a career in Space x AI.
 
 <!-- ### Music
 During the pandemic, I have started learning to play the piano. I hope to play my favourite piano piece [Nuvole Bianche](https://www.youtube.com/watch?v=VUCI-1vIbUo) by the end of 2020! -->
