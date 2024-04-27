@@ -5,13 +5,12 @@ layout: default
 
 ## [About Me](#about-me)
 
-I am a Ph.D. candidate at the University of Alberta, working with Professor [Rich Sutton](incompleteideas.net/) in the Reinforcement Learning and Artificial Intelligence ([RLAI](http://rlai.ualberta.ca/)) lab.
+I just finished my Ph.D. at the University of Alberta, working with Professor [Rich Sutton](incompleteideas.net/) in the Reinforcement Learning and Artificial Intelligence ([RLAI](http://rlai.ualberta.ca/)) lab.
 I am fascinated by the question of how the mind works and how we can build artificial systems that have general learning abilities.
 I believe reinforcement learning offers _the_ computational theory of intelligence and I am trying to discover how agents can continually learn to perform a myriad of tasks over their lifetime!
 
 I love space! And I want to use my AI expertise in space sciences and technology.
-I envision a future where artificial systems will have human-like intelligence and adaptability, making
-space exploration significantly easier and safer for our species.
+I envision a future where artificial systems will have human-like intelligence and adaptability, making space exploration significantly easier and safer for our species.
 <!-- The effort has to be inter-disciplinary, so come join [the greatest intellectual pursuits of our time](https://twitter.com/richardssutton/status/1575619651563708418)! -->
 
 <!-- The extent to which this pursuit will advance science and benefit humanity make it one of the greatest intellectual pursuits of our time. -->
@@ -20,18 +19,20 @@ space exploration significantly easier and safer for our species.
 <!-- Currently, my research focuses on learning and planning methods for continuing (non-episodic) problems. I also love reading about the connections between AI, neuroscience, and cognitive psychology. -->
 <!-- I think about intelligence in the context of artificial agents and conduct research in fundamental RL for making it better-suited for solving real-world problems. I hope to make autonomous vehicles a reality in my country, India. -->
 
-You can find my resume [here](uploads/Resume_AbhishekNaik.pdf) (last updated: Dec 2023).
+You can find my resume [here](uploads/Resume_AbhishekNaik.pdf) (last updated: Feb 2024).
 
 ---
 
 ## [Some updates](#news)
 
-- (Nov 2023) [Khurram Javed](https://khurramjaved.com/) and I won the natHACKS hackathon! [Demo](https://www.youtube.com/watch?v=VVa_BcEbB9M)
+- (Mar 2024) Defended my Ph.D. dissertation! :D
+- (Feb 2024) Presented the Amii AI seminar to an audience of 100+ people [[link to recording](https://www.youtube.com/watch?v=M8vN5HohzP4)]
+- (Nov 2023) [Khurram Javed](https://khurramjaved.com/) and I won the natHACKS hackathon! [[Demo](https://www.youtube.com/watch?v=VVa_BcEbB9M)]
 - (Aug 2023) Oral spotlight talk at the Science of Intelligence institute's summer school at Berlin
 - (May 2023) Started working with AlbertaSat, which is UofA's student group that designs, builds, and operates nano satellites!
 - (April 2023) Oral presentation of my internship work on RL in recommender systems at a workshop in WWW'23 at Austin
 - (Jun 2022) Started an internship at Google Brain
-- (Apr 2022) Passed my PhD candidacy exam!
+- (Apr 2022) Passed my Ph.D. candidacy exam!
 - (Mar 2022) Paper accepted at RLDM 2022
 - (Dec 2021) Presented a lecture on 'The Essentials of RL' at the 3rd Nepal AI Winter School
 - (Sep 2021) Paper accepted at NeurIPS 2021
@@ -83,6 +84,8 @@ I mainly focusing on learning and planning methods for continual learning in RL.
 In particular, I design algorithms for non-episodic problems such that an agent can learn to achieve its goals from a single stream of experience (without resets or timeouts).
 <!-- Currently, I'm interested in learning and planning methods for continuing (non-episodic) problems in RL. -->
 
+- A couple of interesting papers on the way... ;)
+
 - #### Investigating Action-space Generalization in RL for Recommender Systems [[PDF](https://dl.acm.org/doi/abs/10.1145/3543873.3587661)]
 **Abhishek Naik**, Bo Chang, Alexandros Karatzoglou, Martin Mladenov, Ed H. Chi, Minmin Chen  <br>
 Oral presentation at the _Decision Making for RecSys_ [workshop](https://decisionmaking4ir.github.io/WWW-2023/), WWW, 2023.
@@ -122,6 +125,14 @@ Technical Report, _ArXiv:1703.03401,_ 2017.
 ---
 
 ## [Talks](#talks)
+
+- #### Reinforcement Learning in Continuing Problems Using Average Reward
+_Ph.D. Defense Public Seminar,_ March 2024 <br>
+[[Video](https://drive.google.com/file/d/1KzHHGtjIz-L37e-gwIcn5EEBT7igr4iG/view), [Slides](uploads/Talks/Defense_Talk_AbhishekNaik.pdf)]
+
+- #### An Experimentalist's Venture into RL Theory: Two Successes and a Failure
+_[Amii AI Seminar](https://sites.google.com/ualberta.ca/ai-seminar/),_ Feb 2024 <br>
+[[Video](https://www.youtube.com/watch?v=M8vN5HohzP4), [Slides](uploads/Talks/AI_Seminar_AbhishekNaik.pdf)]
 
 - #### Unifying Perspectives on Intelligence: What RL adds to  the Common Model of the Agent
 _[Science of Intelligence Institute](https://www.scienceofintelligence.de/)'s Summer School,_ Aug 2023 <br>
