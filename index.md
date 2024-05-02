@@ -5,9 +5,13 @@ layout: default
 
 ## [About Me](#about-me)
 
-I just finished my Ph.D. at the University of Alberta, working with Professor [Rich Sutton](incompleteideas.net/) in the Reinforcement Learning and Artificial Intelligence ([RLAI](http://rlai.ualberta.ca/)) lab.
+I just finished my Ph.D. at the University of Alberta with [Richard Sutton](http://incompleteideas.net/), in which I developed simple and practical algorithms from first principles for long-lived artificial decision-making systems.
+
+In particular, I developed algorithms within the reinforcement-learning framework for continuing (non-episodic) problems—in which the agent-environment interaction goes on _ad infinitum_—with the goal of maximizing the average reward obtained per step. Empirically, the algorithms are easy to implement and use.
+
+<!-- I just finished my Ph.D. at the University of Alberta, working with Professor [Rich Sutton](incompleteideas.net/) in the Reinforcement Learning and Artificial Intelligence ([RLAI](http://rlai.ualberta.ca/)) lab.
 I am fascinated by the question of how the mind works and how we can build artificial systems that have general learning abilities.
-I believe reinforcement learning offers _the_ computational theory of intelligence and I am trying to discover how agents can continually learn to perform a myriad of tasks over their lifetime!
+I believe reinforcement learning offers _the_ computational theory of intelligence and I am trying to discover how agents can continually learn to perform a myriad of tasks over their lifetime! -->
 
 I love space! And I want to use my AI expertise in space sciences and technology.
 I envision a future where artificial systems will have human-like intelligence and adaptability, making space exploration significantly easier and safer for our species.
@@ -186,7 +190,7 @@ My goal was to make self-driving cars a reality in my country, India. Towards th
 ### AlbertaSat
 **Software, Automation, and Testing Team Member; April 2023 – _ongoing_; Edmonton, Canada** <br>
 
-- [AlbertaSat](https://albertasat.ca/) is University of Alberta’s student group that designs, builds, and operates nano satellites. My role is to simulate various operational and safety scenarios of our upcoming satellite to ensure it can robustly achieve all the mission objectives.
+- [AlbertaSat](https://albertasat.ca/) is University of Alberta’s student group that designs, builds, and operates nano satellites. My role is to simulate various operational and safety scenarios of our upcoming satellite to ensure it can robustly achieve all the mission objectives. I am also doing some explorative RL/AI work for them on the side!
 
 ### Google Research, Brain Team
 **Research Scientist Intern; June 2022 – Sep 2022; Toronto, Canada** <br>
