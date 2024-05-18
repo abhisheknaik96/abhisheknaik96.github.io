@@ -84,11 +84,15 @@ Some text -->
 {: #research }
 <!-- this is the custom tag for this section -->
 
-I mainly focusing on learning and planning methods for continual learning in RL.
-In particular, I design algorithms for non-episodic problems such that an agent can learn to achieve its goals from a single stream of experience (without resets or timeouts).
+During my Ph.D., I focused on algorithms that can learn continually throughout an agent's lifetime.
+In particular, I designed algorithms for non-episodic problems such that an agent can learn to achieve its goals from a single stream of experience (without resets or timeouts).
 <!-- Currently, I'm interested in learning and planning methods for continuing (non-episodic) problems in RL. -->
 
-- A couple of interesting papers on the way... ;)
+- Some more interesting work on the way... ;)
+
+- #### Reward Centering [[PDF](https://arxiv.org/abs/2405.09999)]
+**Abhishek Naik**, Yi Wan, Manan Tomar, Richard S. Sutton <br>
+In _Reinforcement Learning Conference ([RLC](https://rl-conference.cc/))_, 2024.
 
 - #### Investigating Action-space Generalization in RL for Recommender Systems [[PDF](https://dl.acm.org/doi/abs/10.1145/3543873.3587661)]
 **Abhishek Naik**, Bo Chang, Alexandros Karatzoglou, Martin Mladenov, Ed H. Chi, Minmin Chen  <br>
