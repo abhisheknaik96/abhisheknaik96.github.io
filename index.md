@@ -80,6 +80,24 @@ Some text -->
 
 ---
 
+## [Ph.D. Dissertation](#phd)
+{: #phd }
+
+This dissertation develops simple and practical learning algorithms from first principles for long-lived agents.
+Formally, the algorithms are developed within the reinforcement learning framework for continuing (non-episodic) problems, in which the agent-environment interaction goes on _ad infinitum,_ with the goal of maximizing the _average reward_ obtained per step.
+
+There are three main contributions:
+1. Foundational one-step tabular learning algorithms for average-reward prediction and control.
+2. Multi-step prediction algorithms for average-reward prediction, some of which are proved to converge with linear function approximation.
+3. Reward centering to improve _discounted-reward_ algorithms.
+
+All of the above contributions are grounded in theory.
+My experiments show that the performance of the proposed algorithms is robust to the choice of their parameters—making them easy to use.
+
+_Defended in **March 2024**._ [[Dissertation PDF](uploads/PhD/Naik_Abhishek_202404_PhD.pdf), [Defense Slides](uploads/Talks/Defense_Talk_AbhishekNaik.pdf), [Defense Seminar video](https://drive.google.com/file/d/1KzHHGtjIz-L37e-gwIcn5EEBT7igr4iG/view)]
+
+---
+
 ## [Publications and Pre-prints](#research)
 {: #research }
 <!-- this is the custom tag for this section -->
