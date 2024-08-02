@@ -23,7 +23,7 @@ I envision a future where artificial systems will have human-like intelligence a
 <!-- Currently, my research focuses on learning and planning methods for continuing (non-episodic) problems. I also love reading about the connections between AI, neuroscience, and cognitive psychology. -->
 <!-- I think about intelligence in the context of artificial agents and conduct research in fundamental RL for making it better-suited for solving real-world problems. I hope to make autonomous vehicles a reality in my country, India. -->
 
-You can find my resume [here](uploads/Resume_AbhishekNaik.pdf) (last updated: Feb 2024).
+You can find my resume [here](uploads/Resume_AbhishekNaik.pdf) (last updated: May 2024).
 
 ---
 
