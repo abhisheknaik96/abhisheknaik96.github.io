@@ -94,7 +94,7 @@ There are three main contributions:
 All of the above contributions are grounded in theory.
 My experiments show that the performance of the proposed algorithms is robust to the choice of their parameters—making them easy to use.
 
-_Defended in **March 2024**._ [[Dissertation PDF](uploads/PhD/Naik_Abhishek_202404_PhD.pdf), [Defense Slides](uploads/Talks/Defense_Talk_AbhishekNaik.pdf), [Defense Seminar video](https://drive.google.com/file/d/1KzHHGtjIz-L37e-gwIcn5EEBT7igr4iG/view)]
+_Defended in **March 2024**._ [[Dissertation PDF](uploads/PhD/Naik_Abhishek_202404_PhD.pdf), [Defense Slides](uploads/Talks/Defense_Talk_AbhishekNaik.pdf), [Defense Seminar video](https://www.youtube.com/watch?v=BTTVuV5r4-k)]
 
 ---
 
