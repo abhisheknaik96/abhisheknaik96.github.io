@@ -325,7 +325,10 @@ There's hardly anything as spectacular as this confluence of science and enginee
 I love watching and playing _the beautiful game_. Come rain or shine, my heart beats for Real Madrid. I also root for Liverpool, Juventus, and Portugal. My favorite player is, you guessed it, Cristiano Ronaldo --- one of the greatest footballers of all time. -->
 
 ### Books
-If I had to pick one ~~thing~~ of the few things I could do all my life, it would be reading (sports comes first). With three fat bookshelves overflowing with books back home, and many more in my handy Kindle, there are actually times when I am happy to see long queues, presenting another opportunity to dive into my latest book. Some of my favorite authors are Adrian Tchaikovsky, Ted Chiang, Andy Weir, Michael Crichton. I also read non-fiction, mostly about intelligence. Check out [my Goodreads page](https://www.goodreads.com/review/list/41821528-abhishek-naik)!
+If I had to pick one ~~thing~~ of the few things I could do all my life, it would be reading (sports comes first). With three fat bookshelves overflowing with books back home, and many more in my handy Kindle, there are actually times when I am happy to see long queues, presenting another opportunity to dive into my latest book. Some of my favorite authors are Adrian Tchaikovsky, Ted Chiang, Andy Weir, Michael Crichton.
+I also read non-fiction, mostly about intelligence.
+I have had the pleasure of leading the [Making Minds reading group](http://rlai.ualberta.ca/mmrg.html) at the University of Alberta. 
+Check out [my Goodreads page](https://www.goodreads.com/review/list/41821528-abhishek-naik)!
 
 ### Space
 I've found space fascinating since I was a kid. Over the past few years, my go-to sci-fi subgenre is first contact and inter-galactical travel. But my interest in space has had a massive resurgence thanks to [Kerbal Space Program](https://www.kerbalspaceprogram.com/) and [Everyday Astronaut](https://www.youtube.com/c/EverydayAstronaut/videos). Instead of core AI, I ~might~ want to start a career in Space x AI.
