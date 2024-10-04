@@ -15,13 +15,13 @@ Preface: There are many equivalent forms of the policy gradient in the literatur
 Okay, so the two main equivalent forms of the policy gradient are:
 
 $$\begin{aligned}
-	\nabla_\mathbb{\theta} J(\mathbb{\theta}) \doteq \mathbb{E}_\tau \Bigg[ G_\tau \sum_{t=0}^{T-1} \nabla_\mathbb{\theta} \ln \pi_\mathbb{\theta}(A_t|S_t) \Bigg],
+	\nabla_\mathbb{\theta} J(\mathbb{\theta}) = \mathbb{E}_\tau \Bigg[ G_\tau \sum_{t=0}^{T-1} \nabla_\mathbb{\theta} \ln \pi_\mathbb{\theta}(A_t|S_t) \Bigg],
 \end{aligned}$$
 
 and
 
 $$\begin{aligned}
-	\nabla_\mathbb{\theta} J(\mathbb{\theta}) \doteq \mathbb{E}_\tau \Bigg[ \sum_{t=0}^{T-1} G_t \nabla_\mathbb{\theta} \ln \pi_\mathbb{\theta}(A_t|S_t) \Bigg],
+	\nabla_\mathbb{\theta} J(\mathbb{\theta}) = \mathbb{E}_\tau \Bigg[ \sum_{t=0}^{T-1} G_t \nabla_\mathbb{\theta} \ln \pi_\mathbb{\theta}(A_t|S_t) \Bigg],
 \end{aligned}$$
 
 where $$\mathbb{\theta}$$ denotes the parameters of the policy, $$J(\mathbb{\theta})$$ denotes the performance metric (in case of episodic tasks, the expected return from the distribution of starting states), $$\tau$$ represents a trajectory starting from a state sampled from the starting-state distribution $$\mathbb{d}_0$$ and consequently following policy $$\pi_\mathbb{\theta}$$, $$G_\tau$$ denotes the return obtained in trajectory $$\tau$$, $$T$$ denotes the length of such a trajectory, and $$\mathbb{E}_\tau$$ denotes an expectation over trajectories drawn like this.
@@ -71,18 +71,18 @@ $$\begin{aligned}
 This non-intuitive expression is true. Let us verify it for small $$k$$. For $$k=1$$:
 
 $$\begin{aligned}
-    \mathbb{E}_\tau[R_1] &= \sum_s \mu(s) \sum_a \pi(a|s) \sum_{s',r} p(s',r|s,a)\, r \\
-    \nabla \mathbb{E}_\tau[R_1] &= \sum_s \mu(s) \sum_a \nabla \pi(a|s) \sum_{s',r} p(s',r|s,a)\, r \\
-    &= \sum_s \mu(s) \sum_a \pi(a|s) \sum_{s',r} p(s',r|s,a) \big[ r\, \nabla \ln \pi(a|s) \big] \qquad \text{(log-likelihood trick)}\\
+    \mathbb{E}_\tau[R_1] &= \sum_s d_0(s) \sum_a \pi(a|s) \sum_{s',r} p(s',r|s,a)\, r \\
+    \nabla \mathbb{E}_\tau[R_1] &= \sum_s d_0(s) \sum_a \nabla \pi(a|s) \sum_{s',r} p(s',r|s,a)\, r \\
+    &= \sum_s d_0(s) \sum_a \pi(a|s) \sum_{s',r} p(s',r|s,a) \big[ r\, \nabla \ln \pi(a|s) \big] \qquad \text{(log-likelihood trick)}\\
     \nabla \mathbb{E}_\tau[R_1] &= \mathbb{E} \big[ R_1 \nabla \ln \pi(A_0|S_0) \big] \qquad \checkmark
 \end{aligned}$$
 
 For $$k=2$$:
 
 $$\begin{aligned}
-    \mathbb{E}_\tau[R_2] &= \sum_s \mu(s) \sum_a \pi(a|s) \sum_{s',r} p(s',r|s,a) \sum_{s'} \mu(s') \sum_{a'} \pi(a'|s') \sum_{s'',r'} p(s'',r'|s',a')\, r' \\
-    \nabla \mathbb{E}_\tau[R_2] &= \sum_s \mu(s) \sum_a {\color{blue}{\nabla \pi(a|s)}} \sum_{s',r} p(s',r|s,a) \sum_{s'} \mu(s') \sum_{a'} \pi(a'|s') \sum_{s'',r'} p(s'',r'|s',a')\, r' \\
-    &\quad + \sum_s \mu(s) \sum_a \pi(a|s) \sum_{s',r} p(s',r|s,a) \sum_{s'} \mu(s') \sum_{a'} {\color{blue}{\nabla \pi(a'|s')}} \sum_{s'',r'} p(s'',r'|s',a')\, r' \\
+    \mathbb{E}_\tau[R_2] &= \sum_s d_0(s) \sum_a \pi(a|s) \sum_{s',r} p(s',r|s,a) \sum_{a'} \pi(a'|s') \sum_{s'',r'} p(s'',r'|s',a')\, r' \\
+    \nabla \mathbb{E}_\tau[R_2] &= \sum_s d_0(s) \sum_a {\color{blue}{\nabla \pi(a|s)}} \sum_{s',r} p(s',r|s,a) \sum_{a'} \pi(a'|s') \sum_{s'',r'} p(s'',r'|s',a')\, r' \\
+    &\quad + \sum_s d_0(s) \sum_a \pi(a|s) \sum_{s',r} p(s',r|s,a) \sum_{a'} {\color{blue}{\nabla \pi(a'|s')}} \sum_{s'',r'} p(s'',r'|s',a')\, r' \\
     &= \mathbb{E} \big[ R_2 \nabla \ln \pi(A_0|S_0) \big] + \mathbb{E} \big[ R_2 \nabla \ln \pi(A_1|S_1) \big] \qquad \text{(log-likelihood trick)} \\
     \nabla \mathbb{E}_\tau[R_2] &= \mathbb{E} [ R_2 \sum_{t=0}^{1} \nabla \ln \pi(A_t|S_t) ] \qquad \checkmark
 \end{aligned}$$
