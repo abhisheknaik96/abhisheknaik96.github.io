@@ -48,3 +48,6 @@ vendor/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Misc
+Gemfile*

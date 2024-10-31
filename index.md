@@ -15,6 +15,7 @@ I believe reinforcement learning offers _the_ computational theory of intelligen
 
 I love space! And I want to use my AI expertise in space sciences and technology.
 I envision a future where artificial systems will have human-like intelligence and adaptability, making space exploration significantly easier and safer for our species.
+To this end, I am currently working at the National Research Council of Canada ([NRC](https://nrc.canada.ca/en/)) as a postdoc fellow, where I do RL research for improving space science and technology 🚀 🛰️
 <!-- The effort has to be inter-disciplinary, so come join [the greatest intellectual pursuits of our time](https://twitter.com/richardssutton/status/1575619651563708418)! -->
 
 <!-- The extent to which this pursuit will advance science and benefit humanity make it one of the greatest intellectual pursuits of our time. -->
@@ -26,10 +27,12 @@ I envision a future where artificial systems will have human-like intelligence a
 You can find my resume [here](uploads/Resume_AbhishekNaik.pdf) (last updated: May 2024).
 
 ---
+---
 
 ## [Some updates](#news)
 
-- (Mar 2024) Defended my Ph.D. dissertation! :D
+- (Sep 2024) Started RL research for space applications at NRC!
+- (Mar 2024) Defended my [Ph.D. dissertation](https://era.library.ualberta.ca/items/42307739-a774-4d6b-b1a3-de9fbc949575)! :D
 - (Feb 2024) Presented the Amii AI seminar to an audience of 100+ people [[link to recording](https://www.youtube.com/watch?v=M8vN5HohzP4)]
 - (Nov 2023) [Khurram Javed](https://khurramjaved.com/) and I won the natHACKS hackathon! [[Demo](https://www.youtube.com/watch?v=VVa_BcEbB9M)]
 - (Aug 2023) Oral spotlight talk at the Science of Intelligence institute's summer school at Berlin
@@ -79,6 +82,7 @@ You can find my resume [here](uploads/Resume_AbhishekNaik.pdf) (last updated: Ma
 Some text -->
 
 ---
+---
 
 ## [Ph.D. Dissertation](#phd)
 {: #phd }
@@ -94,8 +98,9 @@ There are three main contributions:
 All of the above contributions are grounded in theory.
 My experiments show that the performance of the proposed algorithms is robust to the choice of their parameters—making them easy to use.
 
-_Defended in **March 2024**._ [[Dissertation PDF](uploads/PhD/Naik_Abhishek_202404_PhD.pdf), [Defense Slides](uploads/Talks/Defense_Talk_AbhishekNaik.pdf), [Defense Seminar video](https://www.youtube.com/watch?v=BTTVuV5r4-k)]
+_Defended in **March 2024**._ [[Dissertation PDF](https://era.library.ualberta.ca/items/42307739-a774-4d6b-b1a3-de9fbc949575), [Defense Slides](uploads/Talks/Defense_Talk_AbhishekNaik.pdf), [Defense Seminar video](https://www.youtube.com/watch?v=BTTVuV5r4-k)]
 
+---
 ---
 
 ## [Publications and Pre-prints](#research)
@@ -149,6 +154,7 @@ S Chandra Mouli, **Abhishek Naik**, Bruno Ribeiro, Jennifer Neville <br>
 Technical Report, _ArXiv:1703.03401,_ 2017.
 
 ---
+---
 
 ## [Talks](#talks)
 
@@ -193,21 +199,16 @@ _[ Tea Time Talks](https://amiithinks.github.io/tea-time-talks/), RLAI lab and
 [[Video](https://www.youtube.com/watch?v=csr-cUthM-Y), [Slides](uploads/Talks/TTT_AbhishekNaik.pdf)]
 
 ---
-
-## [Master's Thesis](#mtech)
-
-_This thesis was a part of my integrated Bachelor's + Master's program in the Dept. of Computer Science and Engineering at the Indian Institute of Technology Madras in Chennai, India, supervised by Professor [Balaraman Ravindran](www.cse.iitm.ac.in/~ravi). Defended in **May 2018**._
-
-My goal was to make self-driving cars a reality in my country, India. Towards this end, I modeled it as a multi-agent learning problem in a safety-critical application and:
-1. proposed a risk-averse imitation learning algorithm that had lower tail-end risk w.r.t. the then state-of-the-art,
-2. trialled a curriculum-based learning approach for multi-agent RoboSoccer, and
-3. extended the TORCS simulator to release the first open-source driving simulator that supports multi-agent training —  MADRaS (has 100+ stars on [Github](https://github.com/abhisheknaik96/MultiAgentTORCS)).
-
-[[Thesis PDF](uploads/DDP/DDP_Thesis_AbhishekNaik.pdf), [Defense Slides](uploads/DDP/DDP_Slides_AbhishekNaik.pdf)]
-
 ---
 
 ## [Work Experience](#work-experience)
+
+
+### National Research Council of Canada
+**Postdoc Fellow; Sep 2024 – _ongoing_; Ottawa, Canada** <br>
+<!-- With the [Digital Technologies](https://nrc.canada.ca/en/research-development/research-collaboration/research-centres/digital-technologies-research-centre) research center -->
+
+- At [NRC](https://nrc.canada.ca/en/), I am doing reinforcement-learning research with a particular focus on applications in the space industry. For instance, we are trying to make satellite communications orders of magnitude faster using RL. I am also mentoring graduate students through collaborations with universities.
 
 ### AlbertaSat
 **Software, Automation, and Testing Team Member; April 2023 – _ongoing_; Edmonton, Canada** <br>
@@ -249,10 +250,25 @@ With [Bruno Ribeiro](https://www.cs.purdue.edu/homes/ribeirob/)
 With [Sravan Bodapati](https://www.linkedin.com/in/justsravan/) and [Venkatraman Kalyanapasupathy](https://www.linkedin.com/in/venkatraman-kalyanapasupathy-b19201/)
 
 - Built a classifier to determine the start-reading-location of books.
-- Now in production, this feature helps Kindle users start reading a book quicker after downloading it, without having to flip through pages like acknowledgements or copyright notices. If you use a Kindle, you would have experienced this!
+- Now in production, this feature helps Kindle users start reading a book quicker after downloading it, without having to flip through pages like acknowledgements or copyright notices. If you use a Kindle, you have used this feature :)
 
 
-***
+---
+---
+
+## [Master's Thesis](#mtech)
+
+_This thesis was a part of my integrated Bachelor's + Master's program in the Dept. of Computer Science and Engineering at the Indian Institute of Technology Madras in Chennai, India, supervised by Professor [Balaraman Ravindran](www.cse.iitm.ac.in/~ravi). Defended in **May 2018**._
+
+My goal was to make self-driving cars a reality in my country, India. Towards this end, I modeled it as a multi-agent learning problem in a safety-critical application and:
+1. proposed a risk-averse imitation learning algorithm that had lower tail-end risk w.r.t. the then state-of-the-art,
+2. trialled a curriculum-based learning approach for multi-agent RoboSoccer, and
+3. extended the TORCS simulator to release the first open-source driving simulator that supports multi-agent training —  MADRaS (has 100+ stars on [Github](https://github.com/abhisheknaik96/MultiAgentTORCS)).
+
+[[Thesis PDF](uploads/DDP/DDP_Thesis_AbhishekNaik.pdf), [Defense Slides](uploads/DDP/DDP_Slides_AbhishekNaik.pdf)]
+
+---
+---
 
 
 ## [Teaching Experience](#teaching-experience)
@@ -284,7 +300,8 @@ As one of Teaching Assistants of this course offered by [Professor Balaraman Rav
 As one of the 'Subject Matter Expert's, I developed programming assignments, multiple-choice quizzes, and slides for the four courses that form the RL Specialization, released in late 2019. There have been more than 80k enrolments till now!
 
 
-***
+---
+---
 
 
 ## [Community Service](#community-service)
@@ -327,11 +344,11 @@ I love watching and playing _the beautiful game_. Come rain or shine, my heart b
 ### Books
 If I had to pick one ~~thing~~ of the few things I could do all my life, it would be reading (sports comes first). With three fat bookshelves overflowing with books back home, and many more in my handy Kindle, there are actually times when I am happy to see long queues, presenting another opportunity to dive into my latest book. Some of my favorite authors are Adrian Tchaikovsky, Ted Chiang, Andy Weir, Michael Crichton.
 I also read non-fiction, mostly about intelligence.
-I have had the pleasure of leading the [Making Minds reading group](http://rlai.ualberta.ca/mmrg.html) at the University of Alberta. 
+I have had the pleasure of leading the [Making Minds reading group](http://rlai.ualberta.ca/mmrg.html) for 3+ years at the University of Alberta.
 Check out [my Goodreads page](https://www.goodreads.com/review/list/41821528-abhishek-naik)!
 
 ### Space
-I've found space fascinating since I was a kid. Over the past few years, my go-to sci-fi subgenre is first contact and inter-galactical travel. But my interest in space has had a massive resurgence thanks to [Kerbal Space Program](https://www.kerbalspaceprogram.com/) and [Everyday Astronaut](https://www.youtube.com/c/EverydayAstronaut/videos). Instead of core AI, I ~might~ want to start a career in Space x AI.
+I've found space fascinating since I was a kid. Over the past few years, my go-to sci-fi subgenre is first contact and inter-galactical travel. But my interest in space has had a massive resurgence thanks to [Kerbal Space Program](https://www.kerbalspaceprogram.com/) and [Everyday Astronaut](https://www.youtube.com/c/EverydayAstronaut/videos). Instead of core AI, I ~~might want to start~~ have started a career in Space x AI!
 
 <!-- ### Music
 During the pandemic, I have started learning to play the piano. I hope to play my favourite piano piece [Nuvole Bianche](https://www.youtube.com/watch?v=VUCI-1vIbUo) by the end of 2020! -->
