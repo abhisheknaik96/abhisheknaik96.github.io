@@ -5,17 +5,19 @@ layout: default
 
 ## [About Me](#about-me)
 
-I just finished my Ph.D. at the University of Alberta with [Richard Sutton](http://incompleteideas.net/), in which I developed simple and practical algorithms from first principles for long-lived artificial decision-making systems.
+I am a postdoctoral fellow at the National Research Council of Canada ([NRC](https://nrc.canada.ca/en/)), where I do reinforcement-learning (RL) research for improving space science and technology 🚀 🛰
 
-In particular, I developed algorithms within the reinforcement-learning framework for continuing (non-episodic) problems—in which the agent-environment interaction goes on _ad infinitum_—with the goal of maximizing the average reward obtained per step. Empirically, the algorithms are easy to implement and use.
+I love space! My goal is to take human-like intelligence where human intelligence cannot go---making space exploration much easier and safer for humanity.
+
+In 2024, I finished my Ph.D. at the University of Alberta with [Richard Sutton](http://incompleteideas.net/), in which I developed simple and practical algorithms from first principles for long-lived artificial decision-making systems. In particular, I developed algorithms within the RL framework for continuing (non-episodic) problems with the goal of maximizing the average reward obtained per step. Empirically, the algorithms are easy to implement and use.
 
 <!-- I just finished my Ph.D. at the University of Alberta, working with Professor [Rich Sutton](incompleteideas.net/) in the Reinforcement Learning and Artificial Intelligence ([RLAI](http://rlai.ualberta.ca/)) lab.
 I am fascinated by the question of how the mind works and how we can build artificial systems that have general learning abilities.
 I believe reinforcement learning offers _the_ computational theory of intelligence and I am trying to discover how agents can continually learn to perform a myriad of tasks over their lifetime! -->
 
-I love space! And I want to use my AI expertise in space sciences and technology.
-I envision a future where artificial systems will have human-like intelligence and adaptability, making space exploration significantly easier and safer for our species.
-To this end, I am currently working at the National Research Council of Canada ([NRC](https://nrc.canada.ca/en/)) as a postdoc fellow, where I do RL research for improving space science and technology 🚀 🛰️
+<!-- I love space! And I want to use my AI expertise in space sciences and technology.
+I envision a future where artificial systems will have human-like intelligence and adaptability, making space exploration significantly easier and safer for our species. -->
+<!-- To this end, I am currently working at the National Research Council of Canada ([NRC](https://nrc.canada.ca/en/)) as a postdoc fellow, where I do RL research for improving space science and technology 🚀 🛰️ -->
 <!-- The effort has to be inter-disciplinary, so come join [the greatest intellectual pursuits of our time](https://twitter.com/richardssutton/status/1575619651563708418)! -->
 
 <!-- The extent to which this pursuit will advance science and benefit humanity make it one of the greatest intellectual pursuits of our time. -->
@@ -24,20 +26,22 @@ To this end, I am currently working at the National Research Council of Canada (
 <!-- Currently, my research focuses on learning and planning methods for continuing (non-episodic) problems. I also love reading about the connections between AI, neuroscience, and cognitive psychology. -->
 <!-- I think about intelligence in the context of artificial agents and conduct research in fundamental RL for making it better-suited for solving real-world problems. I hope to make autonomous vehicles a reality in my country, India. -->
 
-You can find my resume [here](uploads/Resume_AbhishekNaik.pdf) (last updated: May 2024).
+You can find my resume [here](uploads/Resume_AbhishekNaik.pdf) (last updated: Dec 2024).
 
 ---
 ---
 
 ## [Some updates](#news)
 
-- (Sep 2024) Started RL research for space applications at NRC!
+- (Feb 2025) I had the pleasure of being interviewed for a TalkRL podcast [episode](https://www.talkrl.com/episodes/abhishek-naik)!
+- (Sep 2024) Started a postdoc on RL research for space applications at NRC!
+- (Aug 2024) Presented [Reward Centering](https://arxiv.org/abs/2405.09999) at RLC 2024!
 - (Mar 2024) Defended my [Ph.D. dissertation](https://era.library.ualberta.ca/items/42307739-a774-4d6b-b1a3-de9fbc949575)! :D
 - (Feb 2024) Presented the Amii AI seminar to an audience of 100+ people [[link to recording](https://www.youtube.com/watch?v=M8vN5HohzP4)]
 - (Nov 2023) [Khurram Javed](https://khurramjaved.com/) and I won the natHACKS hackathon! [[Demo](https://www.youtube.com/watch?v=VVa_BcEbB9M)]
-- (Aug 2023) Oral spotlight talk at the Science of Intelligence institute's summer school at Berlin
+- (Aug 2023) Oral spotlight [talk](uploads/Talks/SCIoI_Spotlight_AbhishekNaik.pdf) at the Science of Intelligence institute's summer school at Berlin!
 - (May 2023) Started working with AlbertaSat, which is UofA's student group that designs, builds, and operates nano satellites!
-- (April 2023) Oral presentation of my internship work on RL in recommender systems at a workshop in WWW'23 at Austin
+<!-- - (April 2023) Oral presentation of my internship work on RL in recommender systems at a workshop in WWW'23 at Austin
 - (Jun 2022) Started an internship at Google Brain
 - (Apr 2022) Passed my Ph.D. candidacy exam!
 - (Mar 2022) Paper accepted at RLDM 2022
@@ -49,7 +53,7 @@ You can find my resume [here](uploads/Resume_AbhishekNaik.pdf) (last updated: Ma
 - (Apr 2021) Paper accepted in the Journal of AI Research (JAIR)
 - (Jan 2021) Started TA-ing for Rich Sutton's [CMPUT609 RL-2](https://sites.google.com/ualberta.ca/cmput-609/) course
 - (Dec 2020) Helped organize the [Policy Optimization in RL](https://sites.google.com/ualberta.ca/rlandoptimization-neurips2020/home) tutorial at NeurIPS 2020. We made some cool interactive notebooks; links on the website!
-- (Oct 2020) [Presented](https://youtu.be/DA7vgHrT3OU?t=34702) our work on 'Personalized Brain State Targeting via Reinforcement Learning' at the 3rd Neuromatch conference (more Q/A at the [9:58:41](https://youtu.be/DA7vgHrT3OU?t=35921) mark)
+- (Oct 2020) [Presented](https://youtu.be/DA7vgHrT3OU?t=34702) our work on 'Personalized Brain State Targeting via Reinforcement Learning' at the 3rd Neuromatch conference (more Q/A at the [9:58:41](https://youtu.be/DA7vgHrT3OU?t=35921) mark) -->
 <!-- - (Sep 2020) Reviewed for AAAI 2021 -->
 <!-- - (Sep 2020) Started TA-ing for Martha White's [CMPUT397 RL-1 course](https://marthawhite.github.io/rlcourse/) -->
 <!-- - (Aug 2020) Finished organizing the [Amii Tea Time Talk series](https://amiithinks.github.io/tea-time-talks/). Check out all the videos [here](https://www.youtube.com/watch?v=g80wiWvOtvI&list=PLKlhhkvvU8-Y3Up8reY3Qi_YWN_v7EN3O)! -->
@@ -107,11 +111,11 @@ _Defended in **March 2024**._ [[Dissertation PDF](https://era.library.ualberta.c
 {: #research }
 <!-- this is the custom tag for this section -->
 
-During my Ph.D., I focused on algorithms that can learn continually throughout an agent's lifetime.
-In particular, I designed algorithms for non-episodic problems such that an agent can learn to achieve its goals from a single stream of experience (without resets or timeouts).
+<!-- During my Ph.D., I focused on algorithms that can learn continually throughout an agent's lifetime.
+In particular, I designed algorithms for non-episodic problems such that an agent can learn to achieve its goals from a single stream of experience (without resets or timeouts). -->
 <!-- Currently, I'm interested in learning and planning methods for continuing (non-episodic) problems in RL. -->
 
-- Some more interesting work on the way... ;)
+- Some more interesting work on the way... :)
 
 - #### Reward Centering [[PDF](https://arxiv.org/abs/2405.09999)]
 **Abhishek Naik**, Yi Wan, Manan Tomar, Richard S. Sutton <br>
@@ -157,6 +161,14 @@ Technical Report, _ArXiv:1703.03401,_ 2017.
 ---
 
 ## [Talks](#talks)
+
+- #### Intro to Reinforcement Learning: What, When, How?
+_NRC Knowledge-Exchange Seminar,_ Dec 2024 <br>
+[[Slides](uploads/Talks/RL_Intro_DT_AbhishekNaik.pdf)]
+
+- #### Demystifying the Discount Factor
+_Guest Lecture at a graduate RL course at UofA,_ Nov 2024 <br>
+[[Slides](uploads/Talks/DemystifyingDiscounting.pdf)]
 
 - #### Reinforcement Learning in Continuing Problems Using Average Reward
 _Ph.D. Defense Public Seminar,_ March 2024 <br>
@@ -357,8 +369,8 @@ During the pandemic, I have started learning to play the piano. I hope to play m
 <!-- ### Age of Empires
 I grew up building many civilisations and plotting the downfall of others, all the while learning so much about the intriguing medieval history. With countless hours spent on AoE2's gripping storyline and exciting gameplay, I can't wait for [AOE4](https://www.ageofempires.com/games/age-of-empires-iv/) to come out! -->
 
-### Photography and Traveling
-I love visiting and documenting quaint, spectacular places, and digging into the local cuisine. Till I figure out where to showcase some of my favorite pictures, here is my [old Flickr account](https://www.flickr.com/photos/120844874@N04/). I also enjoy trekking and hiking into the wilderness. After skydiving, bungee jumping, scuba diving, parasailing, I'm looking forward to hang gliding and cliff jumping!
+<!-- ### Photography and Traveling
+I love visiting and documenting quaint, spectacular places, and digging into the local cuisine. Till I figure out where to showcase some of my favorite pictures, here is my [old Flickr account](https://www.flickr.com/photos/120844874@N04/). I also enjoy trekking and hiking into the wilderness. After skydiving, bungee jumping, scuba diving, parasailing, I'm looking forward to hang gliding and cliff jumping! -->
 
 ***
 
