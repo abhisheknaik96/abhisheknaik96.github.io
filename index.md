@@ -41,6 +41,7 @@ You can find my resume [here](uploads/Resume_AbhishekNaik.pdf) (last updated: De
 - (Nov 2023) [Khurram Javed](https://khurramjaved.com/) and I won the natHACKS hackathon! [[Demo](https://www.youtube.com/watch?v=VVa_BcEbB9M)]
 - (Aug 2023) Oral spotlight [talk](uploads/Talks/SCIoI_Spotlight_AbhishekNaik.pdf) at the Science of Intelligence institute's summer school at Berlin!
 - (May 2023) Started working with AlbertaSat, which is UofA's student group that designs, builds, and operates nano satellites!
+
 <!-- - (April 2023) Oral presentation of my internship work on RL in recommender systems at a workshop in WWW'23 at Austin
 - (Jun 2022) Started an internship at Google Brain
 - (Apr 2022) Passed my Ph.D. candidacy exam!
@@ -375,7 +376,8 @@ I love visiting and documenting quaint, spectacular places, and digging into the
 ***
 
 ## [Contact Me](#contact-me)
-[//]: # (Email ID -)
-![Email ID](/images/ID.png){:width="45%"}
+<!-- [//]: # (Email ID -)
+![Email ID](/images/ID.png){:width="45%"} -->
+abhisheknaik22296@gmail.com
 
 ***
