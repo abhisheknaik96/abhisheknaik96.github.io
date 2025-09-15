@@ -378,6 +378,6 @@ I love visiting and documenting quaint, spectacular places, and digging into the
 ## [Contact Me](#contact-me)
 <!-- [//]: # (Email ID -)
 ![Email ID](/images/ID.png){:width="45%"} -->
-abhisheknaik22296@gmail.com
+On [LinkedIn](https://www.linkedin.com/in/abhisheknaik96) or [email](mailto:abhisheknaik22296@gmail.com).
 
 ***
