@@ -5,29 +5,31 @@ date: 2025-07-20
 time: 2102
 permalink: posts/LagrangePoints
 tags: general
-summary: My journey of understanding these fascinating points in the universe.
-published: false
+summary: My journey towards understanding these fascinating points in the universe.
+published: true
 ---
 
 ## Preface
 
-Which of the following phenomena is true?
+We have all seen videos of like the following, of planets revolving around a star:
 
 | ![Three bodies revolving around a central body with different angular velocities](/images/lagrange_points/orbits.gif){:width="95%"} |
 |:--:|
 | Figure 1: Three bodies revolving around a central body with different angular velocities |
 
+Simple orbital mechanics tells us that the angular velocity of an orbiting body is inversely proportional to its distance from the central body.
+
+Turns out, under specific conditions, the latter can also be true!
+
 | ![Three bodies revolving around a central body with the same angular velocity](/images/lagrange_points/orbits_wrong.gif){:width="95%"} |
 |:--:|
 | Figure 2: Three bodies revolving around a central body with the same angular velocity |
 
-The former is true. Simple orbital mechanics tells us that the angular velocity of an orbiting body is inversely proportional to its distance from the central body.
-
-Turns out, the latter can also be true! For every orbiting body, there exist four points in its vicinity where a tiny body can have the same angular velocity as the primary body around a central celestial body. This post outlines my journey of understanding these _Lagrange points_.
+For every orbiting body, there exist four points in its vicinity where a tiny body can have the same angular velocity as the primary body around a central celestial body. This post outlines my journey of understanding these _Lagrange points_---and hopefully yours as well.
 
 | ![L1 and L2 points](/images/lagrange_points/L1L2_exaggerated.gif){:width="95%"} |
 |:--:|
-| Figure 3: Two small bodies at the L1 and L2 points of a celestial body revolving around a star. |
+| Figure 3: Two small bodies at the L1 and L2 points of a two-body system consisting of a planet revolving around a star.|
 
 ---
 
@@ -77,13 +79,32 @@ _Screenshot goes here_
 
 Not very useful...
 
-At this point, I went to Wikipedia to look up the 'answer'. It had an approximate answer, quoting the quintic equation had no closed-form solution. Fair enough.
+At this point, I went to Wikipedia to look up the 'answer'. It had an approximate answer, quoting the quintic equation had no closed-form solution. That explained my struggles.
 
-But if it's an approximation solution, I thought I too can estimate it ... numerically.
+But sure, even if we can't find an analytical solution, we should still be able to approximate it. My first attempt was through visualizing all the forces to get an idea of where they cancel out.
+
+
+### Force visualization
+
+Let us plot the gravitational forces experienced by an object orbiting the sun, namely due to the attraction by Sun and Earth, $$F_s$$ and $$F_e$$ respectively, as well as the centripetal force due to the revolution around Sun, $$F_{cent}$$. For simplicity, we will plot the forces per unit mass of the satellite.
+
+| ![Forces acting on a satellite per unit mass](/images/lagrange_points/forces_plot.png){:width="95%"} |
+|:--:|
+| Figure 4: Forces acting on a satellite per unit mass. The distance $$r$$ is measured from the sun but the x-ticks are shown w.r.t. Earth for better interpretability. |
+
+There is a lot going on in the plot, so let us consider a few basic things one at a time:
+- The centripetal force for a fixed angular velocity ($$\omega_e$$, that of Earth around the Sun) increases with distance from the Sun. At the scale of the plot, this is indicated by a small positive slope (green).
+- At the scale of the plot, the gravitational force due to the Sun appears almost constant, but with a perceptible negative slope (orange).
+- The gravitational force due to Earth is symmetric (blue), with the direction towards the sun indicated with a negative sign.
+
+The red line indicates the sum of forces experienced by a satellite per unit mass. It is zero at roughly $$1.5 * 10^9$$km on either side of Earth---which is our first (visual) estimate of the L1 and L2 points.
+
+The estimate is quite rough. But we can make it more precise with just a few additions to the code I wrote to generate the plot.
+
 
 ### Numerical estimation
 
-I wrote the following piece of code. It incrementally estimates the distance where the forces balance out by starting close to Earth and gradually increasing the distance.
+This piece of code which incrementally estimates the distance where the forces balance out by starting close to Earth and gradually increasing the distance towards the sun. The code should converge to the L1 point after enough iterations.
 
 ```python
 import math
@@ -139,7 +160,8 @@ for i in range(20):
     Iteration 19: start=1515354619.7509766, end=1515355001.2207031, delta=190.73486328125
 ```
 
-Numerical estimates show that L1 is approximately $$1.51535 * 10^9$$m or roughly 1.5 million km from Earth.
+Our numerical estimates show that L1 is approximately $$1.51535 * 10^9$$m or roughly 1.5 million km from Earth.
+
 It matches the approximate solution on Wikipedia, good.
 
 Same story with L2.
@@ -199,36 +221,29 @@ for i in range(20):
 
 This shows L2 is approximately $$1.52549 * 10^9$$m or roughly 1.5 million km from Earth.
 
-Wait, this is the same distance as L1 but on opposite sides of Earth...
+Good, our numerical estimates match our visual estimate.
 
-How come?
+---
 
-Before making sense of this, first let us take a moment to appreciate what we've done so far. We worked through the physics from first principles and derived the analytical form for the L1 and L2 points. Then we estimated those points numerically with some code. Great.
+Isn't it strange that the L1 and L2 points are almost the same distance from Earth? Why? Is it just a conicidence or is there a deeper reason why?
 
-Now we want to find out <i>why</i> the two points are almost equally away from Earth.
+These are the questions that immediately came to my mind as I finished the above visual and numerical analysis.
 
-### Force visualization
+But I decided to postpone answering those questions for a while. A wise man once told me to savor the results you have before jumping to the next set of results.
 
-Let us plot the gravitational forces experienced by an object orbiting the sun, namely due to the attraction by Sun and Earth, $$F_s$$ and $$F_e$$ respectively, as well as the centripetal force due to the revolution around Sun, $$F_{cent}$$. For simplicity, we will plot the forces per unit mass of the satellite.
+So let us take a moment to appreciate what we've done so far. We worked through the physics from first principles and derived the analytical form for the L1 and L2 points. Then we estimated those points visually and numerically with some code. Great.
 
-| ![Forces acting on a satellite per unit mass](/images/lagrange_points/forces_plot.png){:width="95%"} |
-|:--:|
-| Figure 4: Forces acting on a satellite per unit mass. The distance $$r$$ is measured from the sun but the x-ticks are shown w.r.t. Earth for better interpretability. |
+---
 
-There is a lot going on in the plot, so let us consider a few basic things one at a time:
-- The centripetal force for a fixed angular velocity ($$\omega_e$$, that of Earth around the Sun) increases with distance from the Sun. At the scale of the plot, this is indicated by a small positive slope (green).
-- At the scale of the plot, the gravitational force due to the Sun appears almost constant, but with a perceptible negative slope (orange).
-- The gravitational force due to Earth is symmetric (blue), with the direction towards the sun indicated with a negative sign.
-
-The red line indicates the sum of forces experienced by a satellite per unit mass. It is zero at roughly $$1.5 * 10^9$$km on either side of Earth, which are roughly the L1 and L2 points.
+Of course, I couldn't resist trying to understand <i>why the two points are almost equally away from Earth?</i>
 
 
 ### Analytical estimation
 
-For that, let's go back to the math. Considering the L1 equation again for now:
+Gemini told me to go back to the math. The L1 equation is:
 
 $$
-\begin{align*} \frac{m_s}{(R-r)^2} &= \frac{m_e }{r^2} + \frac{m_s}{R^3} (R-r) \\ \text{or}\quad \frac{m_s}{(1-\frac{r}{R})^2} &= \frac{m_e}{(\frac{r}{R})^2} + m_s (1-\frac{r}{R}) \\\end{align*}
+\begin{align*} \frac{m_s}{(R-r)^2} &= \frac{m_e }{r^2} + \frac{m_s}{R^3} (R-r) \\ \text{or}\quad \frac{m_s}{(1-\frac{r}{R})^2} &= \frac{m_e}{(\frac{r}{R})^2} + m_s (1-\frac{r}{R}). \\\end{align*}
 $$
 
 Now, let's use the fact that $$\frac{r}{R} << 1$$. As a result, $$(1-\frac{r}{R})^{-2}$$ can be approximated by the first two terms of the Taylor series: $$(1+2\frac{r}{R})$$. Hence,
@@ -237,10 +252,10 @@ $$
 \begin{align*} m_s (1+2\frac{r}{R}) &= \frac{m_e}{(\frac{r}{R})^2} + m_s (1-\frac{r}{R}) \\ 3m_s \frac{r}{R} &= \frac{m_e}{(\frac{r}{R})^2} \\ \big(\frac{r}{R}\big)^3 &= \frac{m_e}{3m_s} \\ \implies r &= \sqrt[3]{\frac{m_e}{3m_s}}R\end{align*}
 $$
 
-Now, the L2 equation:
+Next, the L2 equation:
 
 $$
-\begin{align*} \frac{m_s}{(R+r)^2} + \frac{m_e }{r^2} &= \frac{m_s}{R^3} (R+r) \\ \frac{m_s}{(1+\frac{r}{R})^2} + \frac{m_e }{(\frac{r}{R})^2} &= \frac{m_s}{R^3} (1+\frac{r}{R})\end{align*}
+\begin{align*} \frac{m_s}{(R+r)^2} + \frac{m_e }{r^2} &= \frac{m_s}{R^3} (R+r) \\ \frac{m_s}{(1+\frac{r}{R})^2} + \frac{m_e }{(\frac{r}{R})^2} &= \frac{m_s}{R^3} (1+\frac{r}{R}). \end{align*}
 $$
 
 Using the same binomial approximation,
@@ -249,7 +264,11 @@ $$
 \begin{align*} m_s (1-2\frac{r}{R}) + \frac{m_e}{(\frac{r}{R})^2} &= m_s (1+\frac{r}{R}) \\ 3m_s \frac{r}{R} &= \frac{m_e}{(\frac{r}{R})^2} \\ \big(\frac{r}{R}\big)^3 &= \frac{m_e}{3m_s} \\ \implies r &= \sqrt[3]{\frac{m_e}{3m_s}}R\end{align*}
 $$
 
-Analytically, we arrive at the same approximation.
+<i>Analytically, we arrive at the same approximation for L1 and L2!</i> The mystery deepens.
+
+Unfortunately, I will only solve this mystery in the next post. I am way past my deadline for this post. In the months that I have been working this out (a few minutes after dinner on some days, an occasional long weekend), I have stumbled across at least three other topics that I want to understand and write about, so I am going to take a short break and work on at least one other topic before circling back to this.
+
+Stay tuned for part two!
 
 ---
 
