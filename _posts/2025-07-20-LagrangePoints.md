@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Understanding Lagrange Points"
-date: 2025-07-20
-time: 2102
+date: 2025-11-29
+time: 1943
 permalink: posts/LagrangePoints
 tags: general
 summary: My journey towards understanding these fascinating points in the universe.
@@ -38,8 +38,8 @@ For every orbiting body, there exist four points in its vicinity where a tiny bo
 First, let's quickly review some orbital mechanics.
 
 Define:
-- $$m_s$$: mass of Sun
-- $$m_e$$: mass of Earth<sup>1<sup>
+- $$m_s$$: mass of the Sun
+- $$m_e$$: mass of Earth
 - $$G$$: the Gravitational constant
 - $$R$$: average distance between the Sun and Earth. For simplicity, we assume that Earth's orbit around the Sun is circular.
 
@@ -51,9 +51,7 @@ $$
 
 This implies: $$\omega_e = \sqrt{\frac{Gm_s}{R_e^3}}$$. This equation clearly shows that objects further away from the Sun have a lower angular velocity (as seen in Figure 1).
 
-Now, the gravitational force of the Sun on a satellite at a distance $$r$$ from Earth is $$F_s = \frac{G m_s m_{sat}}{(R_e-r)^2}$$ and that of Earth on the satellite is $$F_e = \frac{G m_e m_{sat}}{r^2}$$.
-
-The centripetal force experienced by the satellite due to its revolution around the Sun is $$F_{cent} = m_{sat} \omega^2 (R_e-r)$$.
+Now, the gravitational force of the Sun on a satellite orbiting the Sun at a distance $$r$$ from Earth (between Earth and the Sun) is $$F_s = \frac{G m_s m_{sat}}{(R_e-r)^2}$$ and that of Earth on the satellite is $$F_e = \frac{G m_e m_{sat}}{r^2}$$. The centripetal force experienced by the satellite due to its revolution around the Sun is $$F_{cent} = m_{sat} \omega^2 (R_e-r)$$.
 
 ## Deriving the L1 point
 
@@ -71,22 +69,20 @@ $$
 
 This is a fifth-degree polynomial in $$r$$.
 
-I tried finding solutions for it using pen and paper but all I ended up doing was ~~wasting~~ using a lot of ink and paper.
+I tried finding its solutions using pen and paper but all I ended up doing was ~~wasting~~ using a lot of ink.
 
-Next, I tried Wolfram Alpha.
-
-_Screenshot goes here_
-
-Not very useful...
+Wolfram Alpha didn't help either; I couldn't make any sense of its output.
 
 At this point, I went to Wikipedia to look up the 'answer'. It had an approximate answer, quoting the quintic equation had no closed-form solution. That explained my struggles.
 
-But sure, even if we can't find an analytical solution, we should still be able to approximate it. My first attempt was through visualizing all the forces to get an idea of where they cancel out.
+Even if a closed-form solution doesn't exist, we should still be able to approximate it.
+
+My first attempt was through visualizing all the forces to get an idea of where they cancel out.
 
 
 ### Force visualization
 
-Let us plot the gravitational forces experienced by an object orbiting the sun, namely due to the attraction by Sun and Earth, $$F_s$$ and $$F_e$$ respectively, as well as the centripetal force due to the revolution around Sun, $$F_{cent}$$. For simplicity, we will plot the forces per unit mass of the satellite.
+The three forces acting on the satellite are the two gravitational forces due to the attraction by the Sun and Earth---$$F_s$$ and $$F_e$$ respectively---as well as the centripetal force due to the revolution around Sun---$$F_{cent}$$. For simplicity, we will plot the forces per unit mass of the satellite.
 
 | ![Forces acting on a satellite per unit mass](/images/lagrange_points/forces_plot.png){:width="95%"} |
 |:--:|
@@ -97,14 +93,14 @@ There is a lot going on in the plot, so let us consider a few basic things one a
 - At the scale of the plot, the gravitational force due to the Sun appears almost constant, but with a perceptible negative slope (orange).
 - The gravitational force due to Earth is symmetric (blue), with the direction towards the sun indicated with a negative sign.
 
-The red line indicates the sum of forces experienced by a satellite per unit mass. It is zero at roughly $$1.5 * 10^9$$km on either side of Earth---which is our first (visual) estimate of the L1 and L2 points.
+The red line indicates the sum of forces experienced by a satellite per unit mass. It is zero at roughly $$1.5 * 10^9$$km on either side of Earth---our first (visual) estimate of the L1 and L2 points.
 
-The estimate is quite rough. But we can make it more precise with just a few additions to the code I wrote to generate the plot.
+The estimate is quite rough, but it can be made more precise with just a few additions to the code I wrote to generate the plot.
 
 
 ### Numerical estimation
 
-This piece of code which incrementally estimates the distance where the forces balance out by starting close to Earth and gradually increasing the distance towards the sun. The code should converge to the L1 point after enough iterations.
+This piece of code incrementally estimates the distance where the forces balance out by starting close to Earth and gradually increasing the distance towards the Sun. The code should converge to the L1 point after enough iterations.
 
 ```python
 import math
@@ -116,7 +112,7 @@ R  = 1.52e11                      # average distance between Sun and Earth (m)
 
 w_m2 = math.sqrt(G * m1 / R**3)   # angular velocity of Earth around Sun (rad/s)
 
-F1_by_m = lambda l1: G * m1 / (R - l1)**2      # gravitational force per unit mass due to Sun (m/s^2)
+F1_by_m = lambda l1: G * m1 / (R - l1)**2    # gravitational force per unit mass due to Sun (m/s^2)
 F2_by_m = lambda l1: G * m2 / (l1)**2        # gravitational force per unit mass due to Earth (m/s^2)
 F_cent_by_m = lambda l1: w_m2**2 * (R - l1)  # centrifugal force per unit mass when orbiting around Sun with Earth's angular velocity (m/s^2)
 
@@ -160,9 +156,7 @@ for i in range(20):
     Iteration 19: start=1515354619.7509766, end=1515355001.2207031, delta=190.73486328125
 ```
 
-Our numerical estimates show that L1 is approximately $$1.51535 * 10^9$$m or roughly 1.5 million km from Earth.
-
-It matches the approximate solution on Wikipedia, good.
+Our numerical estimate shows that L1 is approximately $$1.51535 * 10^9$$m or roughly 1.5 million km from Earth, which matches the approximate solution on Wikipedia. Good.
 
 Same story with L2.
 
@@ -221,17 +215,17 @@ for i in range(20):
 
 This shows L2 is approximately $$1.52549 * 10^9$$m or roughly 1.5 million km from Earth.
 
-Good, our numerical estimates match our visual estimate.
+Note that our numerical estimates match the initial visual estimate. Good.
 
 ---
 
-Isn't it strange that the L1 and L2 points are almost the same distance from Earth? Why? Is it just a conicidence or is there a deeper reason why?
+_Isn't it strange that the L1 and L2 points are almost the same distance from Earth? Is it just a conicidence or is there a deeper reason why?_
 
-These are the questions that immediately came to my mind as I finished the above visual and numerical analysis.
+These questions came to my mind as I finished the two analyses.
 
-But I decided to postpone answering those questions for a while. A wise man once told me to savor the results you have before jumping to the next set of results.
+However, I decided to postpone answering those question. A wise man once told me to savor the things you have learned before jumping to the next question.
 
-So let us take a moment to appreciate what we've done so far. We worked through the physics from first principles and derived the analytical form for the L1 and L2 points. Then we estimated those points visually and numerically with some code. Great.
+So let's take a moment to appreciate what we've done so far. We worked through the physics from first principles and derived the analytical form for the L1 and L2 points. Then we estimated those points visually and numerically with some code. Great.
 
 ---
 
@@ -266,14 +260,34 @@ $$
 
 <i>Analytically, we arrive at the same approximation for L1 and L2!</i> The mystery deepens.
 
-Unfortunately, I will only solve this mystery in the next post. I am way past my deadline for this post. In the months that I have been working this out (a few minutes after dinner on some days, an occasional long weekend), I have stumbled across at least three other topics that I want to understand and write about, so I am going to take a short break and work on at least one other topic before circling back to this.
+Unfortunately, I will only solve this mystery in the next post; I am way past my deadline for this post. In the months that I have been working this out (a few minutes after dinner on some days, an occasional long weekend), I have stumbled across at least three other topics that I want to write about, so I am going to take a short break and work on at least one other topic before circling back to this.
 
 Stay tuned for part two!
 
+(If you're interested, start looking into [Hill Sphere](https://en.wikipedia.org/wiki/Hill_sphere).)
+
 ---
 
-<sub>
-**Notes:** <br>
-1: The Sun vs Earth. <br>
-2: Footnote 2. <br>
-</sub>
+## Epilogue
+
+We have only touched L1 and L2 in this post; I want to derive L4 and L5.
+
+| ![The five Lagrange points](/images/lagrange_points/lagrange_points.png){:width="60%"} |
+|:--:|
+| Figure 5: The five Langrange points for a two-body system like the Sun-Earth system. [Created by Xander89 for Wikipedia](https://commons.wikimedia.org/w/index.php?curid=36697081) under the CC BY 3.0 license. |
+
+L4 and L5 are really cool because they show up like the following:
+
+| ![Jupiter's Trojans and Greeks](/images/lagrange_points/jupiter_trojans_greeks.gif){:width="75%"} |
+|:--:|
+| Figure 6: Asteroids 'caught' at the Jupiter-Sun system's L4 and L5 points (named Trojans and Greeks respectively :). Source: [Wolfram's YouTube video](https://www.youtube.com/watch?v=5bYDiUe3168) |
+
+
+---
+
+## References
+
+1. The [Wikipedia article on Lagrange Points](https://en.wikipedia.org/wiki/Lagrange_point) is a great starting point, as expected.
+2. Neil J. Cornish's (1998) article on [The Lagrange Points](https://map.gsfc.nasa.gov/ContentMedia/lagrange.pdf) offers a different but useful perspective.
+3. I created the animations using [VPython](https://www.glowscript.org/) based on the code introduced in [this interesting Dot Physics video](https://www.youtube.com/watch?v=FoJBoxxbYdE&list=PLWFlMBumSLSZ6yZiyb3-gJLAbYQC7YiTB&index=2).
+4. Gemini gave useful pointers, in particular for the binomial approximation.
