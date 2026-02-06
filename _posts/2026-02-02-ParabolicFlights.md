@@ -98,7 +98,13 @@ So that is the next tradeoff. Comfort of the passengers versus time of weightles
 
 The angle of __ implies a radius of curvature of ___. An astute reader may note that the centripetal force will only completely add with the gravity at the bottom of the arc. The total g force decreases from the starting point to the end of the arc. We know that this makes the ride more comfortable, but for higher fuel efficiency, it makes sense to decrease the radius of curvature and reach the angle of approach faster. If the pilots are to maintain a g force of 2g on the passengers and the aircraft, the radius of curvature needs to get tighter and tighter from the starting of the arc.
 
-<sketch of the arc with some circles for visualization. The circles start large and become smaller>
+| ![Visualization of net g force in a circular pull-up arc](/images/parabolic_flight/pull_up_circular.png){:width="95%"} |
+|:--:|
+| Figure X: In a circular pull-up arc, the net downward g force w.r.t. the aircraft and its passengers is 2g is only at the beginning of the arc and keeps decreasing as the angle of the aircraft increases. |
+
+| ![Visualization of net g force in a circular pull-up arc](/images/parabolic_flight/pull_up_2g.png){:width="95%"} |
+|:--:|
+| Figure X: The aircraft can take a sharper turn while maintaining a net g force of 2g and attain the desired angle of entry into the weightlessness phase. |
 
 ---
 
