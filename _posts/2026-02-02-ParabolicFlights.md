@@ -1,20 +1,17 @@
 ---
 layout: post
-title: "Simulating gravity on Earth"
+title: "Parabolic flights: Simulating microgravity on Earth"
 date: 2026-02-02
 time: 2116
 permalink: posts/ParabolicFlights
 tags: general
-summary: Parabolic flights: The only way to simulate space on Earth
+summary: Understanding he only way to simulate space on Earth
 published: false
 ---
 
 ## Preface
 
 
-| ![Three bodies revolving around a central body with different angular velocities](/images/lagrange_points/orbits.gif){:width="95%"} |
-|:--:|
-| Figure 1: Three bodies revolving around a central body with different angular velocities |
 
 
 
@@ -60,7 +57,9 @@ To counter the deceleration caused by atmospheric drag, the aircraft needs to ke
 
 Turns out that controlling the thrust requires precise control by the pilots because the atmospheric drag changes continuously due to the changing velocity and height of the aircraft.
 
-<plot of thrust w.r.t. time/distance>
+| ![Visualization of the thrust required from airplan engines to negate the atmospheric drag](/images/parabolic_flight/thrust_to_negate_drag.png){:width="95%"} |
+|:--:|
+| Figure X: Thrust required by the airplane engines to negate atmospheric drag. |
 
 I used the following equation for drag:
 $$\begin{align*}
@@ -69,6 +68,70 @@ F_d \doteq \frac{1}{2}\rho v^2 c_d A,
 where, $$F_d$$ denotes the drag force, $$\rho$$ denotes the density of the fluid in which the object is traveling, $$v$$ denotes the velocity of the object w.r.t. the fluid, $$c_d$$ is the drag coefficient, and $$A$$ denotes the surface area of the object in the direction of motion.
 
 Note that while the aircraft is in the free-fall phase, its velocity changes---changing the drag. The drag depends on the square of the velocity. And the square of the velocity is linear in the square of time, implying the drag depends on the squre of time, or that the drag has a parabolic shape w.r.t. time, just as we see in the above plot.
+
+Here is the code to generate the above plot:
+```python
+import jax.numpy as jnp
+import matplotlib.pyplot as plt
+
+# Constants
+g = 9.81           # m/s^2
+m = 10_000         # Mass of an empty Falcon 20 + crew + researchers + equipment (kg; 7500+~2500)
+Cd = 0.02          # Drag coefficient
+A = 41             # Wing area (m^2; for aircrafts, wing area is considered instead of frontal area)
+rho_0 = 1.225      # Air density at sea level (kg/m^3)
+H_scale = 10400    # Scale height for density (m)
+
+# Initial conditions for the 20-second parabola
+v_0 = 160           # Starting velocity (m/s)
+y_0 = 8000          # Initial altitude (m)
+theta = jnp.deg2rad(45)  # Entry angle
+
+duration = 23      # simulation duration
+dt = 0.05
+t = jnp.arange(0, duration, dt)
+
+def simulate_parabola(t, v_0, y_0, theta):
+    # velocity components under projectile motion (assuming drag is negated)
+    v_x = v_0 * jnp.cos(theta)
+    v_y = v_0 * jnp.sin(theta) - g * t
+    v_mag = jnp.sqrt(v_x**2 + v_y**2)
+
+    # distance and altitude
+    x = v_0 * jnp.cos(theta) * t
+    y = y_0 + (v_0 * jnp.sin(theta) * t) - (0.5 * g * t**2)
+
+    # air density: rho(h) = rho_0 * exp(-h / H_scale)
+    rho = rho_0 * jnp.exp(-y / H_scale)
+
+    # thrust required is equal and opposite to drag: 0.5 * rho * v^2 * Cd * A
+    thrust = 0.5 * rho * (v_mag**2) * Cd * A
+
+    return x, y, thrust
+
+x, y, thrust = simulate_parabola(t, v_0, y_0, theta)
+
+# plotting the results
+fig, ax1 = plt.subplots(figsize=(10, 5))
+
+# plot trajectory
+ax1.set_xlabel('Horizontal Distance (m)')
+ax1.set_ylabel('Altitude (m)', color='tab:blue', rotation=0, labelpad=40)
+ax1.plot(x, y, color='tab:blue', linewidth=3)#, label='Flight Path')
+ax1.tick_params(axis='y')
+ax1.grid(True, linestyle='--', alpha=0.7)
+ax1.spines[['top']].set_visible(False)
+
+# plot required thrust
+ax2 = ax1.twinx()
+ax2.set_ylabel('Required\nThrust (kN)', color='tab:orange', rotation=0, labelpad=40)
+ax2.plot(x, thrust / 1000, color='tab:orange', linestyle='--')#, label='Thrust to Negate Drag')
+ax2.tick_params(axis='y')
+ax2.spines[['top']].set_visible(False)
+
+fig.tight_layout()
+plt.show()
+```
 
 ---
 
@@ -112,3 +175,4 @@ The angle of __ implies a radius of curvature of ___. An astute reader may note 
 
 1. Gemini gave useful pointers, in particular for the binomial approximation.
 2. Growing up, my friends and I certainly learned that through trial-and-error while playing cricket.
+3. https://www.grc.nasa.gov/www/k-12/VirtualAero/BottleRocket/airplane/drageq.html
