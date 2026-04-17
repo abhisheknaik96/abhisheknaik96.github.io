@@ -143,25 +143,39 @@ What angle should the aircraft be going at when starting the free fall?
 
 What is the objective? Maximizing the amount of _time_ of the weightlessness feeling sounds like a reasonable guess. It would enable performing as many experiments as possible, to get used to being in space, etc. 
 
-Let's compare the time of flight versus the angle of approach. 
+The duration of weightlessness is easy to compute. Assuming the aircraft thrust negates the atmospheric drag, the duration is simply how long it takes for the vertical upward component of the entry velocity to turn into, say, the equivalent downward component.
+So, the upward $$v \sin(\theta)$$ turns into downward $$-v \sin(\theta)$$ under the effect of gravity:
 
-<plot>
+$$\begin{align*} 
+v_{\text{final}} &= v_{\text{initial}} - gt \\
+\implies t &= \frac{2v \sin(\theta)}{g}.
+\end{align*}$$
+
+| ![Plot of the duration of weightlessness with different entry angles](/images/parabolic_flight/weightlessness_duration.png){:width="95%"} |
+|:--:|
+| Figure X: Duration of weightlessness with different entry angles (for a given entry velocity of 160m/s)|
 
 Clearly, larger the angle, larger the time of flight. So should the aircraft start the weightlessness phase at 90 degrees? 
 
-<!-- Not really. We haven't accounted for an critical component so far: the g forces experienced by the aircraft and its passengers during the pull-up and pull-out phases. 
+<!-- At the same time, we have to consider the comfort of passengers (and the actual ability of the aircraft) to go through this maneuver. -->
 
-Let's consider the g forces felt for different angles of approach. 
+Not really. 
+Consider the amount of movement required by the aircraft in the forward direction (called 'pitch') at the top of the parabolic arc.
 
-<plot> -->
+| ![Visualization the pitch that the aircraft has to do at the top of the parabolic arc for different entry angles](/images/parabolic_flight/pitch.png){:width="95%"} |
+|:--:|
+| Figure X: The aircraft has to pitch increasingly more at the top of the parabolic arc as the angle of entry increases. |
 
-Not really. An important consideration is that the aircraft should have a significant horizontal velocity component to prevent the aircraft from stalling and for the pilots to retain enough control authority to pitch the aircraft into the dive.
-<i> This is a little difficult to explain in short and requires reviewing the principles of flight, so please take my word for now.</i>
-Typically, the angle is 45—50 degrees<sup>6</sup>.
+As the angle of entry increases, the horizontal component of the entry velocity reduces. 
+An aircraft needs to maintain a certain minimum velocity otherwise it risks becoming an uncontrollable metallic tube falling from the sky. 
+In the case of parabolic flights, a certain horizontal velocity is required at the top of the parabola for the pilots to have enough control authority to pitch the aircraft into the dive.
+<i> This is a little difficult to explain in short and requires reviewing the principles of flight, so you'll have to take my word for now.</i> 
+
+Typically, the entry angle of a parabolic flight is 45—50 degrees<sup>4</sup> to balance this tradeoff between increasing duration of weightlessness and decreasing control over the aircraft.
 
 ---
 
-The next thing to consider is the g-force acting on the aircraft and its passengers to pull off the parabolic flight.
+The next thing to consider is the g-forces acting on the aircraft and its passengers before and after the duration of weightlessness.
 
 [plot of g-force felt at the bottom of a circular pull-up for a given velocity w.r.t. changing radii of curvature. Say 1.2g is too low, 3g is too high]
 
