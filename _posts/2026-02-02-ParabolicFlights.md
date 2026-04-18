@@ -177,31 +177,38 @@ Typically, the entry angle of a parabolic flight is 45—50 degrees<sup>4</sup> 
 
 The next thing to consider is the g-forces acting on the aircraft and its passengers before and after the duration of weightlessness.
 
-[plot of g-force felt at the bottom of a circular pull-up for a given velocity w.r.t. changing radii of curvature. Say 1.2g is too low, 3g is too high]
+| ![Visualization of the g-force in a circular pull-up arc](/images/parabolic_flight/centrifugal.png){:width="40%"} |
+|:--:|
+| Figure X: The net downward force on the aircraft and its passengers is from the acceleration due gravity and the outward centerifugal force from the circular pull-up arc that the aircraft flies to enter the parabolic weightlessness phase. |
 
+The net g-force force at the beginning of a circular pull-up arc is $$ g + v^2/r$$, where $$r$$ is the radius of curvature and $$v$$ is the entry velocity. 
+
+| ![Plot of the g-forces at the bottom of a circular pull-up arc](/images/parabolic_flight/g_forces_with_radii.png){:width="95%"} |
+|:--:|
+| Figure X: The net g-force on the aircraft and its passengers for a given entry velocity (160 m/s). |
 
 Modern commerical aircrafts are designed to withstand g forces up to +2.5g. _[find a good reference from this [Wikipedia section](https://en.wikipedia.org/wiki/Load_factor_(aeronautics)#Design_standards)]_
 
-Aircrafts for parabolic flights are retrofitted to withstand more g forces that a commercial aircraft, but the next consideration is also how much g forces the human passengers can handle. Fighter pilots can withstand up to 9g for a few seconds; F1 drivers can _[get references]_; regular folks like you and me may not be comfortable beyond 3g.<sup>6</sup> 
+Aircrafts for parabolic flights are retrofitted to withstand more g forces that a commercial aircraft, but the next consideration is also how much g forces the human passengers can handle. Fighter pilots can withstand up to 9g for a few seconds; F1 drivers can _[get references]_; regular folks like you and me may not be comfortable beyond 3g ([watch Tom Scott pass out at 3.6g in <10s!](https://www.youtube.com/watch?v=DMKcO-T5Y4o&)).
 
-[this para has to go] So that is the next tradeoff. Comfort of the passengers versus time of weightlessness. The sweet spot is considered to be 2g. This translates to an angle of about __.
+So why not have a large radius of curvature (like 10km) so that the net g-force is close to $$1g$$, something we are evolved for?
 
-[first line has to go] The angle of __ implies a radius of curvature of ___. An astute reader may note that the centripetal force will only completely add with the gravity at the bottom of the arc. The total g force decreases from the starting point to the end of the arc. We know that this makes the ride more comfortable, but for higher fuel efficiency, it makes sense to decrease the radius of curvature and reach the angle of approach faster. If the pilots are to maintain a g force of 2g on the passengers and the aircraft, the radius of curvature needs to get tighter and tighter from the starting of the arc.
+Simple answer: to save fuel. Beyond the obvious benefit to the environment, parabolic flights are not cheap (for instance, [Novespace charges ~7500 Euros](https://www.airzerog.com/reservation/) (~12k CAD) for ~10mins of total weightlessness!). More comfort means a lot more fuel and money.
 
-| ![Visualization of net g force in a circular pull-up arc](/images/parabolic_flight/pull_up_circular.png){:width="95%"} |
+The sweet spot is considered to be about 1.8g. This translates to a radius of curvature ~3km.
+
+An astute reader may note that the centrifugal force will only completely add with the gravitational force at _the bottom of the arc_. The total g-force decreases from the starting point to the end of the arc. We know that this makes the ride more comfortable, but for higher fuel efficiency, it makes sense to decrease the radius of curvature and reach the angle of approach faster. The pilots can maintain a g-force of 1.8g on the passengers and the aircraft by making the radius of curvature tighter and tighter from the starting of the arc.
+
+| ![Visualization of net g-force with circular and not circular arcs](/images/parabolic_flight/pull_up_radii.png){:width="95%"} |
 |:--:|
-| Figure X: In a circular pull-up arc, the net downward g force w.r.t. the aircraft and its passengers is 2g is only at the beginning of the arc and keeps decreasing as the angle of the aircraft increases. |
+| Figure X: To maintain a roughly constant g-force on the aircraft and its passengers, pilots skillfully follow a decreasing radius of curvature. |
 
-| ![Visualization of net g force in a circular pull-up arc](/images/parabolic_flight/pull_up_2g.png){:width="95%"} |
-|:--:|
-| Figure X: The aircraft can take a sharper turn while maintaining a net g force of 2g and attain the desired angle of entry into the weightlessness phase. |
 
 ---
 
 ## References
 
-1. Gemini gave useful pointers, in particular for the binomial approximation.
-2. Growing up, my friends and I certainly learned that through trial-and-error while playing cricket.
-3. https://www.grc.nasa.gov/www/k-12/VirtualAero/BottleRocket/airplane/drageq.html
-4.[45](https://en.wikipedia.org/wiki/Reduced-gravity_aircraft#Operating_principles), [45](https://web.archive.org/web/20091213132109/http://jsc-aircraft-ops.jsc.nasa.gov/Reduced_Gravity/trajectory.html), [45](https://www.nasa.gov/mission/parabolic-flight/), [50](https://www.space.com/lunar-gravity-parabolic-flight-pilot-interview), [50](https://aeroreport.de/en/good-to-know/a-brief-guide-parabolic-flights)
-5. [Watch Tom Scott pass out at 3.6g in <10s](https://www.youtube.com/watch?v=DMKcO-T5Y4o&)
+1. General references: [Wikipedia: Reduced-gravity aircraft](https://en.wikipedia.org/wiki/Reduced-gravity_aircraft) and [Aeroreport: A brief guide: Parabolic flights](https://aeroreport.de/en/good-to-know/a-brief-guide-parabolic-flights)
+2. For estimating the drag: [A page on NASA's website](https://www.grc.nasa.gov/www/k-12/VirtualAero/BottleRocket/airplane/drageq.html)
+3. For the angle of entry: [1](https://en.wikipedia.org/wiki/Reduced-gravity_aircraft#Operating_principles), [2](https://web.archive.org/web/20091213132109/http://jsc-aircraft-ops.jsc.nasa.gov/Reduced_Gravity/trajectory.html), [3](https://www.nasa.gov/mission/parabolic-flight/), [4](https://www.space.com/lunar-gravity-parabolic-flight-pilot-interview), [5](https://aeroreport.de/en/good-to-know/a-brief-guide-parabolic-flights)
+4. I got a bunch of preliminary information from Gemini, after which I went down a bunch of rabbit holes to compile all this information.
