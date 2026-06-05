@@ -5,7 +5,7 @@ layout: default
 
 ## [About Me](#about-me)
 
-I am a postdoctoral fellow at the National Research Council of Canada ([NRC](https://nrc.canada.ca/en/)), where I do reinforcement-learning (RL) research for improving space science and technology 🚀 🛰
+I am a postdoctoral fellow at the National Research Council of Canada ([NRC](https://nrc.canada.ca/en/)), where I do reinforcement-learning (RL) and robotics research for improving space science and technology 🚀 🛰  
 
 I love space! My goal is to take human-like intelligence where human intelligence cannot go---making space exploration much easier and safer for humanity.
 
@@ -26,21 +26,29 @@ I envision a future where artificial systems will have human-like intelligence a
 <!-- Currently, my research focuses on learning and planning methods for continuing (non-episodic) problems. I also love reading about the connections between AI, neuroscience, and cognitive psychology. -->
 <!-- I think about intelligence in the context of artificial agents and conduct research in fundamental RL for making it better-suited for solving real-world problems. I hope to make autonomous vehicles a reality in my country, India. -->
 
-You can find my resume [here](uploads/Resume_AbhishekNaik.pdf) (last updated: Dec 2024).
+[Here](uploads/Resume_AbhishekNaik.pdf) my resume (last updated: May 2026).
 
 ---
 ---
 
-## [Some updates](#news)
+<!-- <hr style="border: none; border-top: 2px solid #000000; width: 50%; margin: auto"> -->
 
+
+## [Some Updates](#news)
+
+- (May 2026) Presented a talk on _"Robot Learning at Scale: Learning To Walk From Scratch Within 11 Minutes of Training"_ (paper coming soon).
+- (May 2026) Two papers that I co-authored are accepted in the Reinforcement Learning Journal: one on robotic manipulation and one on sim2real transfer.
+- (Jan 2026) I am hosting two interns over the Winter term. This is my first time supervising students!
+- (Oct 2025) My first research proposal was approved! I am the lead PI for a six-month $150k project on safe RL-based robotics.
 - (Feb 2025) I had the pleasure of being interviewed for a TalkRL podcast [episode](https://www.talkrl.com/episodes/abhishek-naik)!
 - (Sep 2024) Started a postdoc on RL research for space applications at NRC!
 - (Aug 2024) Presented [Reward Centering](https://arxiv.org/abs/2405.09999) at RLC 2024!
 - (Mar 2024) Defended my [Ph.D. dissertation](https://era.library.ualberta.ca/items/42307739-a774-4d6b-b1a3-de9fbc949575)! :D
 - (Feb 2024) Presented the Amii AI seminar to an audience of 100+ people [[link to recording](https://www.youtube.com/watch?v=M8vN5HohzP4)]
-- (Nov 2023) [Khurram Javed](https://khurramjaved.com/) and I won the natHACKS hackathon! [[Demo](https://www.youtube.com/watch?v=VVa_BcEbB9M)]
+
+<!-- - (Nov 2023) [Khurram Javed](https://khurramjaved.com/) and I won the natHACKS hackathon! [[Demo](https://www.youtube.com/watch?v=VVa_BcEbB9M)]
 - (Aug 2023) Oral spotlight [talk](uploads/Talks/SCIoI_Spotlight_AbhishekNaik.pdf) at the Science of Intelligence institute's summer school at Berlin!
-- (May 2023) Started working with AlbertaSat, which is UofA's student group that designs, builds, and operates nano satellites!
+- (May 2023) Started working with AlbertaSat, which is UofA's student group that designs, builds, and operates nano satellites! -->
 
 <!-- - (April 2023) Oral presentation of my internship work on RL in recommender systems at a workshop in WWW'23 at Austin
 - (Jun 2022) Started an internship at Google Brain
@@ -88,6 +96,7 @@ Some text -->
 
 ---
 ---
+<!-- <hr style="border: none; border-top: 2px solid #000000;"> -->
 
 ## [Ph.D. Dissertation](#phd)
 {: #phd }
@@ -108,7 +117,8 @@ _Defended in **March 2024**._ [[Dissertation PDF](https://era.library.ualberta.c
 ---
 ---
 
-## [Publications and Pre-prints](#research)
+<!-- ## [Publications and Pre-prints](#research) -->
+## [Selected Research](#research)
 {: #research }
 <!-- this is the custom tag for this section -->
 
@@ -118,13 +128,21 @@ In particular, I designed algorithms for non-episodic problems such that an agen
 
 - Some more interesting work on the way... :)
 
+- #### Rethinking the Suitability of RL Algorithms Under Practical Transfer Constraints _[PDF coming soon]_
+Hany Hamed, **Abhishek Naik**, Colin Bellinger, A. Rupam Mahmood <br>
+In _Reinforcement Learning Conference ([RLC](https://rl-conference.cc/))_, 2026.
+
+- #### Dynamic Object Masks as Goal Representations for Visual Goal-Conditioned Reinforcement Learning _[PDF coming soon]_
+Fahim Shahriar, Cheryl Wang, Seyed Alireza Azimi, Gautham Vasan, Hany Hamed, **Abhishek Naik**, A. Rupam Mahmood, Colin Bellinger <br>
+In _Reinforcement Learning Conference ([RLC](https://rl-conference.cc/))_, 2026.
+
 - #### Reward Centering [[PDF](https://arxiv.org/abs/2405.09999)]
 **Abhishek Naik**, Yi Wan, Manan Tomar, Richard S. Sutton <br>
 In _Reinforcement Learning Conference ([RLC](https://rl-conference.cc/))_, 2024.
 
-- #### Investigating Action-space Generalization in RL for Recommender Systems [[PDF](https://dl.acm.org/doi/abs/10.1145/3543873.3587661)]
+<!-- - #### Investigating Action-space Generalization in RL for Recommender Systems [[PDF](https://dl.acm.org/doi/abs/10.1145/3543873.3587661)]
 **Abhishek Naik**, Bo Chang, Alexandros Karatzoglou, Martin Mladenov, Ed H. Chi, Minmin Chen  <br>
-Oral presentation at the _Decision Making for RecSys_ [workshop](https://decisionmaking4ir.github.io/WWW-2023/), WWW, 2023.
+Oral presentation at the _Decision Making for RecSys_ [workshop](https://decisionmaking4ir.github.io/WWW-2023/), WWW, 2023. -->
 
 - #### Multi-Step Average-Reward Prediction via Differential TD(lambda) [[PDF](https://drive.google.com/file/d/1Ygx2XI0mOFw4pfWZOm67uWsJQTOZEPSj/view?usp=sharing)]
 **Abhishek Naik**, Richard S. Sutton <br>
@@ -150,25 +168,30 @@ In _Optimization Foundations of Reinforcement Learning [Workshop](https://optrl2
 Anirban Santara, Sohan Rudra, Sree Aditya Buridi, Meha Kaushik, **Abhishek Naik**, Bharat Kaul, Balaraman Ravindran <br>
 In _Journal of Artificial Intelligence Research (JAIR)_, 2021.
 
-- #### RAIL: Risk-Averse Imitation Learning [[PDF](https://arxiv.org/abs/1707.06658)]
+<!-- - #### RAIL: Risk-Averse Imitation Learning [[PDF](https://arxiv.org/abs/1707.06658)]
 Anirban Santara<sup>*</sup>, **Abhishek Naik**<sup>*</sup>, Balaraman Ravindran, Dipankar Das, Dheevatsa Mudigere, Sasikanth Avancha, Bharat Kaul <br>
-In _International Conference on Autonomous Agents and MultiAgent Systems (AAMAS)_, 2018.
+In _International Conference on Autonomous Agents and MultiAgent Systems (AAMAS)_, 2018. -->
 
-- #### Identifying User Survival Types via Clustering of Censored Social Network Data [[PDF](https://arxiv.org/abs/1703.03401)]
+<!-- - #### Identifying User Survival Types via Clustering of Censored Social Network Data [[PDF](https://arxiv.org/abs/1703.03401)]
 S Chandra Mouli, **Abhishek Naik**, Bruno Ribeiro, Jennifer Neville <br>
-Technical Report, _ArXiv:1703.03401,_ 2017.
+Technical Report, _ArXiv:1703.03401,_ 2017. -->
 
 ---
 ---
 
-## [Talks](#talks)
+<!-- ## [Talks](#talks) -->
+## [Selected Talks](#talks)
+
+- #### Robot Learning at Scale: Learning To Walk From Scratch Within 11 Minutes of Training
+_NRC Knowledge-Exchange Seminar,_ May 2026 <br>
+_[Slides coming soon]_
 
 - #### Intro to Reinforcement Learning: What, When, How?
 _NRC Knowledge-Exchange Seminar,_ Dec 2024 <br>
 [[Slides](uploads/Talks/RL_Intro_DT_AbhishekNaik.pdf)]
 
 - #### Demystifying the Discount Factor
-_Guest Lecture at a graduate RL course at UofA,_ Nov 2024 <br>
+_Guest Lecture at a graduate RL course at University of Alberta,_ Nov 2024 <br>
 [[Slides](uploads/Talks/DemystifyingDiscounting.pdf)]
 
 - #### Reinforcement Learning in Continuing Problems Using Average Reward
@@ -187,9 +210,9 @@ _[Science of Intelligence Institute](https://www.scienceofintelligence.de/)'s Su
 _[3rd Nepal Winter School in AI](https://nepalschool.naamii.com.np/home),_ Dec 2021 <br>
 [[Slides](uploads/Talks/NAAMI21_EssentialsRL_AbhishekNaik.pdf)]
 
-- #### Towards Reinforcement Learning in the Continuing Setting
+<!-- - #### Towards Reinforcement Learning in the Continuing Setting
 _[NERL workshop](https://sites.google.com/view/neverendingrl) at ICLR 2021,_ May 2021 <br>
-[[Slides](uploads/Talks/NERL21_ContinuingRL_AbhishekNaik.pdf)]
+[[Slides](uploads/Talks/NERL21_ContinuingRL_AbhishekNaik.pdf)] -->
 
 - #### Personalized Brain State Targeting via Reinforcement Learning
 _[The 3rd Neuromatch Conference](https://neuromatch.io/),_ Oct 2020 <br>
@@ -221,12 +244,12 @@ _[ Tea Time Talks](https://amiithinks.github.io/tea-time-talks/), RLAI lab and
 **Postdoc Fellow; Sep 2024 – _ongoing_; Ottawa, Canada** <br>
 <!-- With the [Digital Technologies](https://nrc.canada.ca/en/research-development/research-collaboration/research-centres/digital-technologies-research-centre) research center -->
 
-- At [NRC](https://nrc.canada.ca/en/), I am doing reinforcement-learning research with a particular focus on applications in the space industry. For instance, we are trying to make satellite communications orders of magnitude faster using RL. I am also mentoring graduate students through collaborations with universities.
+- At [NRC](https://nrc.canada.ca/en/), I am doing reinforcement-learning research with a particular focus on applications in the space industry. I am leading a project on continually learning RL-based quadruped robotics and involved in another to make satellite communications orders of magnitude faster using RL. I am also mentoring/co-supervising students through internships at NRC and through collaborations with universities.
 
 ### AlbertaSat
-**Software, Automation, and Testing Team Member; April 2023 – _ongoing_; Edmonton, Canada** <br>
+**Software, Automation, and Testing Team Member; April 2023 – Aug 2024; Edmonton, Canada** <br>
 
-- [AlbertaSat](https://albertasat.ca/) is University of Alberta’s student group that designs, builds, and operates nano satellites. My role is to simulate various operational and safety scenarios of our upcoming satellite to ensure it can robustly achieve all the mission objectives. I am also doing some explorative RL/AI work for them on the side!
+- [AlbertaSat](https://albertasat.ca/) is University of Alberta’s student group that designs, builds, and operates nano satellites. My role was to simulate various operational and safety scenarios of our upcoming satellite to ensure it can robustly achieve all the mission objectives. I was also doing some explorative RL/AI work for them on the side!
 
 ### Google Research, Brain Team
 **Research Scientist Intern; June 2022 – Sep 2022; Toronto, Canada** <br>
@@ -271,7 +294,7 @@ With [Sravan Bodapati](https://www.linkedin.com/in/justsravan/) and [Venkatraman
 
 ## [Master's Thesis](#mtech)
 
-_This thesis was a part of my integrated Bachelor's + Master's program in the Dept. of Computer Science and Engineering at the Indian Institute of Technology Madras in Chennai, India, supervised by Professor [Balaraman Ravindran](www.cse.iitm.ac.in/~ravi). Defended in **May 2018**._
+_This thesis was a part of my integrated Bachelor's + Master's program in the Dept. of Computer Science and Engineering at the Indian Institute of Technology Madras in Chennai, India, supervised by Professor [Balaraman Ravindran](https://www.cse.iitm.ac.in/~ravi/). Defended in **May 2018**._
 
 My goal was to make self-driving cars a reality in my country, India. Towards this end, I modeled it as a multi-agent learning problem in a safety-critical application and:
 1. proposed a risk-averse imitation learning algorithm that had lower tail-end risk w.r.t. the then state-of-the-art,
@@ -288,7 +311,7 @@ My goal was to make self-driving cars a reality in my country, India. Towards th
 
 - ### Reinforcement Learning II ([CMPUT609](https://sites.google.com/ualberta.ca/cmput-609/)) (x4)
 **Jan - Apr 2024, 2023, 2021, 2020; Dept. of Computing Science, University of Alberta** <br>
-As a teaching assistant for [Professor Rich Sutton](http://www.incompleteideas.net/)'s class of ~30 graduate students, I presented some lectures, helped create the assignments and lectures, and spent a suprisingly large amount of time grading.
+As a teaching assistant for [Professor Rich Sutton](http://www.incompleteideas.net/)'s class of ~30 graduate students, I presented some lectures, helped create the assignments and lectures, and spent a surprisingly large amount of time grading.
 
 
 - ### Reinforcement Learning I ([CMPUT397](https://marthawhite.github.io/rlcourse/))
@@ -310,7 +333,7 @@ As one of Teaching Assistants of this course offered by [Professor Balaraman Rav
 
 - ### Reinforcement Learning Specialization on Coursera [[Link](https://www.coursera.org/specializations/reinforcement-learning)]
 **Jan 2019 - Oct 2019; University of Alberta** <br>
-As one of the 'Subject Matter Expert's, I developed programming assignments, multiple-choice quizzes, and slides for the four courses that form the RL Specialization, released in late 2019. There have been more than 80k enrolments till now!
+As one of the 'Subject Matter Expert's, I developed programming assignments, multiple-choice quizzes, and slides for the four courses that form the RL Specialization, released in late 2019. As of Dec 2025, there have been more than 100k enrolments!
 
 
 ---
@@ -318,6 +341,9 @@ As one of the 'Subject Matter Expert's, I developed programming assignments, mul
 
 
 ## [Community Service](#community-service)
+
+- #### Reviewer
+I review reinforcement-learning papers semi-regularly for conferences, workshops, and journals, including for RLC, EWRL, ICLR, AAAI, ICML, NeurIPS, Artificial Intelligence.
 
 - #### Co-organizer, ICML 2021 Social on Continuing (Non-episodic) Problems in RL
 **July 2021** <br>
@@ -331,37 +357,39 @@ Alan Chan, Shivam Garg, Dhawal Gupta and I created a [set of notebooks](https://
 **June 2020 – Aug 2020** <br>
 Organized and moderated the talks of 40+ speakers over the course of 12 weeks (in a virtual format for the first time). Full playlist [here](https://www.youtube.com/watch?v=g80wiWvOtvI&list=PLKlhhkvvU8-Y3Up8reY3Qi_YWN_v7EN3O).
 
-
 - #### Executive Member, [Computer Science Graduate Students' Association](https://sites.google.com/ualberta.ca/csgsa/), University of Alberta
 **Apr 2019 – Apr 2020** <br>
 Along with representing the interests of the graduate students to the department, I helped organize activities which support their well-being – physically and emotionally, academically and personally – to make University of Alberta a home away from home, especially for international students.
-
 
 - #### Volunteer, [Centre for Autism Services Alberta](https://centreforautism.ab.ca/)
 **Jan 2019 - Mar 2020** <br>
 As a part of the Centre's Community and Therapeutic program, I helped organize recreational activities for individuals in the age range of 5-20 affected with the Autism Spectrum Disorder. The aim was to create a fun and supportive atmosphere for the individuals to interact with each other and have a good time.
 
 ---
+---
 
-## [Interests and Hobbies](#interests-and-hobbies)
-
-### Ice-hockey
-One of the fastest sport in the world, with an exhausting 60 minutes of action (yes, even while watching). The wizardry these athletes pull off _while on skates_ is a delight to watch (shoutout to Connor McDavid! _#LetsGoOilers_). I am currently ~~learning ice-skating in order to start playing ice-hockey by early 2020!~~ ~~learning to play ice-hockey!~~ playing hockey in a league!
-
-### Formula 1
-There's hardly anything as spectacular as this confluence of science and engineering which gives the world these lean, mean, and beautiful machines, with some of fittest athletes on the planet battling fearlessly at speeds excessive of 300 kmph over 20+ challenging tracks all over the world. Current favorite track: Spa Francorchamps, Team: _Forza Ferrari_ forever!
-
-<!-- ### Football
-I love watching and playing _the beautiful game_. Come rain or shine, my heart beats for Real Madrid. I also root for Liverpool, Juventus, and Portugal. My favorite player is, you guessed it, Cristiano Ronaldo --- one of the greatest footballers of all time. -->
+## [Some Interests and Hobbies](#interests-and-hobbies)
 
 ### Books
 If I had to pick one ~~thing~~ of the few things I could do all my life, it would be reading (sports comes first). With three fat bookshelves overflowing with books back home, and many more in my handy Kindle, there are actually times when I am happy to see long queues, presenting another opportunity to dive into my latest book. Some of my favorite authors are Adrian Tchaikovsky, Ted Chiang, Andy Weir, Michael Crichton.
-I also read non-fiction, mostly about intelligence.
+I also read non-fiction, mostly about space or minds.
 I have had the pleasure of leading the [Making Minds reading group](http://rlai.ualberta.ca/mmrg.html) for 3+ years at the University of Alberta.
-Check out [my Goodreads page](https://www.goodreads.com/review/list/41821528-abhishek-naik)!
+Check out [my Goodreads page](https://www.goodreads.com/review/list/41821528-abhishek-naik) and connect with me!
 
 ### Space
-I've found space fascinating since I was a kid. Over the past few years, my go-to sci-fi subgenre is first contact and inter-galactical travel. But my interest in space has had a massive resurgence thanks to [Kerbal Space Program](https://www.kerbalspaceprogram.com/) and [Everyday Astronaut](https://www.youtube.com/c/EverydayAstronaut/videos). Instead of core AI, I ~~might want to start~~ have started a career in Space x AI!
+I have found space fascinating since I was a kid. Over the past few years, my go-to sci-fi subgenre has been first contact and inter-galactical travel. But my interest in space has had a massive resurgence thanks to [Kerbal Space Program](https://www.kerbalspaceprogram.com/) and [Everyday Astronaut](https://www.youtube.com/c/EverydayAstronaut/videos). Instead of core AI, I ~~might want to start~~ have started a career in AIxSpace!
+
+### Formula 1
+There is hardly anything as spectacular as this confluence of science and engineering which gives the world these lean, mean, and beautiful machines, with some of fittest athletes on the planet battling fearlessly at speeds excessive of 300 kmph over 20+ challenging tracks all over the world. Current favorite track: ~~Spa Francorchamps~~ Circuit Gilles-Villeneuve, Team: _Forza Ferrari_ forever! _(sigh)_
+
+### How Things Work
+I am marvelled by the incredible displays of science and engineering all around us, so I spend inordinate amounts of time looking up how things work, like Sterling Engines, Fluorescence, Lagrange Points, water-based mills, series-parallel power-split hybrid powertrains, etc. Sometimes I learn enough (and have enough time) to try and explain them to the world through [my blog](https://abhisheknaik96.github.io/AllPosts).
+
+### Ice-hockey
+One of the fastest sport in the world, with an exhausting 60 minutes of action (yes, even while watching). The wizardry these athletes pull off _while on skates_ is a delight to watch (shoutout to Connor McDavid! _#LetsGoOilers_). I am currently ~~learning ice-skating in order to start playing ice-hockey by early 2020!~~ ~~learning to play ice-hockey!~~ ~~playing hockey in a league!~~ taking a sabbatical from hockey.
+
+<!-- ### Football
+I love watching and playing _the beautiful game_. Come rain or shine, my heart beats for Real Madrid. I also root for Liverpool, Juventus, and Portugal. My favorite player is, you guessed it, Cristiano Ronaldo --- one of the greatest footballers of all time. -->
 
 <!-- ### Music
 During the pandemic, I have started learning to play the piano. I hope to play my favourite piano piece [Nuvole Bianche](https://www.youtube.com/watch?v=VUCI-1vIbUo) by the end of 2020! -->
@@ -373,11 +401,14 @@ I grew up building many civilisations and plotting the downfall of others, all t
 <!-- ### Photography and Traveling
 I love visiting and documenting quaint, spectacular places, and digging into the local cuisine. Till I figure out where to showcase some of my favorite pictures, here is my [old Flickr account](https://www.flickr.com/photos/120844874@N04/). I also enjoy trekking and hiking into the wilderness. After skydiving, bungee jumping, scuba diving, parasailing, I'm looking forward to hang gliding and cliff jumping! -->
 
-***
+
+---
+---
 
 ## [Contact Me](#contact-me)
 <!-- [//]: # (Email ID -)
 ![Email ID](/images/ID.png){:width="45%"} -->
 On [LinkedIn](https://www.linkedin.com/in/abhisheknaik96) or [email](mailto:abhisheknaik22296@gmail.com).
 
-***
+---
+---
