@@ -136,6 +136,10 @@ In _Reinforcement Learning Conference ([RLC](https://rl-conference.cc/))_, 2026.
 Fahim Shahriar, Cheryl Wang, Seyed Alireza Azimi, Gautham Vasan, Hany Hamed, **Abhishek Naik**, A. Rupam Mahmood, Colin Bellinger <br>
 In _Reinforcement Learning Conference ([RLC](https://rl-conference.cc/))_, 2026.
 
+- #### Benchmarking Action Spaces in Reinforcement Learning for Vision-based Robotic Manipulation [[PDF](https://arxiv.org/abs/2606.18594)]
+Seyed Alireza Azimi, Homayoon Farrahi, **Abhishek Naik**, Colin Bellinger, A. Rupam Mahmood <br>
+_Under review_.
+
 - #### Reward Centering [[PDF](https://arxiv.org/abs/2405.09999)]
 **Abhishek Naik**, Yi Wan, Manan Tomar, Richard S. Sutton <br>
 In _Reinforcement Learning Conference ([RLC](https://rl-conference.cc/))_, 2024.
@@ -344,6 +348,7 @@ As one of the 'Subject Matter Expert's, I developed programming assignments, mul
 
 - #### Reviewer
 I review reinforcement-learning papers semi-regularly for conferences, workshops, and journals, including for RLC, EWRL, ICLR, AAAI, ICML, NeurIPS, Artificial Intelligence.
+<!-- Artificial Intelligence, ICLR ’20, AAAI ’21, ICML ’21, NeurIPS ’22, RLC ’25, EWRL ’26 -->
 
 - #### Co-organizer, ICML 2021 Social on Continuing (Non-episodic) Problems in RL
 **July 2021** <br>
