@@ -5,11 +5,20 @@ layout: default
 
 ## [About Me](#about-me)
 
-I am a postdoctoral fellow at the National Research Council of Canada ([NRC](https://nrc.canada.ca/en/)), where I do reinforcement-learning (RL) and robotics research for improving space science and technology 🚀 🛰  
+I am a Founding Member of Technical Staff at Oak Lab, where we are building algorithms that will enable all kinds of artificial systems to learn continually in real time—from their own experience—with orders of magnitude less compute and energy than contemporary methods.
+
+Recently, I finished a postdoc at the National Research Council Canada, where I did reinforcement-learning research at the intersection of robotics and space applications. Check out [this video](https://www.youtube.com/watch?v=vUFJiZdJaQ0) of our robot dog (Rocky!) traversing lunar-like terrain zero-shot after learning to walk purely in simulation in less than 20 minutes using a single GPU!
+
+Previously, I obtained my Ph.D. at the University of Alberta with Rich Sutton, where I developed simple and practical algorithms from first principles for long-lived artificial decision-making systems. In particular, I developed the algorithms within the reinforcement-learning framework for continuing (non-episodic) problems—in which the agent-environment interaction goes on ad infinitum—with the goal of maximizing the average reward obtained per step. Empirically, my algorithms are easy to implement and use.
+
+I love space! I envision a future where artificial systems will have human-like intelligence and adaptability, making space exploration significantly easier and safer for our species.
+
+
+<!-- I am a postdoctoral fellow at the National Research Council of Canada ([NRC](https://nrc.canada.ca/en/)), where I do reinforcement-learning (RL) and robotics research for improving space science and technology 🚀 🛰  
 
 I love space! My goal is to take human-like intelligence where human intelligence cannot go---making space exploration much easier and safer for humanity.
 
-In 2024, I finished my Ph.D. at the University of Alberta with [Richard Sutton](http://incompleteideas.net/), in which I developed simple and practical algorithms from first principles for long-lived artificial decision-making systems. In particular, I developed algorithms within the RL framework for continuing (non-episodic) problems with the goal of maximizing the average reward obtained per step. Empirically, the algorithms are easy to implement and use.
+In 2024, I finished my Ph.D. at the University of Alberta with [Richard Sutton](http://incompleteideas.net/), in which I developed simple and practical algorithms from first principles for long-lived artificial decision-making systems. In particular, I developed algorithms within the RL framework for continuing (non-episodic) problems with the goal of maximizing the average reward obtained per step. Empirically, the algorithms are easy to implement and use. -->
 
 <!-- I just finished my Ph.D. at the University of Alberta, working with Professor [Rich Sutton](incompleteideas.net/) in the Reinforcement Learning and Artificial Intelligence ([RLAI](http://rlai.ualberta.ca/)) lab.
 I am fascinated by the question of how the mind works and how we can build artificial systems that have general learning abilities.
@@ -36,16 +45,20 @@ I envision a future where artificial systems will have human-like intelligence a
 
 ## [Some Updates](#news)
 
-- (May 2026) Presented a talk on _"Robot Learning at Scale: Learning To Walk From Scratch Within 11 Minutes of Training"_ (paper coming soon).
+- (Nov 2026) Our robot-dog work was featured in [Nature's weekly AI&Robotics newsletter](https://mailchi.mp/nature/ai-and-robotics-briefing-13897940)!
+- (Oct 2026) NRC published [a wonderful article](https://nrc.canada.ca/en/stories/rocky-robot-taking-human-intelligence-where-humans-cannot-go) about our RL-for-space-robotics work for a very general audience!
+- (Oct 2026) Joined Oak Lab as a Founding Member of Technical Staff! Really excited for what we'll build!
+- (Sep 2026) Presented our robot-dog work at the [Space Robotics Workshop](https://space-robots.org/iros2026/) at IROS 2026!
+<!-- - (May 2026) Presented a talk on _"Robot Learning at Scale: Learning To Walk From Scratch Within 11 Minutes of Training"_ [[link to paper](https://arxiv.org/abs/2610.24241)]. -->
 - (May 2026) Two papers that I co-authored are accepted in the Reinforcement Learning Journal: one on robotic manipulation and one on sim2real transfer.
 - (Jan 2026) I am hosting two interns over the Winter term. This is my first time supervising students!
 - (Oct 2025) My first research proposal was approved! I am the lead PI for a six-month $150k project on safe RL-based robotics.
 - (Feb 2025) I had the pleasure of being interviewed for a TalkRL podcast [episode](https://www.talkrl.com/episodes/abhishek-naik)!
 - (Sep 2024) Started a postdoc on RL research for space applications at NRC!
-- (Aug 2024) Presented [Reward Centering](https://arxiv.org/abs/2405.09999) at RLC 2024!
-- (Mar 2024) Defended my [Ph.D. dissertation](https://era.library.ualberta.ca/items/42307739-a774-4d6b-b1a3-de9fbc949575)! :D
-- (Feb 2024) Presented the Amii AI seminar to an audience of 100+ people [[link to recording](https://www.youtube.com/watch?v=M8vN5HohzP4)]
 
+<!-- - (Aug 2024) Presented [Reward Centering](https://arxiv.org/abs/2405.09999) at RLC 2024!
+- (Mar 2024) Defended my [Ph.D. dissertation](https://era.library.ualberta.ca/items/42307739-a774-4d6b-b1a3-de9fbc949575)! :D
+- (Feb 2024) Presented the Amii AI seminar to an audience of 100+ people [[link to recording](https://www.youtube.com/watch?v=M8vN5HohzP4)] -->
 <!-- - (Nov 2023) [Khurram Javed](https://khurramjaved.com/) and I won the natHACKS hackathon! [[Demo](https://www.youtube.com/watch?v=VVa_BcEbB9M)]
 - (Aug 2023) Oral spotlight [talk](uploads/Talks/SCIoI_Spotlight_AbhishekNaik.pdf) at the Science of Intelligence institute's summer school at Berlin!
 - (May 2023) Started working with AlbertaSat, which is UofA's student group that designs, builds, and operates nano satellites! -->
@@ -128,11 +141,16 @@ In particular, I designed algorithms for non-episodic problems such that an agen
 
 - Some more interesting work on the way... :)
 
-- #### Rethinking the Suitability of RL Algorithms Under Practical Transfer Constraints _[PDF coming soon]_
+- #### Towards Reinforcement Learning for Space Robotics: Fast Training and Reliable Real-World Transfer [[PDF](https://arxiv.org/abs/2610.24241)]
+**Abhishek Naik**, Michael Wu, Michael O'Sullivan, Colin Bellinger, Yunli Wang <br>
+In _[Space Robotics Workshop](https://space-robots.org/iros2026/),_ IROS 2026. <br>
+(A [pop-science article about this work](https://nrc.canada.ca/en/stories/rocky-robot-taking-human-intelligence-where-humans-cannot-go) was featured in _Nature_'s AI & Robotics newsletter [on November 3rd](https://mailchi.mp/nature/ai-and-robotics-briefing-13897940)!)
+
+- #### Rethinking the Suitability of RL Algorithms Under Practical Transfer Constraints [[PDF](https://arxiv.org/abs/2607.17326)]
 Hany Hamed, **Abhishek Naik**, Colin Bellinger, A. Rupam Mahmood <br>
 In _Reinforcement Learning Conference ([RLC](https://rl-conference.cc/))_, 2026.
 
-- #### Dynamic Object Masks as Goal Representations for Visual Goal-Conditioned Reinforcement Learning _[PDF coming soon]_
+- #### Dynamic Object Masks as Goal Representations for Visual Goal-Conditioned Reinforcement Learning [[PDF](https://arxiv.org/abs/2510.06277)]
 Fahim Shahriar, Cheryl Wang, Seyed Alireza Azimi, Gautham Vasan, Hany Hamed, **Abhishek Naik**, A. Rupam Mahmood, Colin Bellinger <br>
 In _Reinforcement Learning Conference ([RLC](https://rl-conference.cc/))_, 2026.
 
@@ -185,6 +203,10 @@ Technical Report, _ArXiv:1703.03401,_ 2017. -->
 
 <!-- ## [Talks](#talks) -->
 ## [Selected Talks](#talks)
+
+- #### Reinforcement Learning for Continuing Tasks
+_Carleton University's NTN Seminar,_ Oct 2026 <br>
+[[Slides](uploads/Talks/RLforContinuingTasks_AbhishekNaik.pdf)]
 
 - #### Robot Learning at Scale: Learning To Walk From Scratch Within 11 Minutes of Training
 _NRC Knowledge-Exchange Seminar,_ May 2026 <br>
@@ -243,26 +265,36 @@ _[ Tea Time Talks](https://amiithinks.github.io/tea-time-talks/), RLAI lab and
 
 ## [Work Experience](#work-experience)
 
+### Oak Lab
+**Founding Member and Member of Technical Staff** <br>
+Oct 2026 – _ongoing_; Toronto, Canada <br>
+
+- At [Oak Lab](https://oaklab.ai/), we are building algorithms that will enable all kinds of artificial systems to learn continually in real time—from their own experience—with orders of magnitude less compute and energy than contemporary methods. Stay tuned for exciting updates!
+
 
 ### National Research Council of Canada
-**Postdoc Fellow; Sep 2024 – _ongoing_; Ottawa, Canada** <br>
+**Postdoc Fellow** <br>
+Sep 2024 – Sep 2026; Ottawa, Canada <br>
 <!-- With the [Digital Technologies](https://nrc.canada.ca/en/research-development/research-collaboration/research-centres/digital-technologies-research-centre) research center -->
 
-- At [NRC](https://nrc.canada.ca/en/), I am doing reinforcement-learning research with a particular focus on applications in the space industry. I am leading a project on continually learning RL-based quadruped robotics and involved in another to make satellite communications orders of magnitude faster using RL. I am also mentoring/co-supervising students through internships at NRC and through collaborations with universities.
+- At [NRC](https://nrc.canada.ca/en/), I did RL research with a particular focus on applications in the space industry. I was involved in several projects, including a $150k project that I led on RL-based quadruped robotics which was featured in _Nature_'s weekly newsletter! I also mentored/co-supervised students through internships at NRC and through collaborations with universities.
 
 ### AlbertaSat
-**Software, Automation, and Testing Team Member; April 2023 – Aug 2024; Edmonton, Canada** <br>
+**Member: Software, Automation, and Testing Team** <br>
+April 2023 – Aug 2024; Edmonton, Canada <br>
 
-- [AlbertaSat](https://albertasat.ca/) is University of Alberta’s student group that designs, builds, and operates nano satellites. My role was to simulate various operational and safety scenarios of our upcoming satellite to ensure it can robustly achieve all the mission objectives. I was also doing some explorative RL/AI work for them on the side!
+- [AlbertaSat](https://albertasat.ca/) is University of Alberta’s student group that designs, builds, and operates nano satellites. My role was to simulate various operational and safety scenarios of our upcoming satellite to ensure it can robustly achieve all the mission objectives. I also did some explorative RL/AI work for them on the side!
 
 ### Google Research, Brain Team
-**Research Scientist Intern; June 2022 – Sep 2022; Toronto, Canada** <br>
+**Research Scientist Intern** <br>
+June 2022 – Sep 2022; Toronto, Canada <br>
 With [Bo Chang](https://ca.linkedin.com/in/booochang) and [Alexandros Karatzoglou](https://alexiskz.wordpress.com/).
 
 - Investigated methods for action-space generalization in RL for large-scale recommender systems like YouTube.
 
 ### Huawei Research
-**Research Internship; May 2019 – Sep 2019; Edmonton, Canada** <br>
+**Research Scientist Intern** <br>
+May 2019 – Sep 2019; Edmonton, Canada <br>
 With [Hengshuai Yao](https://hengshuaiyao.github.io/).
 
 - Worked on establishing an appropriate problem formulation for control in continuing tasks with function approximation.
@@ -270,7 +302,8 @@ With [Hengshuai Yao](https://hengshuaiyao.github.io/).
 - [Some of the work](https://arxiv.org/abs/1910.02140) started here was presented at the NeurIPS 2019 Workshop on Optimization Foundations of Reinforcement Learning ([OPTRL 2019](https://optrl2019.github.io/)).
 
 ### Intel Labs
-**Research Internship; May 2017 – Jul 2017; Bengaluru, India** <br>
+**Research Intern** <br>
+May 2017 – Jul 2017; Bengaluru, India <br>
 With [Bharat Kaul](https://www.linkedin.com/in/bharatkaul/)
 
 - Started work on a multi-agent version of the TORCS driving simulator ([MADRaS](https://github.com/abhisheknaik96/MultiAgentTORCS)) compatible with OpenAI Gym.
@@ -278,7 +311,8 @@ With [Bharat Kaul](https://www.linkedin.com/in/bharatkaul/)
 -  [This project](https://arxiv.org/abs/1707.06658) was presented at [AAMAS 2018](http://celweb.vuse.vanderbilt.edu/aamas18/).
 
 ### Purdue University
-**Research Internship; May 2016 – Jul 2016; Indiana, USA** <br>
+**Research Intern** <br>
+May 2016 – Jul 2016; Indiana, USA <br>
 With [Bruno Ribeiro](https://www.cs.purdue.edu/homes/ribeirob/)
 
 <!-- - Modeled and empirically observed a bi-modal distribution of user-lifespan in a social network. -->
@@ -379,19 +413,19 @@ As a part of the Centre's Community and Therapeutic program, I helped organize r
 If I had to pick one ~~thing~~ of the few things I could do all my life, it would be reading (sports comes first). With three fat bookshelves overflowing with books back home, and many more in my handy Kindle, there are actually times when I am happy to see long queues, presenting another opportunity to dive into my latest book. Some of my favorite authors are Adrian Tchaikovsky, Ted Chiang, Andy Weir, Michael Crichton.
 I also read non-fiction, mostly about space or minds.
 I have had the pleasure of leading the [Making Minds reading group](http://rlai.ualberta.ca/mmrg.html) for 3+ years at the University of Alberta.
-Check out [my Goodreads page](https://www.goodreads.com/review/list/41821528-abhishek-naik) and connect with me!
+Connect with me on [Goodreads](https://www.goodreads.com/review/list/41821528-abhishek-naik)!
 
 ### Space
-I have found space fascinating since I was a kid. Over the past few years, my go-to sci-fi subgenre has been first contact and inter-galactical travel. But my interest in space has had a massive resurgence thanks to [Kerbal Space Program](https://www.kerbalspaceprogram.com/) and [Everyday Astronaut](https://www.youtube.com/c/EverydayAstronaut/videos). Instead of core AI, I ~~might want to start~~ have started a career in AIxSpace!
+Space has fascinated me since I was a kid. Over the past few years, my go-to sci-fi subgenre has been first contact and inter-galactic travel. But my interest in space has had a massive resurgence thanks to [Kerbal Space Program](https://www.kerbalspaceprogram.com/) and [Everyday Astronaut](https://www.youtube.com/c/EverydayAstronaut/videos). Instead of core AI, I ~~might want to start~~ have started a career in AIxSpace!
 
 ### Formula 1
 There is hardly anything as spectacular as this confluence of science and engineering which gives the world these lean, mean, and beautiful machines, with some of fittest athletes on the planet battling fearlessly at speeds excessive of 300 kmph over 20+ challenging tracks all over the world. Current favorite track: ~~Spa Francorchamps~~ Circuit Gilles-Villeneuve, Team: _Forza Ferrari_ forever! _(sigh)_
 
-### How Things Work
+### How things work
 I am marvelled by the incredible displays of science and engineering all around us, so I spend inordinate amounts of time looking up how things work, like Sterling Engines, Fluorescence, Lagrange Points, water-based mills, series-parallel power-split hybrid powertrains, etc. Sometimes I learn enough (and have enough time) to try and explain them to the world through [my blog](https://abhisheknaik96.github.io/AllPosts).
 
-### Ice-hockey
-One of the fastest sport in the world, with an exhausting 60 minutes of action (yes, even while watching). The wizardry these athletes pull off _while on skates_ is a delight to watch (shoutout to Connor McDavid! _#LetsGoOilers_). I am currently ~~learning ice-skating in order to start playing ice-hockey by early 2020!~~ ~~learning to play ice-hockey!~~ ~~playing hockey in a league!~~ taking a sabbatical from hockey.
+<!-- ### Ice-hockey
+One of the fastest sport in the world, with an exhausting 60 minutes of action (yes, even while watching). The wizardry these athletes pull off _while on skates_ is a delight to watch (shoutout to Connor McDavid! _#LetsGoOilers_). I am currently ~~learning ice-skating in order to start playing ice-hockey by early 2020!~~ ~~learning to play ice-hockey!~~ ~~playing hockey in a league!~~ taking a sabbatical from hockey. -->
 
 <!-- ### Football
 I love watching and playing _the beautiful game_. Come rain or shine, my heart beats for Real Madrid. I also root for Liverpool, Juventus, and Portugal. My favorite player is, you guessed it, Cristiano Ronaldo --- one of the greatest footballers of all time. -->
@@ -413,7 +447,7 @@ I love visiting and documenting quaint, spectacular places, and digging into the
 ## [Contact Me](#contact-me)
 <!-- [//]: # (Email ID -)
 ![Email ID](/images/ID.png){:width="45%"} -->
-On [LinkedIn](https://www.linkedin.com/in/abhisheknaik96) or [email](mailto:abhisheknaik22296@gmail.com).
+On [LinkedIn](https://www.linkedin.com/in/abhisheknaik96) or via [email](mailto:abhisheknaik22296@gmail.com).
 
 ---
 ---
