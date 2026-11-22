@@ -1,0 +1,636 @@
+---
+title: Home
+layout: default
+---
+
+<section id="about-me">
+  <p>I am a Founding Member of Technical Staff at <strong>Oak Lab</strong>, where we are building algorithms that will enable all kinds of artificial systems to learn continually in real time—from their own experience—with orders of magnitude less compute and energy than contemporary methods.</p>
+  <p>Recently, I finished a postdoc at the <strong>National Research Council Canada</strong>, where I did reinforcement-learning research at the intersection of robotics and space applications. Check out <a href="https://www.youtube.com/watch?v=vUFJiZdJaQ0" target="_blank" rel="noopener">this video</a> of our robot dog (Rocky!) traversing lunar-like terrain zero-shot after learning to walk purely in simulation in less than 20 minutes using a single GPU!</p>
+  <p>Previously, I obtained my Ph.D. at the <strong>University of Alberta</strong> with <a href="http://incompleteideas.net/" target="_blank" rel="noopener">Rich Sutton</a>, where I developed simple and practical algorithms from first principles for long-lived artificial decision-making systems. In particular, I developed algorithms within the reinforcement-learning framework for continuing (non-episodic) problems—in which the agent-environment interaction goes on <em>ad infinitum</em>—with the goal of maximizing the average reward obtained per step. Empirically, the algorithms are easy to implement and use.</p>
+  <p>I love space! I envision a future where artificial systems will have human-like intelligence and adaptability, making space exploration significantly easier and safer for our species.</p>
+</section>
+
+<section id="news">
+  <h2>Updates</h2>
+  <div id="news-list" class="news-list"></div>
+</section>
+
+<section id="phd">
+  <h2>Ph.D. Dissertation</h2>
+  <ul id="phd-list" class="clean-list"></ul>
+</section>
+
+<section id="publications">
+  <h2>Selected Papers <span class="aux"><a href="https://scholar.google.co.in/citations?user={{ site.social.google_scholar }}" target="_blank" rel="noopener">Google Scholar &nearr;</a></span></h2>
+  <span id="research"></span>
+  <ol id="publications-list" class="pub"></ol>
+</section>
+
+<section id="talks">
+  <div class="section-header-flex">
+    <h2>Selected Talks</h2>
+    <button id="toggle-talks-btn" type="button" class="btn-toggle-link">
+      Show more
+    </button>
+  </div>
+  <div id="talks-list" class="talks-grid-list"></div>
+</section>
+
+<section id="background">
+  <div class="section-header-flex">
+    <h2>Background</h2>
+    <div class="tab-group" role="tablist" aria-label="Background tabs">
+      <button type="button" class="tab-btn active" data-exp-tab="work">Work Experience</button>
+      <button type="button" class="tab-btn" data-exp-tab="teaching">Teaching</button>
+      <button type="button" class="tab-btn" data-exp-tab="service">Service &amp; Awards</button>
+    </div>
+  </div>
+  <span id="experience"></span>
+  <span id="work-experience"></span>
+  <span id="teaching-experience"></span>
+  <span id="community-service"></span>
+  <div id="background-list" class="background-items"></div>
+</section>
+
+<section id="interests-and-hobbies">
+  <h2>Interests &amp; Hobbies</h2>
+  <ul id="interests-list" class="clean-list"></ul>
+</section>
+
+<section id="contact-me">
+  <h2>Contact</h2>
+  <p>Feel free to reach out via <a href="mailto:{{ site.social.email }}">{{ site.social.email }}</a> or connect on <a href="https://ca.linkedin.com/in/{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>.</p>
+</section>
+
+<script>
+  // ==========================================
+  // EDITABLE CONTENT LISTS
+  // ==========================================
+
+  const NEWS_ITEMS = [
+    { date: "Nov 2026", text: 'Our robot-dog work was featured in <a href="https://mailchi.mp/nature/ai-and-robotics-briefing-13897940" target="_blank" rel="noopener">Nature\'s weekly AI & Robotics newsletter</a>!' },
+    { date: "Oct 2026", text: 'NRC published <a href="https://nrc.canada.ca/en/stories/rocky-robot-taking-human-intelligence-where-humans-cannot-go" target="_blank" rel="noopener">a wonderful article</a> about our RL-for-space-robotics work for a very general audience!' },
+    { date: "Oct 2026", text: 'Joined <a href="https://oaklab.ai/" target="_blank" rel="noopener">Oak Lab</a> as a Founding Member of Technical Staff in Toronto! Really excited for what we\'ll build!' },
+    { date: "Sep 2026", text: 'Presented our robot-dog work at the <a href="https://space-robots.org/iros2026/" target="_blank" rel="noopener">Space Robotics Workshop</a> at IROS 2026!' },
+    { date: "May 2026", text: 'Two papers that I co-authored are accepted in the <em>Reinforcement Learning Journal</em>: one on robotic manipulation and one on sim2real transfer.' },
+    { date: "Jan 2026", text: 'I am hosting two interns over the Winter term. This is my first time supervising students!' },
+    { date: "Oct 2025", text: 'My first research proposal was approved! Lead PI for a six-month $150k project on safe RL-based robotics.' },
+    { date: "Feb 2025", text: 'Had the pleasure of being interviewed for a TalkRL podcast <a href="https://www.talkrl.com/episodes/abhishek-naik" target="_blank" rel="noopener">episode</a>!' },
+    { date: "Sep 2024", text: 'Started a postdoc on RL research for space applications at NRC!' }
+  ];
+
+  const THESIS = {
+    title: "Reinforcement Learning for Continuing Problems Using Average Reward",
+    desc: "This dissertation develops simple and practical learning algorithms from first principles for long-lived agents interacting with continuing environments <em>ad infinitum</em>, with the goal of maximizing average reward per step. Contributions include foundational one-step tabular learning algorithms for prediction and control, multi-step prediction algorithms with convergence proofs, and reward centering to improve discounted-reward algorithms.",
+    meta: "Ph.D. Dissertation, University of Alberta (Supervised by Rich Sutton) &middot; Defended March 2024",
+    links: [
+      { name: "PDF", url: "https://era.library.ualberta.ca/items/42307739-a774-4d6b-b1a3-de9fbc949575" },
+      { name: "Slides", url: "uploads/Talks/Defense_Talk_AbhishekNaik.pdf" },
+      { name: "Video", url: "https://www.youtube.com/watch?v=BTTVuV5r4-k" }
+    ]
+  };
+
+  const PUBLICATIONS = [
+    {
+      title: "Towards Reinforcement Learning for Space Robotics: Fast Training and Reliable Real-World Transfer",
+      authors: "Abhishek Naik, Michael Wu, Michael O'Sullivan, Colin Bellinger, Yunli Wang",
+      venue: "Space Robotics Workshop, IROS 2026",
+      badge: "Featured in Nature's Newsletter",
+      links: [
+        { name: "arXiv", url: "https://arxiv.org/abs/2610.24241" },
+        { name: "NRC Article", url: "https://nrc.canada.ca/en/stories/rocky-robot-taking-human-intelligence-where-humans-cannot-go" }
+      ]
+    },
+    {
+      title: "Rethinking the Suitability of RL Algorithms Under Practical Transfer Constraints",
+      authors: "Hany Hamed, Abhishek Naik, Colin Bellinger, A. Rupam Mahmood",
+      venue: "Reinforcement Learning Conference (RLC), 2026",
+      links: [
+        { name: "arXiv", url: "https://arxiv.org/abs/2607.17326" }
+      ]
+    },
+    {
+      title: "Dynamic Object Masks as Goal Representations for Visual Goal-Conditioned Reinforcement Learning",
+      authors: "Fahim Shahriar, Cheryl Wang, Seyed Alireza Azimi, Gautham Vasan, Hany Hamed, Abhishek Naik, A. Rupam Mahmood, Colin Bellinger",
+      venue: "Reinforcement Learning Conference (RLC), 2026",
+      links: [
+        { name: "arXiv", url: "https://arxiv.org/abs/2510.06277" }
+      ]
+    },
+    {
+      title: "Benchmarking Action Spaces in Reinforcement Learning for Vision-based Robotic Manipulation",
+      authors: "Seyed Alireza Azimi, Homayoon Farrahi, Abhishek Naik, Colin Bellinger, A. Rupam Mahmood",
+      venue: "Under review, 2026",
+      links: [
+        { name: "arXiv", url: "https://arxiv.org/abs/2606.18594" }
+      ]
+    },
+    {
+      title: "Reward Centering",
+      authors: "Abhishek Naik, Yi Wan, Manan Tomar, Richard S. Sutton",
+      venue: "Reinforcement Learning Conference (RLC), 2024",
+      links: [
+        { name: "arXiv", url: "https://arxiv.org/abs/2405.09999" }
+      ]
+    },
+    {
+      title: "Multi-Step Average-Reward Prediction via Differential TD(λ)",
+      authors: "Abhishek Naik, Richard S. Sutton",
+      venue: "The Conference on Reinforcement Learning and Decision Making (RLDM), 2022",
+      links: [
+        { name: "PDF", url: "https://drive.google.com/file/d/1Ygx2XI0mOFw4pfWZOm67uWsJQTOZEPSj/view?usp=sharing" }
+      ]
+    },
+    {
+      title: "Average-Reward Learning and Planning with Options",
+      authors: "Yi Wan, Abhishek Naik, Richard S. Sutton",
+      venue: "Advances in Neural Information Processing Systems (NeurIPS), 2021",
+      links: [
+        { name: "arXiv", url: "https://arxiv.org/abs/2110.13855" }
+      ]
+    },
+    {
+      title: "Towards Reinforcement Learning in the Continuing Setting",
+      authors: "Abhishek Naik, Zaheer Abbas, Adam White, Richard S. Sutton",
+      venue: "Never-Ending Reinforcement Learning (NERL) Workshop, ICLR 2021",
+      links: [
+        { name: "PDF", url: "https://drive.google.com/file/d/1l2sr7HRkeaOdZNaWNjgrqBELnTF90e70/view?usp=sharing" }
+      ]
+    },
+    {
+      title: "Learning and Planning in Average-Reward Markov Decision Processes",
+      authors: "Yi Wan*, Abhishek Naik*, Richard S. Sutton",
+      venue: "International Conference on Machine Learning (ICML), 2021",
+      links: [
+        { name: "arXiv", url: "https://arxiv.org/abs/2006.16318" }
+      ]
+    },
+    {
+      title: "MADRaS: Multi Agent DRiving Simulator",
+      authors: "Anirban Santara, Sohan Rudra, Sree Aditya Buridi, Meha Kaushik, Abhishek Naik, Bharat Kaul, Balaraman Ravindran",
+      venue: "Journal of Artificial Intelligence Research (JAIR), 2021",
+      links: [
+        { name: "arXiv", url: "https://arxiv.org/abs/2010.00993" }
+      ]
+    },
+    {
+      title: "Discounted Reinforcement Learning is Not an Optimization Problem",
+      authors: "Abhishek Naik, Roshan Shariff, Niko Yasui, Richard S. Sutton",
+      venue: "Optimization Foundations of Reinforcement Learning Workshop, NeurIPS 2019",
+      links: [
+        { name: "arXiv", url: "https://arxiv.org/abs/1910.02140" }
+      ]
+    }
+  ];
+
+  const TALKS = [
+    {
+      title: "Reinforcement Learning for Continuing Tasks",
+      venue: "Carleton University's NTN Seminar",
+      date: "Oct 2026",
+      tags: [
+        { name: "Slides", url: "uploads/Talks/RLforContinuingTasks_AbhishekNaik.pdf" }
+      ]
+    },
+    {
+      title: "Robot Learning at Scale: Learning To Walk From Scratch Within 11 Minutes of Training",
+      venue: "NRC Knowledge-Exchange Seminar",
+      date: "May 2026",
+      tags: [
+        { name: "Slides coming soon" }
+      ]
+    },
+    {
+      title: "Intro to Reinforcement Learning: What, When, How?",
+      venue: "NRC Knowledge-Exchange Seminar",
+      date: "Dec 2024",
+      tags: [
+        { name: "Slides", url: "uploads/Talks/RL_Intro_DT_AbhishekNaik.pdf" }
+      ]
+    },
+    {
+      title: "Demystifying the Discount Factor",
+      venue: "Guest Lecture, Graduate RL Course, University of Alberta",
+      date: "Nov 2024",
+      tags: [
+        { name: "Slides", url: "uploads/Talks/DemystifyingDiscounting.pdf" }
+      ]
+    },
+    {
+      title: "Reinforcement Learning in Continuing Problems Using Average Reward",
+      venue: "Ph.D. Defense Public Seminar",
+      date: "Mar 2024",
+      tags: [
+        { name: "Video", url: "https://drive.google.com/file/d/1KzHHGtjIz-L37e-gwIcn5EEBT7igr4iG/view" },
+        { name: "Slides", url: "uploads/Talks/Defense_Talk_AbhishekNaik.pdf" }
+      ]
+    },
+    {
+      title: "An Experimentalist's Venture into RL Theory: Two Successes and a Failure",
+      venue: "Amii AI Seminar",
+      date: "Feb 2024",
+      tags: [
+        { name: "Video", url: "https://www.youtube.com/watch?v=M8vN5HohzP4" },
+        { name: "Slides", url: "uploads/Talks/AI_Seminar_AbhishekNaik.pdf" }
+      ]
+    },
+    {
+      title: "Unifying Perspectives on Intelligence: What RL Adds to the Common Model of the Agent",
+      venue: "Science of Intelligence Institute's Summer School",
+      date: "Aug 2023",
+      tags: [
+        { name: "Slides", url: "uploads/Talks/SCIoI_Spotlight_AbhishekNaik.pdf" }
+      ]
+    },
+    {
+      title: "Essentials of Reinforcement Learning",
+      venue: "3rd Nepal Winter School in AI",
+      date: "Dec 2021",
+      tags: [
+        { name: "Slides", url: "uploads/Talks/NAAMI21_EssentialsRL_AbhishekNaik.pdf" }
+      ]
+    },
+    {
+      title: "Personalized Brain State Targeting via Reinforcement Learning",
+      venue: "The 3rd Neuromatch Conference",
+      date: "Oct 2020",
+      tags: [
+        { name: "Video", url: "https://www.youtube.com/watch?v=MjdOLeOe19g" },
+        { name: "Slides", url: "uploads/Talks/NMC_20_AbhishekNaik.pdf" }
+      ]
+    },
+    {
+      title: "Learning and Planning in Average-Reward MDPs",
+      venue: "Tea Time Talks, RLAI lab and Amii",
+      date: "Aug 2020",
+      tags: [
+        { name: "Slides", url: "uploads/Talks/TTT_2020_AbhishekNaik.pdf" }
+      ]
+    },
+    {
+      title: "On Intelligence: A Glimpse of the Diversity in Natural Intelligence",
+      venue: "Amii AI Meetup",
+      date: "June 2020",
+      tags: [
+        { name: "Slides", url: "uploads/Talks/AmiiAIMeetup_AbhishekNaik_compressed.pdf" }
+      ]
+    },
+    {
+      title: "Figuring Out How the Mind Works: At the Exciting Intersection of RL, Psychology, and Neuroscience",
+      venue: "Cognitive Psychology Seminar, University of Alberta",
+      date: "Mar 2020",
+      tags: [
+        { name: "Slides", url: "uploads/Talks/CogNeuro_AbhishekNaik.pdf" }
+      ]
+    },
+    {
+      title: "Discounting — Does It Make Sense?",
+      venue: "Tea Time Talks, RLAI lab and Amii",
+      date: "Aug 2019",
+      tags: [
+        { name: "Slides", url: "uploads/Talks/TTT_AbhishekNaik.pdf" }
+      ]
+    }
+  ];
+
+  const WORK_EXPERIENCE = [
+    {
+      role: "Founding Member of Technical Staff",
+      org: "Oak Lab",
+      orgUrl: "https://oaklab.ai/",
+      meta: "Oct 2026 – present &middot; Toronto, Canada",
+      desc: "Building algorithms that will enable all kinds of artificial systems to learn continually in real time—from their own experience—with orders of magnitude less compute and energy than contemporary methods."
+    },
+    {
+      role: "Postdoc Fellow",
+      org: "National Research Council of Canada (NRC)",
+      meta: "Sep 2024 – Sep 2026 &middot; Ottawa, Canada",
+      desc: "Involved in multiple applied-RL projects for space applications, including leading a $150k project on RL-based quadruped robotics for space exploration (<a href='https://mailchi.mp/nature/ai-and-robotics-briefing-13897940'>featured in <em>Nature</em>'s weekly newsletter</a>!). Also mentored and co-supervised students through internships and university collaborations."
+    },
+    {
+      role: "Member: Software, Automation, and Testing Team",
+      org: "AlbertaSat",
+      meta: "Apr 2023 – Aug 2024 &middot; Edmonton, Canada",
+      desc: "Designed and tested the software for AlbertaSat's third nanosatellite mission. Also explored RL/AI methods for autonomous satellite operations."
+    },
+    {
+      role: "Research Scientist Intern",
+      org: "Google Research, Brain Team",
+      meta: "Jun 2022 – Sep 2022 &middot; Toronto, Canada",
+      desc: "With Bo Chang and Alexandros Karatzoglou, investigated methods for action-space generalization in RL for large-scale recommender systems like YouTube."
+    },
+    {
+      role: "Research Scientist Intern",
+      org: "Huawei Research",
+      meta: "May 2019 – Sep 2019 &middot; Edmonton, Canada",
+      desc: "With Hengshuai Yao, started questioning the discounted problem formulation for control in continuing tasks with function approximation."
+    },
+    {
+      role: "Research Intern",
+      org: "Intel Labs",
+      meta: "May 2017 – Jul 2017 &middot; Bengaluru, India",
+      desc: "With Anirban Santara, developed <a href='https://github.com/abhisheknaik96/MultiAgentTORCS'>MADRaS</a>, a multi-agent driving simulator based on TORCS for RL research (100+ stars on Github)."
+    },
+    {
+      role: "Research Intern",
+      org: "Purdue University",
+      meta: "May 2016 – Jul 2016 &middot; Indiana, USA",
+      desc: "With Bruno Ribeiro, engineered temporal features to predict user lifespan distributions in social networks."
+    },
+    {
+      role: "Technical Intern",
+      org: "Amazon Development Centre",
+      meta: "May 2015 – Jul 2015 &middot; Chennai, India",
+      desc: "With Sravan Bodapati, helped built a classifier to determine which page a newly downloaded book should open. Try it on your Kindle!"
+    }
+  ];
+
+  const TEACHING_EXPERIENCE = [
+    {
+      course: "Reinforcement Learning II (CMPUT609)",
+      tag: "4 Semesters",
+      role: "Teaching Assistant &middot; Dept. of Computing Science, University of Alberta (with Prof. Rich Sutton)",
+      meta: "2024, 2023, 2021, 2020 &middot; Edmonton, Canada"
+    },
+    {
+      course: "Reinforcement Learning I (CMPUT397)",
+      role: "Teaching Assistant &middot; Dept. of Computing Science, University of Alberta (with Prof. Martha White)",
+      meta: "Fall 2020 &middot; Edmonton, Canada"
+    },
+    {
+      course: "Reinforcement Learning (CS6700)",
+      role: "Head Teaching Assistant &middot; Dept. of CSE, IIT Madras (with Prof. Balaraman Ravindran)",
+      meta: "Spring 2018 &middot; Chennai, India"
+    },
+    {
+      course: "Principles of Machine Learning (CS4011)",
+      role: "Teaching Assistant &middot; Dept. of CSE, IIT Madras",
+      meta: "Fall 2017 &middot; Chennai, India"
+    },
+    {
+      course: "Reinforcement Learning Specialization on Coursera",
+      role: "Subject Matter Expert for the 4-course specialization with over 100k+ learners",
+      meta: "University of Alberta &amp; Amii",
+      links: [
+        { name: "Coursera &nearr;", url: "https://www.coursera.org/specializations/reinforcement-learning" }
+      ]
+    }
+  ];
+
+  const SERVICE_ITEMS = [
+    {
+      org: "natHACKS 2023 Winner",
+      role: "Hackathon (with Khurram Javed)",
+      meta: "2023",
+      desc: "We showed we can learn to control on-screen objects via our brains’ EEG signals <i>within seconds</i>!"
+    },
+    {
+      org: "Peer Reviewer",
+      role: "RLC, EWRL, ICLR, AAAI, ICML, NeurIPS, Artificial Intelligence, etc.",
+      meta: "2020 – ongoing",
+      desc: "Semi-regular reviewer for reinforcement-learning conferences, workshops, and journals."
+    },
+    {
+      org: "ICML 2021 Social on Continuing Problems in RL",
+      role: "Co-organizer",
+      meta: "Jul 2021",
+      desc: "Facilitated discussions on the state and future of research in non-episodic RL."
+    },
+    {
+      org: "NeurIPS 2020 Tutorial on Policy Optimization in RL",
+      role: "Co-organizer",
+      meta: "Dec 2020",
+      desc: "Created educational notebooks on policy-gradient methods with Alan Chan, Shivam Garg, and Dhawal Gupta."
+    },
+    {
+      org: "Tea Time Talks 2020 (Amii &amp; RLAI Lab)",
+      role: "Organizer &amp; Moderator",
+      meta: "Jun–Aug 2020",
+      desc: "Organized and moderated 40+ speaker talks over 12 weeks in virtual format."
+    },
+    {
+      org: "Computing Science Graduate Students Association",
+      role: "Executive Member",
+      meta: "2019 – 2020 &middot; Edmonton, Canada",
+      desc: "Our team organized extra-curricular events for graduate students."
+    },
+    {
+      org: "Centre for Autism Services Alberta",
+      role: "Volunteer",
+      meta: "2019 – 2020 &middot; Edmonton, Canada",
+      desc: "Helped organize and conduct recreational activities for youth (ages 5–20) with ASD."
+    }
+  ];
+
+  const INTERESTS = [
+    {
+      title: "Books",
+      desc: "I love reading, mostly science fiction and thrillers. I had the pleasure of leading the <a href='http://rlai.ualberta.ca/mmrg.html'>Making Minds reading group</a> for 3+ years at University of Alberta, where we read and discussed broadly about what it means to be intelligent. Some of my favorite authors are Adrian Tchaikovsky, Ted Chiang, Andy Weir, and Michael Crichton.",
+      link: { name: "Connect with me on Goodreads &nearr;", url: "https://www.goodreads.com/user/show/{{ site.social.goodreads }}" }
+    },
+    {
+      title: "Space exploration",
+      desc: "I have always been fascinated by space, but my interest has grown multifold over the last few years thanks to <a href='https://www.kerbalspaceprogram.com/'>Kerbal Space Program</a>, <a href='https://www.youtube.com/c/EverydayAstronaut/videos'>Everyday Astronaut</a>, and SpaceX.",
+    },
+    {
+      title: "Formula 1",
+      desc: "I love this incredible confluence of science and engineering within the competetiveness of profession sports. The only video game I play is the F1 game. I thoroughly enjoyed walking and biking on Circuit Gilles-Villeneuve and COTA, and I look forward to more!",
+    },
+    {
+      title: "How things work",
+      desc: "I am fascinated by science and human ingenuity, so I spend inordinate amounts of time looking up how things work, such as Lagrange points, water-based mills, series-parallel power-split hybrid powertrains. Sometimes I learn enough (and have enough time) to try and explain them to the world through my blog.",
+      link: { name: "See my posts &nearr;", url: "{{ 'AllPosts' | relative_url }}" }
+    }
+  ];
+
+  // ==========================================
+  // RENDERING FUNCTIONS (HTML & Layout)
+  // ==========================================
+
+  function renderNews() {
+    const el = document.getElementById("news-list");
+    if (!el) return;
+    el.innerHTML = NEWS_ITEMS.map(item => `
+      <div class="news-grid">
+        <span class="news-date">${item.date}</span>
+        <span>${item.text}</span>
+      </div>
+    `).join("");
+  }
+
+  function renderThesis() {
+    const el = document.getElementById("phd-list");
+    if (!el) return;
+    const t = THESIS;
+    const linksHtml = t.links && t.links.length
+      ? t.links.map(l => ` &middot; <a href="${l.url}" target="_blank" rel="noopener">${l.name}</a>`).join("")
+      : "";
+    const mainUrl = t.links && t.links[0] ? t.links[0].url : "#";
+    el.innerHTML = `
+      <li>
+        <span class="pub">
+          <span class="t"><a href="${mainUrl}" target="_blank" rel="noopener">${t.title}</a></span>
+          <span class="a">${t.desc}</span>
+          <span class="v">${t.meta}${linksHtml}</span>
+        </span>
+      </li>
+    `;
+  }
+
+  function renderPublications() {
+    const el = document.getElementById("publications-list");
+    if (!el) return;
+    el.innerHTML = PUBLICATIONS.map(p => {
+      const authors = p.authors.replace(/Abhishek Naik/g, '<span class="me">Abhishek Naik</span>');
+      const badgeHtml = p.badge ? ` <span class="tag">${p.badge}</span>` : "";
+      const primaryUrl = p.links && p.links[0] ? p.links[0].url : (p.link || "#");
+      const linksHtml = p.links && p.links.length
+        ? p.links.map(l => ` &middot; <a href="${l.url}" target="_blank" rel="noopener">${l.name}</a>`).join("")
+        : (p.link ? ` &middot; <a href="${p.link}" target="_blank" rel="noopener">Link</a>` : "");
+      return `
+        <li>
+          <span class="pub">
+            <span class="t"><a href="${primaryUrl}" target="_blank" rel="noopener">${p.title}</a>${badgeHtml}</span>
+            <span class="a">${authors}</span>
+            <span class="v">${p.venue}${linksHtml}</span>
+          </span>
+        </li>
+      `;
+    }).join("");
+  }
+
+  let showAllTalks = false;
+
+  function renderTalks() {
+    const el = document.getElementById("talks-list");
+    if (!el) return;
+    const items = showAllTalks ? TALKS : TALKS.slice(0, 6);
+    el.innerHTML = items.map(t => {
+      const rawLinks = t.links || t.tags || [];
+      const primaryUrl = (rawLinks.find(l => l && l.url) || {}).url || "";
+      const titleHtml = primaryUrl
+        ? `<a href="${primaryUrl}" target="_blank" rel="noopener">${t.title}</a>`
+        : t.title;
+
+      const linksHtml = rawLinks.length
+        ? rawLinks.map(l => {
+            if (typeof l === 'string') return ` &middot; <span style="font-style: normal; color: var(--faint);">${l}</span>`;
+            if (l.url) return ` &middot; <a href="${l.url}" target="_blank" rel="noopener">${l.name}</a>`;
+            return ` &middot; <span style="font-style: normal; color: var(--faint);">${l.name}</span>`;
+          }).join("")
+        : "";
+
+      return `
+        <div class="talk-grid-item">
+          <span class="talk-date">${t.date}</span>
+          <div>
+            <span class="talk-title">${titleHtml}</span>
+            <div class="talk-meta">
+              <span>${t.venue}</span>${linksHtml}
+            </div>
+          </div>
+        </div>
+      `;
+    }).join("");
+    const btn = document.getElementById("toggle-talks-btn");
+    if (btn) btn.textContent = showAllTalks ? "Show recent" : `Show more`;
+  }
+
+  const toggleTalksBtn = document.getElementById("toggle-talks-btn");
+  if (toggleTalksBtn) {
+    toggleTalksBtn.addEventListener("click", () => {
+      showAllTalks = !showAllTalks;
+      renderTalks();
+    });
+  }
+
+  let currentExpTab = "work";
+
+  function renderBackground() {
+    const el = document.getElementById("background-list");
+    if (!el) return;
+
+    if (currentExpTab === "work") {
+      el.innerHTML = WORK_EXPERIENCE.map(w => {
+        const orgHtml = w.orgUrl
+          ? `<a href="${w.orgUrl}" target="_blank" rel="noopener">${w.org}</a>`
+          : w.org;
+        return `
+          <div class="exp-item">
+            <div class="exp-header">
+              <h3 class="exp-org">${orgHtml}</h3>
+              <span class="exp-meta">${w.meta}</span>
+            </div>
+            <div class="exp-role">${w.role}</div>
+            <p class="exp-desc">${w.desc}</p>
+          </div>
+        `;
+      }).join("");
+    } else if (currentExpTab === "teaching") {
+      el.innerHTML = TEACHING_EXPERIENCE.map(item => {
+        const tagHtml = item.tag ? ` <span class="tag">${item.tag}</span>` : "";
+        const linksHtml = item.links && item.links.length
+          ? ` &middot; ` + item.links.map(l => `<a href="${l.url}" target="_blank" rel="noopener">${l.name}</a>`).join(" &middot; ")
+          : "";
+        return `
+          <div class="exp-item">
+            <div class="exp-header">
+              <h3 class="exp-org">${item.course}${tagHtml}</h3>
+              <span class="exp-meta">${item.meta}</span>
+            </div>
+            <div class="exp-role">${item.role}${linksHtml}</div>
+            ${item.desc ? `<p class="exp-desc">${item.desc}</p>` : ""}
+          </div>
+        `;
+      }).join("");
+    } else if (currentExpTab === "service") {
+      el.innerHTML = SERVICE_ITEMS.map(item => `
+        <div class="exp-item">
+          <div class="exp-header">
+            <h3 class="exp-org">${item.org || item.title}</h3>
+            <span class="exp-meta">${item.meta}</span>
+          </div>
+          ${item.role ? `<div class="exp-role">${item.role}</div>` : ""}
+          ${item.desc ? `<p class="exp-desc">${item.desc}</p>` : ""}
+        </div>
+      `).join("");
+    }
+  }
+
+  document.querySelectorAll(".tab-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      currentExpTab = btn.getAttribute("data-exp-tab");
+      document.querySelectorAll(".tab-btn").forEach(b => {
+        b.classList.toggle("active", b === btn);
+      });
+      renderBackground();
+    });
+  });
+
+  function renderInterests() {
+    const el = document.getElementById("interests-list");
+    if (!el) return;
+    el.innerHTML = INTERESTS.map(item => {
+      const metaHtml = item.link
+        ? `<a href="${item.link.url}" target="_blank" rel="noopener">${item.link.name}</a>`
+        : (item.meta || "");
+      return `
+        <li>
+          <span class="pub">
+            <span class="t">${item.title}</span>
+            <span class="a">${item.desc}</span>
+            <span class="v">${metaHtml}</span>
+          </span>
+        </li>
+      `;
+    }).join("");
+  }
+
+  // Initial render
+  renderNews();
+  renderThesis();
+  renderPublications();
+  renderTalks();
+  renderBackground();
+  renderInterests();
+</script>

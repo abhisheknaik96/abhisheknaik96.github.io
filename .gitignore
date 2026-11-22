@@ -1,5 +1,7 @@
 # Generated output.
 _site/
+_preview/
+serve.py
 
 # Added when running `jekyll new PATH` or serving in incremental mode.
 .jekyll-metadata

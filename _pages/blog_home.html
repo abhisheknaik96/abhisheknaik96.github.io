@@ -1,19 +1,24 @@
 ---
 layout: minimal
 title: Random Musings
-permalink: AllPosts
+permalink: /AllPosts/
 ---
 
-{% for post in site.posts %}  <!-- If required, site.posts.reverse -->
+<div class="posts-list">
+{% for post in site.posts %}
   {% if post.tags contains "invisible" %}
     {% continue %}
   {% endif %}
-    <li>
-        <div>
-        <a href="{{ post.permalink }}"> {{ post.title }} </a><br>
-        {{ post.summary }} <br>
-        <i> {{ post.date | date: "%B %e, %Y" }} </i><br>
-        </div>
-    </li>
-    <hr>
+  <div class="post-entry">
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    {% if post.summary %}
+      <div class="summary">{{ post.summary }}</div>
+    {% endif %}
+    <div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
+  </div>
 {% endfor %}
+</div>
+
+<div style="margin-top: 36px;">
+  <a href="{{ '/' | relative_url }}" class="btn">&larr; Back to Home</a>
+</div>
