@@ -1,23 +1,51 @@
-<header id="header">
-  <div class="inner">
-    <a href={{ "/" | relative_url }} class="image avatar"><img src={{"images/AN.jpeg" | relative_url }} alt="Abhishek Naik's Photo" /></a>
+<header class="masthead">
+  <a href="{{ '/' | relative_url }}" class="portrait-link" aria-label="Back to home page">
+    <img class="portrait" src="{{ 'images/AN.jpeg' | relative_url }}" alt="Abhishek Naik" />
+  </a>
+  <div class="intro">
     <h1>Abhishek Naik</h1>
-    <h3>Ph.D., <br>University of Alberta; <a href="https://www.amii.ca/">Amii</a></h3>
-    <!-- <h3><a href="http://rlai.ualberta.ca">RLAI lab</a>, <br>University of Alberta; <a href="https://www.amii.ca/">Amii</a></h3> -->
-  </div>
-  <div class="menu-wrap">
-    <nav class="menu">
-      <ul class="clearfix">
-        <li><a href={{ "#about-me" | relative_url }}>About Me</a></li>
-        <li><a href={{ "#phd" | relative_url }}>Research</a></li>
-        <!-- <li><a href="#talks">Talks</a></li> -->
-        <!-- <li><a href="#teaching-experience">Teaching</a></li> -->
-        <li><a href={{ "#work-experience" | relative_url }}>Work Experience</a></li>
-        <li><a href={{ "#interests-and-hobbies" | relative_url }}>Hobbies</a></li>
-        <li><a href={{ "#contact-me" | relative_url }}>Contact Me</a></li>
-        <li><a href={{ "uploads/Resume_AbhishekNaik.pdf" | relative_url }}>Resume</a></li>
-        <li><a href={{ "AllPosts" | relative_url }}>Blog</a></li>
-      </ul>
+    <p class="title">Founding Member of Technical Staff · <a href="https://oaklab.ai/" target="_blank" rel="noopener">Oak Lab</a></p>
+    <p class="affil">Ph.D., University of Alberta &amp; Amii</p>
+
+    <nav class="sections-nav">
+      <a href="{{ '/#about-me' | relative_url }}">About</a>
+      <span class="sep">·</span>
+      <a href="{{ '/#news' | relative_url }}">News</a>
+      <span class="sep">·</span>
+      <a href="{{ '/#publications' | relative_url }}">Publications</a>
+      <span class="sep">·</span>
+      <a href="{{ '/#talks' | relative_url }}">Talks</a>
+      <span class="sep">·</span>
+      <a href="{{ '/#background' | relative_url }}">Background</a>
+      <span class="sep">·</span>
+      <a href="{{ 'AllPosts' | relative_url }}">Blog</a>
     </nav>
+
+    <div class="chips">
+      <a class="chip" href="mailto:{{ site.social.email }}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
+        Email
+      </a>
+      <a class="chip" href="https://scholar.google.co.in/citations?user={{ site.social.google_scholar }}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+        Scholar
+      </a>
+      <a class="chip" href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        GitHub
+      </a>
+      <a class="chip" href="https://ca.linkedin.com/in/{{ site.social.linkedin }}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        LinkedIn
+      </a>
+      <a class="chip" href="https://x.com/{{ site.social.twitter }}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>
+        X
+      </a>
+      <a class="chip" href="{{ 'uploads/Resume_AbhishekNaik.pdf' | relative_url }}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        Resume
+      </a>
+    </div>
   </div>
 </header>
